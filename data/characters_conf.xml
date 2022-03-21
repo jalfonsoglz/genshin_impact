@@ -4,50 +4,50 @@
     <record id="char_albedo" model="genshin.impact.characters.conf">
         <field name="active">true</field>
       	<field name="name">Albedo</field>
-        <field name="element">geo</field>
-        <field name="weapon_type">sword</field>
+        <field name="element">Geo</field>
+        <field name="weapon_type">Sword</field>
       	<field name="avatar" type="base64" file="genshin_impact/static/img/Albedo.png"/>
     </record>
       <record id="char_aloy" model="genshin.impact.characters.conf">
           <field name="active">true</field>
           <field name="name">Aloy</field>
-          <field name="element">cryo</field>
-          <field name="weapon_type">bow</field>
+          <field name="element">Cryo</field>
+          <field name="weapon_type">Bow</field>
       	<field name="avatar" type="base64" file="genshin_impact/static/img/Aloy.png"/>
       </record>
     <record id="char_amber" model="genshin.impact.characters.conf">
           <field name="active">true</field>
           <field name="name">Amber</field>
-          <field name="element">pyro</field>
-          <field name="weapon_type">bow</field>
+          <field name="element">Pyro</field>
+          <field name="weapon_type">Bow</field>
       	<field name="avatar" type="base64" file="genshin_impact/static/img/Amber.png"/>
       </record>
     <record id="char_ayaka" model="genshin.impact.characters.conf">
           <field name="active">true</field>
           <field name="name">Ayaka</field>
-          <field name="element">cryo</field>
-          <field name="weapon_type">sword</field>
+          <field name="element">Cryo</field>
+          <field name="weapon_type">Sword</field>
       	<field name="avatar" type="base64" file="genshin_impact/static/img/Ayaka.png"/>
       </record>
     <record id="char_barbara" model="genshin.impact.characters.conf">
           <field name="active">true</field>
           <field name="name">Barbara</field>
-          <field name="element">hydro</field>
-          <field name="weapon_type">catalyst</field>
+          <field name="element">Hydro</field>
+          <field name="weapon_type">Catalyst</field>
       	<field name="avatar" type="base64" file="genshin_impact/static/img/Barbara.png"/>
       </record>
     <record id="char_beidou" model="genshin.impact.characters.conf">
           <field name="active">true</field>
           <field name="name">Beidou</field>
-          <field name="element">electro</field>
-          <field name="weapon_type">claymore</field>
+          <field name="element">Electro</field>
+          <field name="weapon_type">Claymore</field>
       	<field name="avatar" type="base64" file="genshin_impact/static/img/Beidou.png"/>
       </record>
     <record id="char_bennet" model="genshin.impact.characters.conf">
           <field name="active">true</field>
           <field name="name">Bennett</field>
-          <field name="element">pyro</field>
-          <field name="weapon_type">sword</field>
+          <field name="element">Pyro</field>
+          <field name="weapon_type">Sword</field>
       	<field name="avatar" type="base64" file="genshin_impact/static/img/Bennett.png"/>
       </record>
 </odoo>

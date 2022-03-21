@@ -14,7 +14,6 @@ class CharactersConf(models.Model):
     active = fields.Boolean(string='Activo', default=True)
     avatar = fields.Image(string='Avatar')
     name = fields.Char(string='Nombre', required=True)
-    rarity = fields.Image(string='Avatar')
     achieved = fields.Boolean(string='Invocado', default=False, tracking=True)
     element = fields.Many2one('genshin.impact.elements', string='Elemento', required=True)
     weapon_type = fields.Many2one('genshin.impact.weapon.type ', string='Tipo de Arma', required=True)

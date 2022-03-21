@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <record id="characters_conf_tree" model="ir.ui.view">
+        <field name="name">genshin.impact.characters.conf.tree</field>
+        <field name="model">genshin.impact.characters.conf</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="active" />
+                <field name="avatar" widget="image"/>
+                <field name="name" />
+                <field name="element" />
+                <field name="weapon_type" />
+                <field name="level" />
+                <field name="constellation" />
+                <field name="basic_attack_talent" />
+                <field name="elemental_skill_talent" />
+                <field name="elemental_burst_talent" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="characters_conf_form" model="ir.ui.view">
+        <field name="name">genshin.impact.characters.conf.form</field>
+        <field name="model">genshin.impact.characters.conf</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="name" required="1" placeholder="Nombre del personaje..." />
+                        </h1>
+                    </div>
+                    <group>
+                        <field name="active" invisible="1" />
+                        <field name="achieved" attrs="{'invisible': [('achieved', '=', False)]}" />
+                        <field name="avatar" widget="image"/>
+                        <field name="element" />
+                        <field name="weapon_type" />
+                        <field name="level" options="{'editable': true}" widget="progressbar"/>
+                        <field name="constellation" />
+                        <field name="basic_attack_talent" />
+                        <field name="elemental_skill_talent" />
+                        <field name="elemental_burst_talent" />
+                        <field name="char_hp" />
+                        <field name="char_atk" />
+                        <field name="char_def" />
+                        <field name="char_crit_rate" />
+                        <field name="char_crit_dmg" />
+                        <field name="char_heal_bonus" />
+                        <field name="char_heal_bonus2" />
+                        <field name="char_energy_recharge" />
+                        <field name="char_acd" />
+                        <field name="char_shield" />
+                        <field name="char_pyro_bonus" />
+                        <field name="char_pyro_res" />
+                        <field name="char_hydro_bonus" />
+                        <field name="char_hydro_res" />
+                        <field name="char_dendro_bonus" />
+                        <field name="char_dendro_res" />
+                        <field name="char_electro_bonus" />
+                        <field name="char_electro_res" />
+                        <field name="char_anemo_bonus" />
+                        <field name="char_anemo_res" />
+                        <field name="char_cryo_bonus" />
+                        <field name="char_cryo_res" />
+                        <field name="char_geo_bonus" />
+                        <field name="char_geo_res" />
+                        <field name="char_phy_bonus" />
+                        <field name="char_phy_res" />
+                    </group>
+                </sheet>
+                <!-- Chatter -->
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers" />
+                    <field name="message_ids" widget="mail_thread" />
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <record id="characters_conf_search" model="ir.ui.view">
+        <field name="name">genshin.impact.characters.conf.search</field>
+        <field name="model">genshin.impact.characters.conf</field>
+        <field name="arch" type="xml">
+            <search string="Personajes">
+                <field name="name" />
+                <field name="level" />
+                <field name="constellation" />
+                <separator />
+                <group expand="1" string="Group by">
+                    <filter string="Invocado" name="achieved" context="{'group_by':'achieved' }" />
+                    <filter string="Nivel" name="level" context="{'group_by':'level' }" />
+                    <filter string="Constelación" name="constellation" context="{'group_by':'constellation' }" />
+                    <filter string="Elemento" name="element" context="{'group_by':'element' }" />
+                    <filter string="Tipo de Arma" name="weapon_type" context="{'group_by':'weapon_type' }" />
+                    <field string="Ataque Básico" name="basic_attack_talent" context="{'group_by':'basic_attack_talent' }" />
+                    <field string="Ataque Elemental" name="elemental_skill_talent" context="{'group_by':'elemental_skill_talent' }" />
+                    <field string="Definitiva Elemental" name="elemental_burst_talent" context="{'group_by':'elemental_burst_talent' }" />
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="characters_conf_action" model="ir.actions.act_window">
+        <field name="name">Personajes</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">genshin.impact.characters.conf</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Crear tu primer registro!
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="genshin_root" name="Gestor Genshin Impact" sequence="1"/>
+    <menuitem id="genshin_config_root" name="Configuración" parent="genshin_root" action="characters_conf_action" sequence="2" />
+    <menuitem id="characters_conf" name="Configurar Personajes" parent="genshin_config_root" action="characters_conf_action" sequence="1" />
+
+</odoo>

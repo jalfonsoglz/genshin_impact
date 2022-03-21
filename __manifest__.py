@@ -21,7 +21,7 @@
         'security/ir.model.access.csv',
         'views/characters_conf.xml',
         'views/elements.xml',
-        'views/weapon.type.xml',
+        'views/weapon_type.xml',
         'data/elements.xml',
         'data/characters.conf.xml',
         'data/weapon.type.xml'

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="characters_albedo" model="genshin.impact.characters">
+            <field name="active">true</field>
+            <field name="name">Albedo</field>
+            <field name="element">Geo</field>
+            <field name="weapon_type">Sword</field>
+            <field name="avatar" type="base64" file="genshin_impact/static/img/avatar/Albedo.png" />
+            <field name="full_avatar" type="base64" file="genshin_impact/static/img/avatar_full/Albedo.png" />
+        </record>
+    </data>
+</odoo>

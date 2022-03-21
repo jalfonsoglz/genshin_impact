@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <odoo>
-    <record id="characters_conf_tree" model="ir.ui.view">
-        <field name="name">genshin.impact.characters.conf.tree</field>
-        <field name="model">genshin.impact.characters.conf</field>
+    <record id="dbms_tree" model="ir.ui.view">
+        <field name="name">genshin.impact.dbms.tree</field>
+        <field name="model">genshin.impact.dbms</field>
         <field name="arch" type="xml">
             <tree>
                 <field name="active" invisible="1" />
@@ -18,30 +18,33 @@
             </tree>
         </field>
     </record>
-    <record id="characters_conf_form" model="ir.ui.view">
-        <field name="name">genshin.impact.characters.conf.form</field>
-        <field name="model">genshin.impact.characters.conf</field>
+    <record id="dbms_form" model="ir.ui.view">
+        <field name="name">genshin.impact.dbms.form</field>
+        <field name="model">genshin.impact.dbms</field>
         <field name="arch" type="xml">
             <form>
                 <sheet>
                     <group>
                         <group col="2">
+                            <group string="Personaje" expand="1">
                             <div class="oe_title">
                                 <h1>
-                                    <field name="name" placeholder="Nombre del personaje..." />
-                                    <field name="full_avatar" widget="image" height="256" />
+                                    <field name="name" placeholder="Nombre..." />
+                                    <field name="avatar" widget="image" height="128" attrs="{'invisible': [('level', '!=', 0)]}"/>
+                                    <field name="full_avatar" widget="image" height="200" />
                                 </h1>
                             </div>
+                            </group>
                             <group string="Progreso">
                                 <field name="active" invisible="1" />
                                 <field name="achieved" attrs="{'invisible': [('achieved', '=', True)]}" />
-                                <field name="element" />
-                                <field name="weapon_type" />
+                                <field name="element" options="{'no_create': True}" />
+                                <field name="weapon_type" options="{'no_create': True}" />
                                 <field name="level" />
                                 <field name="constellation" />
-                                <field name="basic_attack_talent" />
-                                <field name="elemental_skill_talent" />
-                                <field name="elemental_burst_talent" />
+                                <field name="basic_attack_talent" icon="fa-solid fa-sword" />
+                                <field name="elemental_skill_talent" icon="fa-solid fa-star"/>
+                                <field name="elemental_burst_talent" icon="fa-solid fa-burst" />
                             </group>
                         </group>
                     </group>
@@ -50,6 +53,8 @@
                             <field name="char_hp" />
                             <field name="char_atk" />
                             <field name="char_def" />
+                            <field name="char_elemental_mastery" />
+                            <field name="char_stamina" />
                             <field name="char_crit_rate" />
                             <field name="char_crit_dmg" />
                             <field name="char_heal_bonus" />
@@ -88,9 +93,9 @@
             </form>
         </field>
     </record>
-    <record id="characters_conf_search" model="ir.ui.view">
-        <field name="name">genshin.impact.characters.conf.search</field>
-        <field name="model">genshin.impact.characters.conf</field>
+    <record id="dbms_search" model="ir.ui.view">
+        <field name="name">genshin.impact.dbms.search</field>
+        <field name="model">genshin.impact.dbms</field>
         <field name="arch" type="xml">
             <search string="Personajes">
                 <field name="name" />
@@ -110,10 +115,10 @@
             </search>
         </field>
     </record>
-    <record id="characters_conf_action" model="ir.actions.act_window">
+    <record id="dbms_action" model="ir.actions.act_window">
         <field name="name">Personajes</field>
         <field name="type">ir.actions.act_window</field>
-        <field name="res_model">genshin.impact.characters.conf</field>
+        <field name="res_model">genshin.impact.dbms</field>
         <field name="view_mode">tree,form</field>
         <field name="context">{"achieved":1}</field>
         <field name="help" type="html">
@@ -125,8 +130,6 @@
     <!-- Top menu item -->
     <menuitem id="genshin_root" name="Gestor Genshin Impact" sequence="1" />
     <!-- menu categories -->
-    <menuitem id="characters_menu" name="Personajes" parent="genshin_root" action="characters_conf_action" sequence="1" />
-    <menuitem id="genshin_config_root" name="Configuración" parent="genshin_root" action="characters_conf_action" sequence="2" />
-    <!-- actions -->
-    <menuitem id="characters_conf" name="Configurar Personajes" parent="genshin_config_root" action="characters_conf_action" sequence="1" />
+    <menuitem id="characters_menu" name="Personajes" parent="genshin_root" action="dbms_action" sequence="1" />
+    <menuitem id="genshin_dbms_root" name="Configuración" parent="genshin_root" action="dbms_action" sequence="2" />
 </odoo>

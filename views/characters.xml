@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="characters_tree" model="ir.ui.view">
+        <field name="name">genshin.impact.characters.tree</field>
+        <field name="model">genshin.impact.characters</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="active" invisible="1" />
+                <field name="avatar" widget="image" height="48" />
+                <field name="name" />
+                <field name="element" />
+                <field name="weapon_type" />
+            </tree>
+        </field>
+    </record>
+    <record id="characters_form" model="ir.ui.view">
+        <field name="name">genshin.impact.characters.form</field>
+        <field name="model">genshin.impact.characters</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group col="2">
+                            <group string="Personaje" expand="1">
+                                <div class="oe_title">
+                                    <h1>
+                                        <field name="name" placeholder="Nombre..." />
+                                        <field name="avatar" widget="image" height="128" attrs="{'invisible': [('level', '!=', 0)]}" />
+                                        <field name="full_avatar" widget="image" height="200" />
+                                    </h1>
+                                </div>
+                            </group>
+                            <group string="General">
+                                <field name="active" invisible="1" />
+                                <field name="element" options="{'no_create': True}" />
+                                <field name="weapon_type" options="{'no_create': True}" />
+                            </group>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="characters_search" model="ir.ui.view">
+        <field name="name">genshin.impact.characters.search</field>
+        <field name="model">genshin.impact.characters</field>
+        <field name="arch" type="xml">
+            <search string="Personajes">
+                <field name="name" />
+                <group expand="1" string="Group by">
+                    <filter string="Elemento" name="element" context="{'group_by':'element' }" />
+                    <filter string="Tipo de Arma" name="weapon_type" context="{'group_by':'weapon_type' }" />
+                </group>
+            </search>
+        </field>
+    </record>
+    <record id="characters_action" model="ir.actions.act_window">
+        <field name="name">Personajes</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">genshin.impact.characters</field>
+        <field name="view_mode">tree,form</field>
+        <field name="context">{"achieved":1}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Crear tu primer registro!
+            </p>
+        </field>
+    </record>
+    <!-- actions -->
+    <menuitem id="characters_dbms" name="Configurar Personajes" parent="genshin_dbms_root" action="characters_dbms_action" sequence="1" />
+</odoo>

@@ -6,15 +6,15 @@
         <field name="arch" type="xml">
             <tree>
                 <field name="active" invisible="1" />
-                <field name="avatar" widget="image" height="64" />
+                <field name="avatar" widget="image" height="48" />
                 <field name="name" />
                 <field name="element" />
                 <field name="weapon_type" />
-                <field name="level" />
-                <field name="constellation" />
-                <field name="basic_attack_talent" />
-                <field name="elemental_skill_talent" />
-                <field name="elemental_burst_talent" />
+                <field name="level" options="{'editable': true}" />
+                <field name="constellation" options="{'editable': true}" />
+                <field name="basic_attack_talent" options="{'editable': true}" />
+                <field name="elemental_skill_talent" options="{'editable': true}" />
+                <field name="elemental_burst_talent" options="{'editable': true}" />
             </tree>
         </field>
     </record>
@@ -24,18 +24,20 @@
         <field name="arch" type="xml">
             <form>
                 <sheet>
-                    <group col="2">
-                        <group string="Personaje">
-                            <field name="avatar" widget="image" height="64" />
-                            <field name="name" placeholder="Nombre del personaje..." />
-                            <group>
+                    <group>
+                        <group col="2">
+                            <div class="oe_title">
+                                <h1>
+                                    <field name="name" placeholder="Nombre del personaje..." />
+                                    <field name="full_avatar" widget="image" height="256" />
+                                </h1>
+                            </div>
+                            <group string="Progreso">
                                 <field name="active" invisible="1" />
-                                <field name="achieved" attrs="{'invisible': [('achieved', '=', False)]}" />
+                                <field name="achieved" attrs="{'invisible': [('achieved', '=', True)]}" />
                                 <field name="element" />
                                 <field name="weapon_type" />
-                            </group>
-                            <group string="Avance">
-                                <field name="level" options="{'editable': true}" widget="progressbar" />
+                                <field name="level" />
                                 <field name="constellation" />
                                 <field name="basic_attack_talent" />
                                 <field name="elemental_skill_talent" />
@@ -43,7 +45,7 @@
                             </group>
                         </group>
                     </group>
-                    <group col="2">
+                    <group col="3">
                         <group string="Básico">
                             <field name="char_hp" />
                             <field name="char_atk" />
@@ -56,22 +58,24 @@
                             <field name="char_acd" />
                             <field name="char_shield" />
                         </group>
-                        <group string="Estadísticas">
+                        <group string="Bonus Elemental">
                             <field name="char_pyro_bonus" />
-                            <field name="char_pyro_res" />
                             <field name="char_hydro_bonus" />
-                            <field name="char_hydro_res" />
                             <field name="char_dendro_bonus" />
-                            <field name="char_dendro_res" />
                             <field name="char_electro_bonus" />
-                            <field name="char_electro_res" />
                             <field name="char_anemo_bonus" />
-                            <field name="char_anemo_res" />
                             <field name="char_cryo_bonus" />
-                            <field name="char_cryo_res" />
                             <field name="char_geo_bonus" />
-                            <field name="char_geo_res" />
                             <field name="char_phy_bonus" />
+                        </group>
+                        <group string="Resistencia Elemental">
+                            <field name="char_pyro_res" />
+                            <field name="char_hydro_res" />
+                            <field name="char_dendro_res" />
+                            <field name="char_electro_res" />
+                            <field name="char_anemo_res" />
+                            <field name="char_cryo_res" />
+                            <field name="char_geo_res" />
                             <field name="char_phy_res" />
                         </group>
                     </group>

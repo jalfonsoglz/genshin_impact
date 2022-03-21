@@ -114,8 +114,8 @@
         </field>
     </record>
 
-    <menuitem id="genshin_root" name="Gestor Genshin Impact" sequence="1"/>
-    <menuitem id="genshin_config_root" name="Configuración" parent="genshin_root" action="characters_conf_action" sequence="2" />
-    <menuitem id="characters_conf" name="Configurar Personajes" parent="genshin_config_root" action="characters_conf_action" sequence="1" />
+    <menuitem id="genshin_root" name="Gestor Genshin Impact" action="characters_conf_action" sequence="1" groups="base.group_no_one"/>
+    <menuitem id="genshin_config_root" name="Configuración" parent="genshin_root" action="characters_conf_action" sequence="1" groups="base.group_no_one"/>
+    <menuitem id="characters_conf" name="Configurar Personajes" parent="genshin_config_root" action="characters_conf_action" sequence="1" groups="base.group_no_one"/>
 
 </odoo>

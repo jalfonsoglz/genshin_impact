@@ -55,6 +55,6 @@
         </field>
     </record>
 
-    <menuitem id="elements_conf" name="Configurar Elementos" parent="genshin_config_root" action="elements_action" sequence="3" />
+    <menuitem id="elements_conf" name="Configurar Elementos" parent="genshin_config_root" action="elements_action" sequence="2" groups="base.group_no_one"/>
 
 </odoo>

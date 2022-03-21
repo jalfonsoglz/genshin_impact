@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
+    <record id="elements_dendro" model="genshin.impact.elements">
+        <field name="active">False</field>
+      	<field name="name">Dendro</field>
+      	<field name="avatar" type="base64" file="genshin_impact/static/img/elements_dendro-image.png"/>
+    </record>
       <record id="elements_anemo" model="genshin.impact.elements">
       	<field name="name">Anemo</field>
       	<field name="avatar" type="base64" file="genshin_impact/static/img/elements_anemo-image.png"/>

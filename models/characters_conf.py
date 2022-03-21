@@ -16,7 +16,7 @@ class CharactersConf(models.Model):
     name = fields.Char(string='Nombre', required=True)
     achieved = fields.Boolean(string='Invocado', default=False, tracking=True)
     element = fields.Many2one('genshin.impact.elements', string='Elemento', required=True)
-    weapon_type = fields.Many2one('genshin.impact.weapon.type ', string='Tipo de Arma', required=True)
+    weapon_type = fields.Many2one('genshin.impact.weapon.type', string='Tipo de Arma', required=True)
     level = fields.Integer(string='Nivel', default="1", tracking=True)
     constellation = fields.Integer(string='Constelación', default="0", tracking=True)
     basic_attack_talent = fields.Integer(string='Ataque Básico', default="1", tracking=True)

@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
-
     <record id="weapon_type_tree" model="ir.ui.view">
         <field name="name">genshin.impact.weapon.type.tree</field>
         <field name="model">genshin.impact.weapon.type</field>
         <field name="arch" type="xml">
             <tree>
                 <field name="active" invisible="1" />
-                <field name="avatar" widget="image"/>
+                <field name="avatar" widget="image" height="64" />
                 <field name="name" />
             </tree>
         </field>
     </record>
-
     <record id="weapon_type_form" model="ir.ui.view">
         <field name="name">genshin.impact.weapon.type.form</field>
         <field name="model">genshin.impact.weapon.type</field>
@@ -21,18 +19,17 @@
                 <sheet>
                     <div class="oe_title">
                         <h1>
-                            <field name="avatar" widget="image"/>
-                            <field name="name" required="1" placeholder="Nombre de la arma..." />
+                            <field name="avatar" widget="image" height="128" />
                         </h1>
                     </div>
                     <group>
+                        <field name="name" required="1" placeholder="Nombre de la arma..." />
                         <field name="active" invisible="1" />
                     </group>
                 </sheet>
             </form>
         </field>
     </record>
-
     <record id="weapon_type_search" model="ir.ui.view">
         <field name="name">genshin.impact.weapon.type.search</field>
         <field name="model">genshin.impact.weapon.type</field>
@@ -42,7 +39,6 @@
             </search>
         </field>
     </record>
-
     <record id="weapon_type_action" model="ir.actions.act_window">
         <field name="name">Tipo de Arma</field>
         <field name="type">ir.actions.act_window</field>

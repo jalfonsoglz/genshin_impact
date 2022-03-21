@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
-
     <record id="characters_conf_tree" model="ir.ui.view">
         <field name="name">genshin.impact.characters.conf.tree</field>
         <field name="model">genshin.impact.characters.conf</field>
         <field name="arch" type="xml">
             <tree>
-                <field name="active" />
-                <field name="avatar" widget="image" />
+                <field name="active" invisible="1" />
+                <field name="avatar" widget="image" height="64" />
                 <field name="name" />
                 <field name="element" />
                 <field name="weapon_type" />
@@ -19,55 +18,62 @@
             </tree>
         </field>
     </record>
-
     <record id="characters_conf_form" model="ir.ui.view">
         <field name="name">genshin.impact.characters.conf.form</field>
         <field name="model">genshin.impact.characters.conf</field>
         <field name="arch" type="xml">
             <form>
                 <sheet>
-                    <div class="oe_title">
-                        <h1>
-                            <field name="avatar" widget="image"/>
-                            <field name="name" required="1" placeholder="Nombre del personaje..." />
-                        </h1>
-                    </div>
-                    <group>
-                        <field name="active" invisible="1" />
-                        <field name="achieved" attrs="{'invisible': [('achieved', '=', False)]}" />
-                        <field name="element" widget="image"/>
-                        <field name="weapon_type" />
-                        <field name="level" options="{'editable': true}" widget="progressbar"/>
-                        <field name="constellation" />
-                        <field name="basic_attack_talent" />
-                        <field name="elemental_skill_talent" />
-                        <field name="elemental_burst_talent" />
-                        <field name="char_hp" />
-                        <field name="char_atk" />
-                        <field name="char_def" />
-                        <field name="char_crit_rate" />
-                        <field name="char_crit_dmg" />
-                        <field name="char_heal_bonus" />
-                        <field name="char_heal_bonus2" />
-                        <field name="char_energy_recharge" />
-                        <field name="char_acd" />
-                        <field name="char_shield" />
-                        <field name="char_pyro_bonus" />
-                        <field name="char_pyro_res" />
-                        <field name="char_hydro_bonus" />
-                        <field name="char_hydro_res" />
-                        <field name="char_dendro_bonus" />
-                        <field name="char_dendro_res" />
-                        <field name="char_electro_bonus" />
-                        <field name="char_electro_res" />
-                        <field name="char_anemo_bonus" />
-                        <field name="char_anemo_res" />
-                        <field name="char_cryo_bonus" />
-                        <field name="char_cryo_res" />
-                        <field name="char_geo_bonus" />
-                        <field name="char_geo_res" />
-                        <field name="char_phy_bonus" />
-                        <field name="char_phy_res" />
+                    <group col="2">
+                        <group string="Personaje">
+                            <field name="avatar" widget="image" height="64" />
+                            <field name="name" placeholder="Nombre del personaje..." />
+                            <group>
+                                <field name="active" invisible="1" />
+                                <field name="achieved" attrs="{'invisible': [('achieved', '=', False)]}" />
+                                <field name="element" />
+                                <field name="weapon_type" />
+                            </group>
+                            <group string="Avance">
+                                <field name="level" options="{'editable': true}" widget="progressbar" />
+                                <field name="constellation" />
+                                <field name="basic_attack_talent" />
+                                <field name="elemental_skill_talent" />
+                                <field name="elemental_burst_talent" />
+                            </group>
+                        </group>
+                    </group>
+                    <group col="2">
+                        <group string="Básico">
+                            <field name="char_hp" />
+                            <field name="char_atk" />
+                            <field name="char_def" />
+                            <field name="char_crit_rate" />
+                            <field name="char_crit_dmg" />
+                            <field name="char_heal_bonus" />
+                            <field name="char_heal_bonus2" />
+                            <field name="char_energy_recharge" />
+                            <field name="char_acd" />
+                            <field name="char_shield" />
+                        </group>
+                        <group string="Estadísticas">
+                            <field name="char_pyro_bonus" />
+                            <field name="char_pyro_res" />
+                            <field name="char_hydro_bonus" />
+                            <field name="char_hydro_res" />
+                            <field name="char_dendro_bonus" />
+                            <field name="char_dendro_res" />
+                            <field name="char_electro_bonus" />
+                            <field name="char_electro_res" />
+                            <field name="char_anemo_bonus" />
+                            <field name="char_anemo_res" />
+                            <field name="char_cryo_bonus" />
+                            <field name="char_cryo_res" />
+                            <field name="char_geo_bonus" />
+                            <field name="char_geo_res" />
+                            <field name="char_phy_bonus" />
+                            <field name="char_phy_res" />
+                        </group>
                     </group>
                 </sheet>
                 <!-- Chatter -->
@@ -78,7 +84,6 @@
             </form>
         </field>
     </record>
-
     <record id="characters_conf_search" model="ir.ui.view">
         <field name="name">genshin.impact.characters.conf.search</field>
         <field name="model">genshin.impact.characters.conf</field>
@@ -101,7 +106,6 @@
             </search>
         </field>
     </record>
-
     <record id="characters_conf_action" model="ir.actions.act_window">
         <field name="name">Personajes</field>
         <field name="type">ir.actions.act_window</field>

@@ -24,7 +24,7 @@
         'views/elements.xml',
         'data/elements.xml',
         'data/weapon.type.xml',
-        #'data/characters.conf.xml'
+        'data/characters.conf.xml'
     ],
     'images': ['static/description/banner.png'],
     'demo': [],

@@ -13,4 +13,3 @@ class Elements(models.Model):
 	active = fields.Boolean(string='Activo', default=True)
 	avatar = fields.Image(string='Icono del Elemento')
 	name = fields.Char(string='Nombre del Elemento', required=True)
-	note = fields.Text(string='Descripción', readonly=False)

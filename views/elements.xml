@@ -9,7 +9,6 @@
                 <field name="active" invisible="1" />
                 <field name="avatar" widget="image" />
                 <field name="name" />
-                <field mame="note" />
             </tree>
         </field>
     </record>
@@ -28,7 +27,6 @@
                     </div>
                     <group>
                         <field name="active" invisible="1" />
-                        <field mame="note" />
                     </group>
                 </sheet>
             </form>

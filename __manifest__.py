@@ -23,8 +23,8 @@
         'views/weapon_type.xml',
         'views/characters_conf.xml',
         'data/elements.xml',
-        'data/weapon_type.xml',
-        'data/characters_conf.xml'
+        'data/weapon.type.xml',
+        'data/characters.conf.xml'
     ],
     'images': ['static/description/banner.png'],
     'demo': [],

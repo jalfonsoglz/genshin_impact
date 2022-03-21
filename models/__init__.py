@@ -3,5 +3,6 @@
 
 from . import characters_conf
 from . import elements
+from . import weapon_type
 
 

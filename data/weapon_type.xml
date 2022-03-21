@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="weapon_type_bow" model="genshin.impact.weapon.type">
+      	<field name="name">Bow</field>
+      	<field name="avatar" type="base64" file="genshin_impact/static/img/Bow.png"/>
+    </record>
+      <record id="weapon_type_catalyst" model="genshin.impact.weapon.type">
+      	<field name="name">Catalyst</field>
+      	<field name="avatar" type="base64" file="genshin_impact/static/img/Claymore.png"/>
+      </record>
+      <record id="weapon_type_claymore" model="genshin.impact.weapon.type">
+      	<field name="name">Claymore</field>
+      	<field name="avatar" type="base64" file="genshin_impact/static/img/Claymore.png"/>
+      </record>
+    <record id="weapon_type_polearm" model="genshin.impact.weapon.type">
+      	<field name="name">Polearm</field>
+      	<field name="avatar" type="base64" file="genshin_impact/static/img/Polearm.png"/>
+      </record>
+    <record id="weapon_type_sword" model="genshin.impact.weapon.type">
+      	<field name="name">Sword</field>
+      	<field name="avatar" type="base64" file="genshin_impact/static/img/Sword.png"/>
+      </record>
+
+</odoo>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
 
-    <record id="elements_tree" model="ir.ui.view">
-        <field name="name">genshin.impact.elements.tree</field>
-        <field name="model">genshin.impact.elements</field>
+    <record id="weapon_type_tree" model="ir.ui.view">
+        <field name="name">genshin.impact.weapon.type.tree</field>
+        <field name="model">genshin.impact.weapon.type</field>
         <field name="arch" type="xml">
             <tree>
                 <field name="active" invisible="1" />
@@ -13,16 +13,16 @@
         </field>
     </record>
 
-    <record id="elements_form" model="ir.ui.view">
-        <field name="name">genshin.impact.elements.form</field>
-        <field name="model">genshin.impact.elements</field>
+    <record id="weapon_type_form" model="ir.ui.view">
+        <field name="name">genshin.impact.weapon.type.form</field>
+        <field name="model">genshin.impact.weapon.type</field>
         <field name="arch" type="xml">
             <form>
                 <sheet>
                     <div class="oe_title">
                         <h1>
                             <field name="avatar" widget="image"/>
-                            <field name="name" required="1" placeholder="Nombre del personaje..." />
+                            <field name="name" required="1" placeholder="Nombre de la arma..." />
                         </h1>
                     </div>
                     <group>
@@ -33,20 +33,20 @@
         </field>
     </record>
 
-    <record id="elements_search" model="ir.ui.view">
-        <field name="name">genshin.impact.elements.search</field>
-        <field name="model">genshin.impact.elements</field>
+    <record id="weapon_type_search" model="ir.ui.view">
+        <field name="name">genshin.impact.weapon.type.search</field>
+        <field name="model">genshin.impact.weapon.type</field>
         <field name="arch" type="xml">
-            <search string="Elementos">
+            <search string="Tipo de Arma">
                 <field name="name" />
             </search>
         </field>
     </record>
 
-    <record id="elements_action" model="ir.actions.act_window">
-        <field name="name">Elementos</field>
+    <record id="weapon_type_action" model="ir.actions.act_window">
+        <field name="name">Tipo de Arma</field>
         <field name="type">ir.actions.act_window</field>
-        <field name="res_model">genshin.impact.elements</field>
+        <field name="res_model">genshin.impact.weapon.type</field>
         <field name="view_mode">tree,form</field>
         <field name="help" type="html">
             <p class="o_view_nocontent_smiling_face">
@@ -55,6 +55,6 @@
         </field>
     </record>
 
-    <menuitem id="elements_conf" name="Configurar Elementos" parent="genshin_config_root" action="elements_action" sequence="2" groups="base.group_no_one"/>
+    <menuitem id="weapon_type_conf" name="Configurar Tipo de Arma" parent="genshin_config_root" action="weapon_type_action" sequence="3" groups="base.group_no_one"/>
 
 </odoo>

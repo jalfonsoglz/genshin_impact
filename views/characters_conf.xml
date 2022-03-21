@@ -28,14 +28,14 @@
                 <sheet>
                     <div class="oe_title">
                         <h1>
+                            <field name="avatar" widget="image"/>
                             <field name="name" required="1" placeholder="Nombre del personaje..." />
                         </h1>
                     </div>
                     <group>
                         <field name="active" invisible="1" />
                         <field name="achieved" attrs="{'invisible': [('achieved', '=', False)]}" />
-                        <field name="avatar" widget="image"/>
-                        <field name="element" />
+                        <field name="element" widget="image"/>
                         <field name="weapon_type" />
                         <field name="level" options="{'editable': true}" widget="progressbar"/>
                         <field name="constellation" />
@@ -107,6 +107,7 @@
         <field name="type">ir.actions.act_window</field>
         <field name="res_model">genshin.impact.characters.conf</field>
         <field name="view_mode">tree,form</field>
+        <field name="context">{"achieved":1}</field>
         <field name="help" type="html">
             <p class="o_view_nocontent_smiling_face">
                 Crear tu primer registro!

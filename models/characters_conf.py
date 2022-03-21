@@ -14,23 +14,10 @@ class CharactersConf(models.Model):
     active = fields.Boolean(string='Activo', default=True)
     avatar = fields.Image(string='Avatar')
     name = fields.Char(string='Nombre', required=True)
+    rarity = fields.Image(string='Avatar')
     achieved = fields.Boolean(string='Invocado', default=False, tracking=True)
-    element = fields.Selection([
-        ('pyro', 'Pyro'),
-        ('hydro', 'Hydro'),
-        ('dendro', 'Dendro'),
-        ('electro', 'Electro'),
-        ('anemo', 'Anemo'),
-        ('cryo', 'Cryo'),
-        ('geo', 'Geo')
-    ], string='Elemento', required=True)
-    weapon_type = fields.Selection([
-        ('sword', 'Espada Ligera'),
-        ('claymore', 'Mandoble'),
-        ('polearm', 'Lanza'),
-        ('bow', 'Arco'),
-        ('catalyst', 'Catalizador')
-    ], string='Tipo de Arma', required=True)
+    element = fields.Many2one('genshin.impact.elements', string='Elemento', required=True)
+    weapon_type = fields.Many2one('genshin.impact.weapon.type ', string='Tipo de Arma', required=True)
     level = fields.Integer(string='Nivel', default="1", tracking=True)
     constellation = fields.Integer(string='Constelación', default="0", tracking=True)
     basic_attack_talent = fields.Integer(string='Ataque Básico', default="1", tracking=True)

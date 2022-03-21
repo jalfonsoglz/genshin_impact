@@ -25,6 +25,7 @@
         'views/elements.xml',
         'data/elements.xml',
         'data/weapon.type.xml',
+        #'data/dbms.xml'
         #'data/characters.xml'
     ],
     'images': ['static/description/banner.png'],

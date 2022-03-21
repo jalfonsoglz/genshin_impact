@@ -116,7 +116,7 @@
         </field>
     </record>
     <record id="dbms_action" model="ir.actions.act_window">
-        <field name="name">Personajes</field>
+        <field name="name">Gestión de Personajes</field>
         <field name="type">ir.actions.act_window</field>
         <field name="res_model">genshin.impact.dbms</field>
         <field name="view_mode">tree,form</field>
@@ -130,6 +130,6 @@
     <!-- Top menu item -->
     <menuitem id="genshin_root" name="Gestor Genshin Impact" sequence="1" />
     <!-- menu categories -->
-    <menuitem id="characters_menu" name="Personajes" parent="genshin_root" action="dbms_action" sequence="1" />
-    <menuitem id="genshin_dbms_root" name="Configuración" parent="genshin_root" action="dbms_action" sequence="2" />
+    <menuitem id="dmbs_menu" name="Gestión de Personajes" parent="genshin_root" action="dbms_action" sequence="1" />
+    <menuitem id="genshin_config_root" name="Configuración" parent="genshin_root" action="dbms_action" sequence="2" />
 </odoo>

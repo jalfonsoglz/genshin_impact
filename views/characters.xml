@@ -20,21 +20,19 @@
             <form>
                 <sheet>
                     <group>
-                        <group col="2">
-                            <group string="Personaje" expand="1">
-                                <div class="oe_title">
-                                    <h1>
-                                        <field name="name" placeholder="Nombre..." />
-                                        <field name="avatar" widget="image" height="128" attrs="{'invisible': [('level', '!=', 0)]}" />
-                                        <field name="full_avatar" widget="image" height="200" />
-                                    </h1>
-                                </div>
-                            </group>
-                            <group string="General">
+                        <div class="oe_title">
+                            <h1>
+                                <field name="name" placeholder="Nombre..." />
+                            </h1>
+                            <group>
                                 <field name="active" invisible="1" />
                                 <field name="element" options="{'no_create': True}" />
                                 <field name="weapon_type" options="{'no_create': True}" />
                             </group>
+                        </div>
+                        <group>
+                            <field name="avatar" widget="image" height="128" />
+                            <field name="full_avatar" widget="image" height="200" />
                         </group>
                     </group>
                 </sheet>
@@ -55,7 +53,7 @@
         </field>
     </record>
     <record id="characters_action" model="ir.actions.act_window">
-        <field name="name">Personajes</field>
+        <field name="name">Configurar Personajes</field>
         <field name="type">ir.actions.act_window</field>
         <field name="res_model">genshin.impact.characters</field>
         <field name="view_mode">tree,form</field>
@@ -67,5 +65,5 @@
         </field>
     </record>
     <!-- actions -->
-    <menuitem id="characters_dbms" name="Configurar Personajes" parent="genshin_dbms_root" action="characters_dbms_action" sequence="1" />
+    <menuitem id="characters_conf" name="Configurar Personajes" parent="genshin_config_root" action="characters_action" sequence="1" />
 </odoo>

@@ -29,6 +29,15 @@
         <record id="elements_pyro" model="genshin.impact.elements">
             <field name="name">Pyro</field>
             <field name="avatar" type="base64" file="genshin_impact/static/img/elements_pyro-image.png" />
+            <field name="note">Pyro is the only element that reacts with every other element in the game.
+                Pyro has the following Elemental Reactions:
+                * Electro Overloaded: Deals AoE Pyro DMG and causes an explosion.
+                * Hydro Vaporize: Deals ×1.5 Pyro DMG when a Pyro attack triggers the reaction.
+                * Cryo Melt: Deals ×2 Pyro DMG when a Pyro attack triggers the reaction.
+                * Dendro Burning: Deals Pyro DMG over time. The grass is considered a Dendro object and will spread the burn effect around the area.
+                * Anemo Swirl: Deals AoE Pyro DMG while spreading the Pyro status to nearby enemies.
+                * Geo Crystallize: Creates a Pyro shield.
+            </field>
         </record>
     </data>
 </odoo>

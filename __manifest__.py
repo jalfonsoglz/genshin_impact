@@ -19,12 +19,12 @@
     ],
     'data': [
         'security/ir.model.access.csv',
+        'views/characters_conf.xml',
         'views/weapon_type.xml',
         'views/elements.xml',
-        'views/characters_conf.xml',
         'data/elements.xml',
         'data/weapon.type.xml',
-        'data/characters.conf.xml'
+        #'data/characters.conf.xml'
     ],
     'images': ['static/description/banner.png'],
     'demo': [],

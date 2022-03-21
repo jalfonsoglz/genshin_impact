@@ -54,5 +54,6 @@
             </p>
         </field>
     </record>
-    <menuitem id="genshin_impact.weapon_type_conf" name="Configurar Tipo de Arma" parent="genshin_impact.genshin_config_root" action="genshin_impact.weapon_type_action" sequence="3" />
+    <!-- actions -->
+    <menuitem id="weapon_type_conf" name="Configurar Tipo de Arma" parent="genshin_config_root" action="weapon_type_action" sequence="3" />
 </odoo>

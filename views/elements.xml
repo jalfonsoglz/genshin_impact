@@ -7,7 +7,7 @@
         <field name="arch" type="xml">
             <tree>
                 <field name="active" invisible="1" />
-                <field name="avatar" widget="image"/>
+                <field name="avatar" widget="image" />
                 <field name="name" />
             </tree>
         </field>
@@ -54,5 +54,6 @@
             </p>
         </field>
     </record>
+    <!-- actions -->
     <menuitem id="genshin_impact.elements_conf" name="Configurar Elementos" parent="genshin_impact.genshin_config_root" action="genshin_impact.elements_action" sequence="2" />
 </odoo>

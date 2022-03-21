@@ -19,8 +19,8 @@
     ],
     'data': [
         'security/ir.model.access.csv',
-        'views/elements.xml',
         'views/weapon_type.xml',
+        'views/elements.xml',
         'views/characters_conf.xml',
         'data/elements.xml',
         'data/weapon.type.xml',

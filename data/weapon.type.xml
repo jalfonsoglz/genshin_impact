@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <data noupdate="1">
+    <data>
         <record id="weapon_type_bow" model="genshin.impact.weapon.type">
             <field name="name">Bow</field>
             <field name="avatar" type="base64" file="genshin_impact/static/img/weapon/Bow.png" />
         </record>
         <record id="weapon_type_catalyst" model="genshin.impact.weapon.type">
             <field name="name">Catalyst</field>
-            <field name="avatar" type="base64" file="genshin_impact/static/img/weapon/Claymore.png" />
+            <field name="avatar" type="base64" file="genshin_impact/static/img/weapon/Catalyst.png" />
         </record>
         <record id="weapon_type_claymore" model="genshin.impact.weapon.type">
             <field name="name">Claymore</field>

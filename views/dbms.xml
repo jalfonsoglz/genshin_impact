@@ -6,10 +6,11 @@
         <field name="arch" type="xml">
             <tree>
                 <field name="active" invisible="1" />
-                <field name="avatar" widget="image" height="48" />
+<!--                <field name="avatar" widget="image" height="48" />-->
                 <field name="name" />
-                <field name="element" />
-                <field name="weapon_type" />
+                <field name="char_element_type" />
+                <field name="char_weapon_type" />
+                <field name="weapons" />
                 <field name="level" options="{'editable': true}" />
                 <field name="constellation" options="{'editable': true}" />
                 <field name="basic_attack_talent" options="{'editable': true}" />
@@ -24,31 +25,34 @@
         <field name="arch" type="xml">
             <form>
                 <sheet>
-                    <group>
-                        <group col="2">
-                            <group>
-                            <div class="oe_title">
-                                <h1>
-                                    <field name="name" placeholder="Nombre..." />
-                                    <field name="avatar" widget="image" height="128" attrs="{'invisible': [('level', '!=', 0)]}"/>
-                                    <field name="full_avatar" widget="image" height="200" />
-                                </h1>
-                            </div>
-                            </group>
-                            <group string="Progreso">
-                                <field name="active" invisible="1" />
-                                <field name="achieved" attrs="{'invisible': [('achieved', '=', True)]}" />
-                                <field name="element" options="{'no_create': True}" />
-                                <field name="weapon_type" options="{'no_create': True}" />
-                                <field name="level" />
-                                <field name="constellation" />
-                                <field name="basic_attack_talent" icon="fa-solid fa-sword" />
-                                <field name="elemental_skill_talent" icon="fa-solid fa-star"/>
-                                <field name="elemental_burst_talent" icon="fa-solid fa-burst" />
-                            </group>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="name" placeholder="Nombre..." />
+                        </h1>
+<!--                        <field name="avatar" widget="image" height="128" />-->
+<!--                        <field name="full_avatar" widget="image" height="200" />-->
+                    </div>
+                    <group col="2">
+                        <group string="Personaje">
+                            <field name="active" invisible="1" />
+                            <field name="achieved" attrs="{'invisible': [('achieved', '=', True)]}" />
+                            <field name="char_element_type" widget="selection" />
+                            <field name="level" />
+                            <field name="constellation" />
+                            <field name="basic_attack_talent" icon="fa-solid fa-sword" />
+                            <field name="elemental_skill_talent" icon="fa-solid fa-star" />
+                            <field name="elemental_burst_talent" icon="fa-solid fa-burst" />
+                        </group>
+                        <group string="Arma">
+                            <field name="char_weapon_type" />
+                            <field name="weapons" />
+                            <field name="weapon_note" />
+                            <field name="weapon_atk" />
+                            <field name="weapon_sub_stat" />
+                            <field name="weapon_sub_stat_value" />
                         </group>
                     </group>
-                    <group col="3">
+                    <group expand="1" col="3">
                         <group string="Básico">
                             <field name="char_hp" />
                             <field name="char_atk" />
@@ -104,10 +108,10 @@
                 <separator />
                 <group expand="1" string="Group by">
                     <filter string="Invocado" name="achieved" context="{'group_by':'achieved' }" />
+                    <filter string="Elemento" name="char_element_type" context="{'group_by':'char_element_type' }" />
+                    <filter string="Tipo de Arma" name="char_weapon_type" context="{'group_by':'char_weapon_type' }" />
                     <filter string="Nivel" name="level" context="{'group_by':'level' }" />
                     <filter string="Constelación" name="constellation" context="{'group_by':'constellation' }" />
-                    <filter string="Elemento" name="element" context="{'group_by':'element' }" />
-                    <filter string="Tipo de Arma" name="weapon_type" context="{'group_by':'weapon_type' }" />
                     <field string="Ataque Básico" name="basic_attack_talent" context="{'group_by':'basic_attack_talent' }" />
                     <field string="Ataque Elemental" name="elemental_skill_talent" context="{'group_by':'elemental_skill_talent' }" />
                     <field string="Definitiva Elemental" name="elemental_burst_talent" context="{'group_by':'elemental_burst_talent' }" />

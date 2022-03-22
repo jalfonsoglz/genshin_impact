@@ -30,7 +30,5 @@ class Weapons(models.Model):
 	image = fields.Image(string='Icono de Arma')
 	name = fields.Char(string='Nombre del Arma', required=True)
 	weapon_type = fields.Many2one('genshin.impact.weapon.type', string='Tipo de Arma')
-	weapon_atk = fields.Integer(string='Ataque', default="1", tracking=True)
 	weapon_sub_stat_type = fields.Selection(SUB_STAT_TYPES, string='Tipo Sub Stat', default='ATK_FLAT')
-	weapon_sub_stat_value = fields.Float(string='Valor Sub Stat', default="1", tracking=True)
 	note = fields.Text(string='Descripción', copy=False)

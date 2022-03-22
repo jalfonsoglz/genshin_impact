@@ -9,9 +9,7 @@
                 <field name="image" widget="image" height="64" />
                 <field name="name" />
                 <field name="weapon_type" />
-                <field name="weapon_atk" />
                 <field name="weapon_sub_stat_type" />
-                <field name="weapon_sub_stat_value" />
                 <field name="note" />
             </tree>
         </field>
@@ -31,9 +29,7 @@
                         <field name="name" required="1" placeholder="Nombre de la arma..." />
                         <field name="active" invisible="1" />
                         <field name="weapon_type" />
-                        <field name="weapon_atk" />
                         <field name="weapon_sub_stat_type" />
-                        <field name="weapon_sub_stat_value" />
                         <field name="note" />
                     </group>
                 </sheet>

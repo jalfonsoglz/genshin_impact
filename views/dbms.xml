@@ -4,18 +4,19 @@
         <field name="name">genshin.impact.dbms.tree</field>
         <field name="model">genshin.impact.dbms</field>
         <field name="arch" type="xml">
-            <tree>
+            <tree default_order="level, constellation" >
                 <field name="active" invisible="1" />
+                <field name="achieved" invisible="1" />
+                <field name="level" />
 <!--                <field name="avatar" widget="image" height="48" />-->
                 <field name="name" />
                 <field name="char_element_type" />
                 <field name="char_weapon_type" />
-                <field name="weapons" />
-                <field name="level" options="{'editable': true}" />
                 <field name="constellation" options="{'editable': true}" />
                 <field name="basic_attack_talent" options="{'editable': true}" />
                 <field name="elemental_skill_talent" options="{'editable': true}" />
                 <field name="elemental_burst_talent" options="{'editable': true}" />
+                <field name="weapons" />
             </tree>
         </field>
     </record>
@@ -45,10 +46,10 @@
                         </group>
                         <group string="Arma">
                             <field name="char_weapon_type" widget="selection" />
-                            <field name="weapons" />
-                            <field name="weapon_note" />
+                            <field name="weapons" widget="selection"/>
                             <field name="weapon_atk" />
-                            <field name="weapon_stat" />
+                            <field name="weapon_note" widget="selection"/>
+                            <field name="weapon_stat" widget="selection"/>
                             <field name="weapon_sub_stat_value" />
                         </group>
                     </group>
@@ -105,6 +106,8 @@
                 <field name="name" />
                 <field name="level" />
                 <field name="constellation" />
+                <field name="achieved" />
+                <filter name="achieved" attrs="{'invisible': [('achieved', '!=', True)]}"/>
                 <separator />
                 <group expand="1" string="Group by">
                     <filter string="Invocado" name="achieved" context="{'group_by':'achieved' }" />

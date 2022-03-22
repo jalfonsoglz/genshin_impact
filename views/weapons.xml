@@ -10,7 +10,7 @@
                 <field name="name" />
                 <field name="weapon_type" />
                 <field name="weapon_sub_stat_type" />
-                <field name="note" />
+                <field name="weapon_note" />
             </tree>
         </field>
     </record>
@@ -30,7 +30,7 @@
                         <field name="active" invisible="1" />
                         <field name="weapon_type" />
                         <field name="weapon_sub_stat_type" />
-                        <field name="note" />
+                        <field name="weapon_note" />
                     </group>
                 </sheet>
             </form>

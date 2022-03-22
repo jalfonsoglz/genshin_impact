@@ -15,14 +15,19 @@ class Dbms(models.Model):
     achieved = fields.Boolean(string='Invocado', default=False, tracking=True)
     # avatar = fields.Many2one(related='name.avatar', string="avatar", readonly=True)
     name = fields.Many2one('genshin.impact.characters', string="Nombre")
-    char_element_type = fields.Many2one(related='name.char_element_type', string='Elemento', readonly=True)
-    char_weapon_type = fields.Many2one(related='name.char_weapon_type', string='Tipo de Arma')
-    weapons = fields.Many2one('genshin.impact.weapons', string='Arma')
-    weapon_note = fields.Many2one('genshin.impact.weapons', string='Arma')
-    # weapon_note = fields.Many2one(related='weapons.note', string='Efecto')
-    weapon_atk = fields.Integer(string='Ataque', default="1", tracking=True)
+    char_element_type = fields.Many2one(related='name.char_element_type',
+                                        string='Elemento', readonly=True, store=True)
+    char_weapon_type = fields.Many2one(related='name.char_weapon_type',
+                                       string='Tipo de Arma', readonly=True, store=True)
+    weapons = fields.Many2one('genshin.impact.weapons', domain=[('weapon_type', '=', 'char_weapon_type')],
+                              string='Arma')
+    # weapon_stat = fields.Many2one(related='weapons.weapon_sub_stat_type',
+    #                               string='Sub Stat de Arma', readonly=True)
+    # weapon_note = fields.Many2one(related='weapons.note',
+    #                               string='Efecto de Arma', readonly=True)
     weapon_stat = fields.Many2one('genshin.impact.weapons', string='Arma')
-    # weapon_stat = fields.Many2one(related='weapons.weapon_sub_stat_type', string='Sub Status')
+    weapon_note = fields.Many2one('genshin.impact.weapons', string='Sub Status')
+    weapon_atk = fields.Integer(string='Ataque', default="1", tracking=True)
     weapon_sub_stat_value = fields.Float(string='Valor', default="1", tracking=True)
     level = fields.Integer(string='Nivel', default="1", tracking=True)
     constellation = fields.Integer(string='Constelación', default="0", tracking=True)

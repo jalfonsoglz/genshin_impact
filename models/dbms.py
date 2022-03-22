@@ -19,7 +19,8 @@ class Dbms(models.Model):
                                         string='Elemento', readonly=True, store=True)
     char_weapon_type = fields.Many2one(related='name.char_weapon_type',
                                        string='Tipo de Arma', readonly=True, store=True)
-    weapons = fields.Many2one('genshin.impact.weapons', domain=[('weapon_type', '=', 'char_weapon_type')],
+    weapons = fields.Many2one('genshin.impact.weapons',
+                              domain=[('weapons.name.char_weapon_type', '=', 'weapons.name.weapon_type')],
                               string='Arma')
     # weapon_stat = fields.Many2one(related='weapons.weapon_sub_stat_type',
     #                               string='Sub Stat de Arma', readonly=True)

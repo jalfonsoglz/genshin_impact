@@ -46,7 +46,7 @@
                         </group>
                         <group string="Arma">
                             <field name="char_weapon_type" widget="selection" />
-                            <field name="weapons" widget="selection"/>
+                            <field name="weapons" />
                             <field name="weapon_atk" />
                             <field name="weapon_note" widget="selection"/>
                             <field name="weapon_stat" widget="selection"/>

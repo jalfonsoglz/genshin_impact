@@ -6,7 +6,7 @@
         <field name="arch" type="xml">
             <tree>
                 <field name="active" invisible="1" />
-                <field name="avatar" widget="image" height="128" />
+                <field name="avatar" widget="image" class="oe_avatar"  height="128" />
                 <field name="name" invisible="1"/>
                 <field name="weapon_type" />
                 <field name="note" />

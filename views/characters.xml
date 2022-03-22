@@ -6,7 +6,7 @@
         <field name="arch" type="xml">
             <tree>
                 <field name="active" invisible="1" />
-                <field name="avatar" widget="image" height="48" />
+                <field name="avatar" widget="image" class="oe_avatar" height="48" />
                 <field name="name" />
                 <field name="char_element_type" />
                 <field name="char_weapon_type" />
@@ -33,7 +33,7 @@
                         </div>
                         <group>
                             <field name="avatar" widget="image" height="128" />
-                            <field name="full_avatar" widget="image" height="200" />
+                            <field name="full_avatar" widget="image" height="128" />
                         </group>
                     </group>
                 </sheet>

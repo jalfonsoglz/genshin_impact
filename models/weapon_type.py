@@ -1,7 +1,15 @@
 # -*- coding: utf-8 -*-
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 
-from odoo import models, fields
+from odoo import _, api, fields, models
+
+WEAPON_TYPE = [
+	('Sword', 'Espada'),
+	('Claymore', 'Mandoble'),
+	('Polearm', 'Lanza'),
+	('Bow', 'Arco'),
+	('Catalyst', 'Catalizador'),
+]
 
 
 class WeaponType(models.Model):
@@ -13,4 +21,5 @@ class WeaponType(models.Model):
 	active = fields.Boolean(string='Activo', default=True)
 	avatar = fields.Image(string='Icono de Arma')
 	name = fields.Char(string='Nombre del Arma', required=True)
+	weapon_type = fields.Selection(WEAPON_TYPE, string='Elemento')
 	note = fields.Text(string='Descripción', copy=False, tracking=True)

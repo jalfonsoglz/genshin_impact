@@ -15,6 +15,7 @@ SUB_STAT_TYPES = [
 	('HEAL_BONUS', 'Bonus Curación'),
 	('CRIT_PERC', 'Prob. Critico %'),
 	('CRIT_DMG', 'Daño Critico %'),
+	('PHY_DMG', 'Daño Físico %'),
 ]
 
 

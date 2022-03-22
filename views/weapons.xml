@@ -45,7 +45,8 @@
         <field name="model">genshin.impact.weapons</field>
         <field name="arch" type="xml">
             <search string="Tipo de Arma">
-                <field name="name" />
+                <filter name="name" />
+                <filter name="achieved" />
                 <separator />
                 <group expand="1" string="Group by">
                 <filter string="Tipo de Arma" name="weapon_type" context="{'group_by':'weapon_type' }" />

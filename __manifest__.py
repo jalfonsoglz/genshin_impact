@@ -10,7 +10,7 @@
     'author': "Alfonso Gonzalez (alfonso@ptree.com.mx)",
     'website': "https://ntropy.tech",
     'category': 'Customizations',
-    'version': '15.0.0.0.6',
+    'version': '15.0.0.0.7',
     'license': "AGPL-3",
     'sequence': "-95",
     'depends': [
@@ -26,7 +26,6 @@
         'views/elements.xml',
         'data/elements.xml',
         'data/weapon.type.xml',
-        #'data/dbms.xml'
         #'data/characters.xml'
     ],
     'images': ['static/description/banner.png'],

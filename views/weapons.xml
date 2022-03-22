@@ -7,8 +7,9 @@
             <tree>
                 <field name="active" invisible="1" />
                 <field name="image" widget="image" class="oe_avatar" height="64" />
-                <field name="name" />
                 <field name="weapon_type" />
+                <field name="name" />
+                <field name="weapon_passive" />
                 <field name="weapon_sub_stat_type" />
                 <field name="weapon_note" />
             </tree>
@@ -28,7 +29,7 @@
                     <group>
                         <field name="name" required="1" placeholder="Nombre de la arma..." />
                         <field name="active" invisible="1" />
-                        <field name="weapon_type" />
+                        <field name="weapon_passive" />
                         <field name="weapon_sub_stat_type" />
                         <field name="weapon_note" />
                     </group>

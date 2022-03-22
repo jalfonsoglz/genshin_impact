@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 
-from odoo import _, api, fields, models
+from odoo import _, fields, models
 
 SUB_STAT_TYPES = [
 	('ATK_FLAT', 'Ataque'),
@@ -31,4 +31,5 @@ class Weapons(models.Model):
 	name = fields.Char(string='Nombre del Arma', required=True)
 	weapon_type = fields.Many2one('genshin.impact.weapon.type', string='Tipo de Arma', index=True)
 	weapon_sub_stat_type = fields.Selection(SUB_STAT_TYPES, string='Tipo Sub Stat')
+	weapon_passive = fields.Text(string='Pasiva', copy=False)
 	weapon_note = fields.Text(string='Descripción', copy=False)

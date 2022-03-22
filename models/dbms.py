@@ -51,4 +51,4 @@ class Dbms(models.Model):
     char_geo_bonus = fields.Float(string='Bonus Geo', default="1", tracking=True)
     char_geo_res = fields.Float(string='Resistencia Geo', default="1", tracking=True)
     char_phy_bonus = fields.Float(string='Bonus Daño Físico', default="1", tracking=True)
-    char_phy_res = fields.Float(string='Resistencia Daño Físico', default="1", tracking=True)
+    char_phy_res = fields.Float(string='Resistencia Física', default="1", tracking=True)

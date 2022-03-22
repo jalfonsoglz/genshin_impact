@@ -4,10 +4,12 @@
         <field name="name">genshin.impact.elements.tree</field>
         <field name="model">genshin.impact.elements</field>
         <field name="arch" type="xml">
-            <tree>
+            <>
                 <field name="active" invisible="1" />
                 <field name="avatar" widget="image" height="64" />
                 <field name="name" />
+                <field name="element_type" />
+                <field name="note" />
             </tree>
         </field>
     </record>
@@ -25,6 +27,7 @@
                     <group>
                         <field name="name" required="1" placeholder="Nombre del personaje..." />
                         <field name="active" invisible="1" />
+                        <field name="element_type" />
                         <field name="note" />
                     </group>
                 </sheet>
@@ -37,6 +40,10 @@
         <field name="arch" type="xml">
             <search string="Elementos">
                 <field name="name" />
+                <separator />
+                <group expand="1" string="Group by">
+                    <filter string="Elemento" name="element_type" context="{'group_by':'element_type' }" />
+                </group>
             </search>
         </field>
     </record>

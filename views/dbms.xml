@@ -26,7 +26,7 @@
                 <sheet>
                     <group>
                         <group col="2">
-                            <group string="Personaje" expand="1">
+                            <group>
                             <div class="oe_title">
                                 <h1>
                                     <field name="name" placeholder="Nombre..." />
@@ -63,7 +63,7 @@
                             <field name="char_acd" />
                             <field name="char_shield" />
                         </group>
-                        <group string="Bonus Elemental">
+                        <group string="Bonus Elemental (%)">
                             <field name="char_pyro_bonus" />
                             <field name="char_hydro_bonus" />
                             <field name="char_dendro_bonus" />
@@ -73,7 +73,7 @@
                             <field name="char_geo_bonus" />
                             <field name="char_phy_bonus" />
                         </group>
-                        <group string="Resistencia Elemental">
+                        <group string="Resistencia Elemental (%)">
                             <field name="char_pyro_res" />
                             <field name="char_hydro_res" />
                             <field name="char_dendro_res" />

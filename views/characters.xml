@@ -46,6 +46,7 @@
         <field name="arch" type="xml">
             <search string="Personajes">
                 <field name="name" />
+                <separator />
                 <group expand="1" string="Group by">
                     <filter string="Elemento" name="char_element_type" context="{'group_by':'char_element_type' }" />
                     <filter string="Tipo de Arma" name="char_weapon_type" context="{'group_by':'char_weapon_type' }" />

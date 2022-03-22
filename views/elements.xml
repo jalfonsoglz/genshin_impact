@@ -25,6 +25,7 @@
                     <group>
                         <field name="name" required="1" placeholder="Nombre del personaje..." />
                         <field name="active" invisible="1" />
+                        <field name="note" />
                     </group>
                 </sheet>
             </form>

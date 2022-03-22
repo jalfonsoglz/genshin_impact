@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 
-from odoo import fields, models
+from odoo import models, fields
 
 
 class Dbms(models.Model):
@@ -18,6 +18,7 @@ class Dbms(models.Model):
     name = fields.Many2one('genshin.impact.characters', string="Nombre")
     element = fields.Many2one('genshin.impact.elements', string='Elemento')
     weapon_type = fields.Many2one('genshin.impact.weapon.type', string='Tipo de Arma')
+    weapons = fields.Many2one('genshin.impact.weapons', string='Arma')
     level = fields.Integer(string='Nivel', default="1", tracking=True)
     constellation = fields.Integer(string='Constelación', default="0", tracking=True)
     basic_attack_talent = fields.Integer(string='Ataque Básico', default="1", tracking=True)

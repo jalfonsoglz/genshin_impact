@@ -28,6 +28,7 @@
                                 <field name="active" invisible="1" />
                                 <field name="element" options="{'no_create': True}" />
                                 <field name="weapon_type" options="{'no_create': True}" />
+                                <field name="note" />
                             </group>
                         </div>
                         <group>

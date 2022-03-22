@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 
-from odoo import fields, models
+from odoo import models, fields
 
 
 class Characters(models.Model):
@@ -16,3 +16,4 @@ class Characters(models.Model):
     name = fields.Char(string='Nombre')
     element = fields.Many2one('genshin.impact.elements', string='Elemento')
     weapon_type = fields.Many2one('genshin.impact.weapon.type', string='Tipo de Arma')
+    note = fields.Text(string='Descripción', copy=False, tracking=True)

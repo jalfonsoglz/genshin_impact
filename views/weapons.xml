@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="weapons_tree" model="ir.ui.view">
+        <field name="name">genshin.impact.weapons.tree</field>
+        <field name="model">genshin.impact.weapons</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="active" invisible="1" />
+                <field name="image" widget="image" height="64" />
+                <field name="name" />
+                <field name="weapon_type" />
+                <field name="weapon_atk" />
+                <field name="weapon_sub_stat_type" />
+                <field name="weapon_sub_stat_value" />
+                <field name="note" />
+            </tree>
+        </field>
+    </record>
+    <record id="weapons_form" model="ir.ui.view">
+        <field name="name">genshin.impact.weapons.form</field>
+        <field name="model">genshin.impact.weapons</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="image" widget="image" height="128" />
+                        </h1>
+                    </div>
+                    <group>
+                        <field name="name" required="1" placeholder="Nombre de la arma..." />
+                        <field name="active" invisible="1" />
+                        <field name="weapon_type" />
+                        <field name="weapon_atk" />
+                        <field name="weapon_sub_stat_type" />
+                        <field name="weapon_sub_stat_value" />
+                        <field name="note" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="weapons_search" model="ir.ui.view">
+        <field name="name">genshin.impact.weapons.search</field>
+        <field name="model">genshin.impact.weapons</field>
+        <field name="arch" type="xml">
+            <search string="Tipo de Arma">
+                <field name="name" />
+                <separator />
+                <group expand="1" string="Group by">
+                <filter string="Tipo de Arma" name="weapon_type" context="{'group_by':'weapon_type' }" />
+                <filter string="Tipo Sub Stat" name="weapon_sub_stat_type" context="{'group_by':'weapon_sub_stat_type' }" />
+                </group>
+            </search>
+        </field>
+    </record>
+    <record id="weapons_action" model="ir.actions.act_window">
+        <field name="name">Armas</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">genshin.impact.weapons</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Crear tu primer registro!
+            </p>
+        </field>
+    </record>
+    <!-- actions -->
+    <menuitem id="weapons_conf" name="Configurar Armas" parent="genshin_config_root" action="weapons_action" sequence="4" />
+</odoo>

@@ -44,11 +44,11 @@
                             <field name="elemental_burst_talent" icon="fa-solid fa-burst" />
                         </group>
                         <group string="Arma">
-                            <field name="char_weapon_type" />
+                            <field name="char_weapon_type" widget="selection" />
                             <field name="weapons" />
                             <field name="weapon_note" />
                             <field name="weapon_atk" />
-                            <field name="weapon_sub_stat" />
+                            <field name="weapon_stat" />
                             <field name="weapon_sub_stat_value" />
                         </group>
                     </group>
@@ -110,6 +110,8 @@
                     <filter string="Invocado" name="achieved" context="{'group_by':'achieved' }" />
                     <filter string="Elemento" name="char_element_type" context="{'group_by':'char_element_type' }" />
                     <filter string="Tipo de Arma" name="char_weapon_type" context="{'group_by':'char_weapon_type' }" />
+                    <filter string="Subtipo de Arma" name="weapon_stat" context="{'group_by':'weapon_stat' }" />
+
                     <filter string="Nivel" name="level" context="{'group_by':'level' }" />
                     <filter string="Constelación" name="constellation" context="{'group_by':'constellation' }" />
                     <field string="Ataque Básico" name="basic_attack_talent" context="{'group_by':'basic_attack_talent' }" />

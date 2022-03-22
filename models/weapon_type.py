@@ -21,5 +21,5 @@ class WeaponType(models.Model):
 	active = fields.Boolean(string='Activo', default=True)
 	avatar = fields.Image(string='Icono de Arma')
 	name = fields.Char(string='Nombre del Arma', required=True)
-	weapon_type = fields.Selection(WEAPON_TYPE, string='Elemento')
+	weapon_type = fields.Selection(WEAPON_TYPE, string='Tipo de Arma')
 	note = fields.Text(string='Descripción', copy=False, tracking=True)

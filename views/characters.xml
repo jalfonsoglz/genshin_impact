@@ -8,8 +8,8 @@
                 <field name="active" invisible="1" />
                 <field name="avatar" widget="image" height="48" />
                 <field name="name" />
-                <field name="element" />
-                <field name="weapon_type" />
+                <field name="char_element_type" />
+                <field name="char_weapon_type" />
             </tree>
         </field>
     </record>
@@ -26,8 +26,8 @@
                             </h1>
                             <group>
                                 <field name="active" invisible="1" />
-                                <field name="element" options="{'no_create': True}" />
-                                <field name="weapon_type" options="{'no_create': True}" />
+                                <field name="char_element_type" options="{'no_create': True}" />
+                                <field name="char_weapon_type" options="{'no_create': True}" />
                                 <field name="note" />
                             </group>
                         </div>
@@ -47,8 +47,8 @@
             <search string="Personajes">
                 <field name="name" />
                 <group expand="1" string="Group by">
-                    <filter string="Elemento" name="element" context="{'group_by':'element' }" />
-                    <filter string="Tipo de Arma" name="weapon_type" context="{'group_by':'weapon_type' }" />
+                    <filter string="Elemento" name="char_element_type" context="{'group_by':'char_element_type' }" />
+                    <filter string="Tipo de Arma" name="char_weapon_type" context="{'group_by':'char_weapon_type' }" />
                 </group>
             </search>
         </field>

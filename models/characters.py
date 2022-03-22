@@ -14,6 +14,6 @@ class Characters(models.Model):
     avatar = fields.Image(string='Avatar')
     full_avatar = fields.Image(string='Avatar')
     name = fields.Char(string='Nombre')
-    element = fields.Many2one('genshin.impact.elements', string='Elemento')
-    weapon_type = fields.Many2one('genshin.impact.weapon.type', string='Tipo de Arma')
+    char_element_type = fields.Many2one('genshin.impact.elements', string='Elemento')
+    char_weapon_type = fields.Many2one('genshin.impact.weapon.type', string='Tipo de Arma')
     note = fields.Text(string='Descripción', copy=False, tracking=True)

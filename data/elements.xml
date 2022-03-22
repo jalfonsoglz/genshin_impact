@@ -4,30 +4,37 @@
         <record id="elements_dendro" model="genshin.impact.elements">
             <field name="active">False</field>
             <field name="name">Dendro</field>
+            <field name="element_type">Dendro</field>
             <field name="avatar" type="base64" file="genshin_impact/static/img/elements/elements_dendro-image.png" />
         </record>
         <record id="elements_anemo" model="genshin.impact.elements">
             <field name="name">Anemo</field>
+            <field name="element_type">Anemo</field>
             <field name="avatar" type="base64" file="genshin_impact/static/img/elements/elements_anemo-image.png" />
         </record>
         <record id="elements_cryo" model="genshin.impact.elements">
             <field name="name">Cryo</field>
+            <field name="element_type">Cryo</field>
             <field name="avatar" type="base64" file="genshin_impact/static/img/elements/elements_cryo-image.png" />
         </record>
         <record id="elements_electro" model="genshin.impact.elements">
             <field name="name">Electro</field>
+            <field name="element_type">Electro</field>
             <field name="avatar" type="base64" file="genshin_impact/static/img/elements/elements_electro-image.png" />
         </record>
         <record id="elements_geo" model="genshin.impact.elements">
             <field name="name">Geo</field>
+            <field name="element_type">Geo</field>
             <field name="avatar" type="base64" file="genshin_impact/static/img/elements/elements_geo-image.png" />
         </record>
         <record id="elements_hydro" model="genshin.impact.elements">
             <field name="name">Hydro</field>
+            <field name="element_type">Hydro</field>
             <field name="avatar" type="base64" file="genshin_impact/static/img/elements/elements_hydro-image.png" />
         </record>
         <record id="elements_pyro" model="genshin.impact.elements">
             <field name="name">Pyro</field>
+            <field name="element_type">Pyro</field>
             <field name="avatar" type="base64" file="genshin_impact/static/img/elements/elements_pyro-image.png" />
         </record>
     </data>

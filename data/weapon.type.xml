@@ -4,26 +4,46 @@
         <record id="weapon_type_bow" model="genshin.impact.weapon.type">
             <field name="name">Bow</field>
             <field name="weapon_type">Bow</field>
+            <field name="note">Los arcos ocupan los ataques de largo alcance en el juego, con ataques cargados capaces de golpear monstruos desde tan lejos como pueda llegar la vista y con la suficiente puntería.
+
+Ataque normal: Una cadena de ataques normales con arco normalmente consiste en 5 golpes rápidos de rango intermedio.
+Ataque cargado: Los usuarios de arco pueden mantener y cargar su ataque normal para otorgarle la energía de su elemento a la flecha. Esto permite ataques más lentos pero precisos, e incrementa mucho el rango y daño máximos del disparo.</field>
             <field name="avatar" type="base64" file="genshin_impact/static/img/weapon/Bow.png" />
         </record>
         <record id="weapon_type_catalyst" model="genshin.impact.weapon.type">
             <field name="name">Catalyst</field>
             <field name="weapon_type">Catalyst</field>
+            <field name="note">Debido a su naturaleza mágica, todos los ataques normales y cargados realizados con un catalizador se consideran daño elemental. El elemento del daño depende del elemento natural o la visión del portador.
+
+Ataque normal: Una cadena de ataques normales con catalizador varían dependiendo del personaje, y algunos pueden ser de objetivo único o de daño en área.
+Ataque cargado: Los usuarios de catalizador consumen una cantidad de su resistencia para liberar un ataque más poderoso que hace daño a su alrededor.</field>
             <field name="avatar" type="base64" file="genshin_impact/static/img/weapon/Catalyst.png" />
         </record>
         <record id="weapon_type_claymore" model="genshin.impact.weapon.type">
             <field name="name">Claymore</field>
             <field name="weapon_type">Claymore</field>
+            <field name="note">Las espadas mandoble limitan al personaje que las utiliza a golpes más lentos que el resto de armas de combate, pero infligen mucho más daño por impacto. También poseen una bonificación de daño para romper objetos Geo, como el caparazón de un monstruo.
+
+Ataque normal: Una cadena de ataques normales con mandoble normalmente consiste en 4 a 5 ataques amplios lentos pero poderosos.
+Ataque cargado: Los usuarios de mandoble realizan un gancho superior antes de realizar varios ataques seguidos que continuamente drena su resistencia. Termina con un poderoso tajo cuando el personaje se queda sin resistencia y alcanza la duración máxima; esto también puede provocarse si se deja de mantener el botón de ataque.</field>
             <field name="avatar" type="base64" file="genshin_impact/static/img/weapon/Claymore.png" />
         </record>
         <record id="weapon_type_polearm" model="genshin.impact.weapon.type">
             <field name="name">Polearm</field>
             <field name="weapon_type">Polearm</field>
+            <field name="note">Las lanzas son el ataque más rápido de todos y tienen un buen alcance frontal.
+
+Ataque normal: Una cadena de ataques normales con lanza normalmente consiste en 5 a 6 golpes rápidos de corto alcance.
+Ataque cargado: El ataque cargado puede variar drásticamente entre personajes. Xiangling puede golpear a sus enemigos con su ataque cargado, mientras Xiao realiza un ataque ascendente que manda a los enemigos al aire, Zhongli hace un ataque hacia delante como si fuera una teletransportación apareciendo unas lanzas por su trayectoria, traspasando enemigos</field>
             <field name="avatar" type="base64" file="genshin_impact/static/img/weapon/Polearm.png" />
         </record>
         <record id="weapon_type_sword" model="genshin.impact.weapon.type">
             <field name="name">Sword</field>
             <field name="weapon_type">Sword</field>
+            <field name="note">Los ataques de espada son el punto medio de las armas de combate cercano. El daño de sus golpes y la velocidad de sus ataques están entre los lentos pero poderosos ataques de mandobles y los rápidos pero menos poderosos ataques de las lanzas.
+
+Ataque normal: Una cadena de ataques normales con espada normalmente consiste en 5 golpes rápidos.
+Ataque cargado: Hace un pequeño gancho hacia arriba antes de realizar 2 ataques rápidos de arco que infligen daño en un área frente al usuario.</field>
             <field name="avatar" type="base64" file="genshin_impact/static/img/weapon/Sword.png" />
         </record>
     </data>

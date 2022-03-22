@@ -4,10 +4,10 @@
         <field name="name">genshin.impact.elements.tree</field>
         <field name="model">genshin.impact.elements</field>
         <field name="arch" type="xml">
-            <>
+            <tree>
                 <field name="active" invisible="1" />
                 <field name="avatar" widget="image" height="64" />
-                <field name="name" />
+                <field name="name" invisible="1" />
                 <field name="element_type" />
                 <field name="note" />
             </tree>
@@ -25,7 +25,7 @@
                         </h1>
                     </div>
                     <group>
-                        <field name="name" required="1" placeholder="Nombre del personaje..." />
+                        <field name="name" invisible="1" required="1" placeholder="Nombre del personaje..." />
                         <field name="active" invisible="1" />
                         <field name="element_type" />
                         <field name="note" />

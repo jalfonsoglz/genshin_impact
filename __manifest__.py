@@ -5,12 +5,12 @@
     'summary': """Módulo de Gestión de Personajes de Genshin Impact""",
 
     'description': """
-    Elements and Weapons as Many2one model
+    Weapon Related Fields for Sub Stat and Type
     """,
     'author': "Alfonso Gonzalez (alfonso@ptree.com.mx)",
     'website': "https://ntropy.tech",
     'category': 'Customizations',
-    'version': '15.0.0.0.8',
+    'version': '15.0.0.0.9',
     'license': "AGPL-3",
     'sequence': "-95",
     'depends': [

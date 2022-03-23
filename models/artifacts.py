@@ -7,7 +7,7 @@ ART_TYPES = [
 	('FLOWER', 'Flor de la Vida'),
 	('PLUME', 'Pluma de la Muerte'),
 	('SANDS', 'Arenas del Eon'),
-	('GLOBET', 'Cáliz de Eonothem'),
+	('GOBLET', 'Cáliz de Eonothem'),
 	('CIRCLET', 'Tiara de Logos'),
 ]
 

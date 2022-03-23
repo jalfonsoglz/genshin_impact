@@ -142,16 +142,16 @@
                             <field name="char_art_sands_stat4" />
                         </group>
                         <group>
-                            <field name="char_art_goblet" domain="[('art_types', '=', 'GLOBET')]" />
+                            <field name="char_art_goblet" domain="[('art_types', '=', 'GOBLET')]" />
                             <field name="char_art_goblet_rarity" />
-                            <field name="char_art_globet_sub1" />
-                            <field name="char_art_globet_stat1" />
-                            <field name="char_art_globet_sub2" />
-                            <field name="char_art_globet_stat2" />
-                            <field name="char_art_globet_sub3" />
-                            <field name="char_art_globet_stat3" />
-                            <field name="char_art_globet_sub4" />
-                            <field name="char_art_globet_stat4" />
+                            <field name="char_art_goblet_sub1" />
+                            <field name="char_art_goblet_stat1" />
+                            <field name="char_art_goblet_sub2" />
+                            <field name="char_art_goblet_stat2" />
+                            <field name="char_art_goblet_sub3" />
+                            <field name="char_art_goblet_stat3" />
+                            <field name="char_art_goblet_sub4" />
+                            <field name="char_art_goblet_stat4" />
                         </group>
                         <group>
                             <field name="char_art_circlet" domain="[('art_types', '=', 'CIRCLET')]" />

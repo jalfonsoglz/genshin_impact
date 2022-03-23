@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="artifacts_set_gladiators_finale" model="genshin.impact.artifacts.sets">
+            <field name="image" type="base64" file="genshin_impact/static/img/art_set/gladiators_finale/gladiators_finale_flower.png" />
+            <field name="name">Final del Gladiador</field>
+            <field name="art_passive_note">El Bono de 4 Piezas se considera % de Daño y es aditivo con otras fuentes de Daño% como el % de Daño Elemental de un Cáliz de Eonothem.
+El Bono de 4 piezas solo se aplica a los Ataques Normales y no afecta a otras fuentes de daño, como la Aguja de infusión de Pica Luna Creciente.</field>
+            <field name="art_passive2">ATQ +18%.</field>
+            <field name="art_passive4">Aumenta el daño de Ataque Normal en un 35% si el personaje usa una espada ligera, mandoble o lanza.</field>
+        </record>
+
+        <record id="artifacts_set_emblem_of_severed_fate" model="genshin.impact.artifacts.sets">
+            <field name="image" type="base64" file="genshin_impact/static/img/art_set/Emblem_of_Severed_Fate.png" />
+            <field name="name">Casco Ornamentado</field>
+            <field name="art_passive_note">Sólo el personaje con el conjunto de artefactos equipado obtendrá la bonificación.
+La bonificación del daño infligido con la Habilidad Definitiva se obtiene en base a cada 100% de Recarga de Energía del personaje que usa este artefacto.
+100% de Recarga de Energía equivale al 25%
+200% de Recarga de Energía equivale al 50%
+300% de Recarga de Energía equivale al 75%</field>
+            <field name="art_passive2">Recarga de Energía +20%.</field>
+            <field name="art_passive4">Aumenta el daño infligido con la Habilidad Definitiva en una cantidad equivalente al 25% de la Recarga de Energía. Se puede obtener un aumento del 75% como máximo.</field>
+        </record>
+    </data>
+</odoo>

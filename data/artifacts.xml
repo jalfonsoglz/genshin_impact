@@ -19,7 +19,7 @@
         <record id="artifacts_gladiators_finale_goblet" model="genshin.impact.artifacts">
             <field name="image" type="base64" file="genshin_impact/static/img/art_set/gladiators_finale/gladiators_finale_goblet.png" />
             <field name="name">Embriaguez del Gladiador</field>
-            <field name="art_types">GLOBET</field>
+            <field name="art_types">GOBLET</field>
         </record>
         <record id="artifacts_gladiators_finale_circlet" model="genshin.impact.artifacts">
             <field name="image" type="base64" file="genshin_impact/static/img/art_set/gladiators_finale/gladiators_finale_circlet.png" />
@@ -44,7 +44,7 @@
         <record id="artifacts_Emblem_of_Severed_Fate_goblet" model="genshin.impact.artifacts">
             <field name="image" type="base64" file="genshin_impact/static/img/art_set/Emblem_of_Severed_Fate.png" />
             <field name="name">Cáliz Escarlata</field>
-            <field name="art_types">GLOBET</field>
+            <field name="art_types">GOBLET</field>
         </record>
         <record id="artifacts_Emblem_of_Severed_Fate_circlet" model="genshin.impact.artifacts">
             <field name="image" type="base64" file="genshin_impact/static/img/art_set/Emblem_of_Severed_Fate.png" />

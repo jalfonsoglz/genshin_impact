@@ -9,9 +9,9 @@
                 <field name="image" widget="image" class="oe_avatar" height="64" />
                 <field name="weapon_type" />
                 <field name="name" />
-                <field name="weapon_passive" />
+                <field name="weapon_rarity" />
                 <field name="weapon_sub_stat_type" />
-                <field name="weapon_note" />
+                <field name="weapon_passive" />
             </tree>
         </field>
     </record>
@@ -23,16 +23,39 @@
                 <sheet>
                     <div class="oe_title">
                         <h1>
-                            <field name="image" widget="image" height="128" />
+                            <field name="image" widget="image" height="256" attrs="{'readonly': [('active', '=', True)]}" />
+                            <field name="name" required="1" />
                         </h1>
                     </div>
-                    <group>
-                        <field name="name" required="1" placeholder="Nombre de la arma..." />
-                        <field name="active" invisible="1" />
-                        <field name="weapon_type" />
-                        <field name="weapon_passive" />
-                        <field name="weapon_sub_stat_type" />
-                        <field name="weapon_note" />
+                    <group col="2">
+                        <group string="Información">
+                            <field name="active" attrs="{'invisible': [('active', '=', True)]}" />
+                            <field name="weapon_type" attrs="{'readonly': [('active', '=', True)]}" />
+                            <field name="weapon_rarity" attrs="{'readonly': [('active', '=', True)]}"/>
+                            <field name="weapon_sub_stat_type" attrs="{'readonly': [('active', '=', True)]}" />
+                        </group>
+                        <group string="⠀">
+                            <field name="weapon_note" widget="html" attrs="{'readonly': [('active', '=', True)]}" />
+                        </group>
+                    </group>
+                    <group string="Pasivas">
+                        <notebook>
+                            <page string="Rango 1 ">
+                                <field name="weapon_passive" widget="html" attrs="{'readonly': [('active', '=', True)]}" />
+                            </page>
+                            <page string="Rango 2 ">
+                                <field name="weapon_passive2" widget="html" attrs="{'readonly': [('active', '=', True)]}" />
+                            </page>
+                            <page string="Rango 3 ">
+                                <field name="weapon_passive3" widget="html" attrs="{'readonly': [('active', '=', True)]}" />
+                            </page>
+                            <page string="Rango 4 ">
+                                <field name="weapon_passive4" widget="html" attrs="{'readonly': [('active', '=', True)]}" />
+                            </page>
+                            <page string="Rango 5 ">
+                                <field name="weapon_passive5" widget="html" attrs="{'readonly': [('active', '=', True)]}" />
+                            </page>
+                        </notebook>
                     </group>
                 </sheet>
             </form>
@@ -46,8 +69,8 @@
                 <field name="name" />
                 <separator />
                 <group expand="1" string="Group by">
-                <filter string="Tipo de Arma" name="weapon_type" context="{'group_by':'weapon_type' }" />
-                <filter string="Tipo Sub Stat" name="weapon_sub_stat_type" context="{'group_by':'weapon_sub_stat_type' }" />
+                    <filter string="Tipo de Arma" name="weapon_type" context="{'group_by':'weapon_type' }" />
+                    <filter string="Tipo Sub Stat" name="weapon_sub_stat_type" context="{'group_by':'weapon_sub_stat_type' }" />
                 </group>
             </search>
         </field>

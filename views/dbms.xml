@@ -1,25 +1,32 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <odoo>
+
     <record id="dbms_tree" model="ir.ui.view">
         <field name="name">genshin.impact.dbms.tree</field>
         <field name="model">genshin.impact.dbms</field>
         <field name="arch" type="xml">
-            <tree default_order="level, constellation" >
+            <tree default_order="level, constellation, name">
                 <field name="active" invisible="1" />
                 <field name="achieved" invisible="1" />
+                <!--                <field name="avatar" widget="image" height="48" />-->
                 <field name="level" />
-<!--                <field name="avatar" widget="image" height="48" />-->
                 <field name="name" />
                 <field name="char_element_type" />
                 <field name="char_weapon_type" />
-                <field name="constellation" options="{'editable': true}" />
-                <field name="basic_attack_talent" options="{'editable': true}" />
-                <field name="elemental_skill_talent" options="{'editable': true}" />
-                <field name="elemental_burst_talent" options="{'editable': true}" />
-                <field name="weapons" />
+                <field name="char_weapon" />
+                <field name="char_art_flower" />
+                <field name="char_art_plume" />
+                <field name="char_art_sands" />
+                <field name="char_art_goblet" />
+                <field name="char_art_circlet" />
+                <field name="constellation" />
+                <field name="basic_attack_talent" />
+                <field name="elemental_skill_talent" />
+                <field name="elemental_burst_talent" />
             </tree>
         </field>
     </record>
+
     <record id="dbms_form" model="ir.ui.view">
         <field name="name">genshin.impact.dbms.form</field>
         <field name="model">genshin.impact.dbms</field>
@@ -30,36 +37,38 @@
                         <h1>
                             <field name="name" placeholder="Nombre..." />
                         </h1>
-<!--                        <field name="avatar" widget="image" height="128" />-->
-<!--                        <field name="full_avatar" widget="image" height="200" />-->
+                        <!--                        <field name="avatar" widget="image" height="128" />-->
+                        <!--                        <field name="full_avatar" widget="image" height="200" />-->
                     </div>
-                    <group col="2">
+                    <group col="3">
                         <group string="Personaje">
                             <field name="active" invisible="1" />
                             <field name="achieved" attrs="{'invisible': [('achieved', '=', True)]}" />
                             <field name="char_element_type" widget="selection" />
                             <field name="level" />
                             <field name="constellation" />
-                            <field name="basic_attack_talent" icon="fa-solid fa-sword" />
-                            <field name="elemental_skill_talent" icon="fa-solid fa-star" />
-                            <field name="elemental_burst_talent" icon="fa-solid fa-burst" />
+                            <field name="basic_attack_talent" icon="fa fa-external-link-square" />
+                            <field name="elemental_skill_talent" icon="fa fa-superpowers" />
+                            <field name="elemental_burst_talent" icon="fa fa-eercast" />
                         </group>
-                        <group string="Arma">
-                            <field name="char_weapon_type" widget="selection" />
-                            <field name="weapons" />
-                            <field name="weapon_atk" />
-                            <field name="weapon_note" widget="selection"/>
-                            <field name="weapon_stat" widget="selection"/>
-                            <field name="weapon_sub_stat_value" />
-                        </group>
-                    </group>
-                    <group expand="1" col="3">
                         <group string="Básico">
                             <field name="char_hp" />
                             <field name="char_atk" />
                             <field name="char_def" />
                             <field name="char_elemental_mastery" />
                             <field name="char_stamina" />
+                        </group>
+                        <group string="Arma">
+                            <field name="char_weapon_type" widget="selection" />
+                            <field name="char_weapon" widget="selection" domain="[('weapon_type', '=', 'char_weapon_type')]" />
+                            <field name="weapon_note" widget="selection" />
+                            <field name="weapon_stat" widget="selection" />
+                            <field name="weapon_atk" />
+                            <field name="weapon_sub_stat_value" />
+                        </group>
+                    </group>
+                    <group col="3">
+                        <group string="Adicional">
                             <field name="char_crit_rate" />
                             <field name="char_crit_dmg" />
                             <field name="char_heal_bonus" />
@@ -89,6 +98,74 @@
                             <field name="char_phy_res" />
                         </group>
                     </group>
+                    <group string="Artefactos" col="3">
+                        <group>
+                            <field name="char_art_flower" domain="[('art_types', '=', 'FLOWER')]" />
+                            <field name="char_art_flower_rarity" />
+                            <field name="char_art_flower_sub1" />
+                            <field name="char_art_flower_stat1" />
+                            <field name="char_art_flower_sub2" />
+                            <field name="char_art_flower_stat2" />
+                            <field name="char_art_flower_sub3" />
+                            <field name="char_art_flower_stat3" />
+                            <field name="char_art_flower_sub4" />
+                            <field name="char_art_flower_stat4" />
+                        </group>
+                        <group>
+                            <field name="char_art_plume" domain="[('art_types', '=', 'PLUME')]" />
+                            <field name="char_art_plume_rarity" />
+                            <field name="char_art_plume_sub1" />
+                            <field name="char_art_plume_stat1" />
+                            <field name="char_art_plume_sub2" />
+                            <field name="char_art_plume_stat2" />
+                            <field name="char_art_plume_sub3" />
+                            <field name="char_art_plume_stat3" />
+                            <field name="char_art_plume_sub4" />
+                            <field name="char_art_plume_stat4" />
+                        </group>
+                        <group>
+                            <field name="art_2pza_passive" />
+                            <field name="art_4pza_passive" />
+                        </group>
+                    </group>
+                    <group string="Artefactos" col="3">
+                        <group>
+                            <field name="char_art_sands" domain="[('art_types', '=', 'SANDS')]" />
+                            <field name="char_art_sands_rarity" />
+                            <field name="char_art_sands_sub1" />
+                            <field name="char_art_sands_stat1" />
+                            <field name="char_art_sands_sub2" />
+                            <field name="char_art_sands_stat2" />
+                            <field name="char_art_sands_sub3" />
+                            <field name="char_art_sands_stat3" />
+                            <field name="char_art_sands_sub4" />
+                            <field name="char_art_sands_stat4" />
+                        </group>
+                        <group>
+                            <field name="char_art_goblet" domain="[('art_types', '=', 'GLOBET')]" />
+                            <field name="char_art_goblet_rarity" />
+                            <field name="char_art_globet_sub1" />
+                            <field name="char_art_globet_stat1" />
+                            <field name="char_art_globet_sub2" />
+                            <field name="char_art_globet_stat2" />
+                            <field name="char_art_globet_sub3" />
+                            <field name="char_art_globet_stat3" />
+                            <field name="char_art_globet_sub4" />
+                            <field name="char_art_globet_stat4" />
+                        </group>
+                        <group>
+                            <field name="char_art_circlet" domain="[('art_types', '=', 'CIRCLET')]" />
+                            <field name="char_art_circlet_rarity" />
+                            <field name="char_art_circlet_sub1" />
+                            <field name="char_art_circlet_stat1" />
+                            <field name="char_art_circlet_sub2" />
+                            <field name="char_art_circlet_stat2" />
+                            <field name="char_art_circlet_sub3" />
+                            <field name="char_art_circlet_stat3" />
+                            <field name="char_art_circlet_sub4" />
+                            <field name="char_art_circlet_stat4" />
+                        </group>
+                    </group>
                 </sheet>
                 <!-- Chatter -->
                 <div class="oe_chatter">
@@ -98,6 +175,7 @@
             </form>
         </field>
     </record>
+
     <record id="dbms_search" model="ir.ui.view">
         <field name="name">genshin.impact.dbms.search</field>
         <field name="model">genshin.impact.dbms</field>
@@ -107,14 +185,13 @@
                 <field name="level" />
                 <field name="constellation" />
                 <field name="achieved" />
-                <filter name="achieved" attrs="{'invisible': [('achieved', '!=', True)]}"/>
+                <filter name="achieved" attrs="{'invisible': [('achieved', '!=', True)]}" />
                 <separator />
                 <group expand="1" string="Group by">
                     <filter string="Invocado" name="achieved" context="{'group_by':'achieved' }" />
                     <filter string="Elemento" name="char_element_type" context="{'group_by':'char_element_type' }" />
                     <filter string="Tipo de Arma" name="char_weapon_type" context="{'group_by':'char_weapon_type' }" />
                     <filter string="Subtipo de Arma" name="weapon_stat" context="{'group_by':'weapon_stat' }" />
-
                     <filter string="Nivel" name="level" context="{'group_by':'level' }" />
                     <filter string="Constelación" name="constellation" context="{'group_by':'constellation' }" />
                     <field string="Ataque Básico" name="basic_attack_talent" context="{'group_by':'basic_attack_talent' }" />
@@ -124,8 +201,9 @@
             </search>
         </field>
     </record>
+
     <record id="dbms_action" model="ir.actions.act_window">
-        <field name="name">Gestión de Personajes</field>
+        <field name="name">Gestión de Personaje</field>
         <field name="type">ir.actions.act_window</field>
         <field name="res_model">genshin.impact.dbms</field>
         <field name="view_mode">tree,form</field>
@@ -136,6 +214,7 @@
             </p>
         </field>
     </record>
+
     <!-- Top menu item -->
     <menuitem id="genshin_root" name="Gestor Genshin Impact" sequence="1" />
     <!-- menu categories -->

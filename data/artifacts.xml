@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="artifacts_gladiators_finale_flower" model="genshin.impact.artifacts">
+            <field name="image" type="base64" file="genshin_impact/static/img/art_set/gladiators_finale/gladiators_finale_flower.png" />
+            <field name="name">Nostalgia del Gladiador</field>
+            <field name="art_types">FLOWER</field>
+        </record>
+        <record id="artifacts_gladiators_finale_plume" model="genshin.impact.artifacts">
+            <field name="image" type="base64" file="genshin_impact/static/img/art_set/gladiators_finale/gladiators_finale_plume.png" />
+            <field name="name">Destino del Gladiador</field>
+            <field name="art_types">PLUME</field>
+        </record>
+        <record id="artifacts_gladiators_finale_sands" model="genshin.impact.artifacts">
+            <field name="image" type="base64" file="genshin_impact/static/img/art_set/gladiators_finale/gladiators_finale_sands.png" />
+            <field name="name">Esperanza del Gladiador</field>
+            <field name="art_types">SANDS</field>
+        </record>
+        <record id="artifacts_gladiators_finale_goblet" model="genshin.impact.artifacts">
+            <field name="image" type="base64" file="genshin_impact/static/img/art_set/gladiators_finale/gladiators_finale_goblet.png" />
+            <field name="name">Embriaguez del Gladiador</field>
+            <field name="art_types">GLOBET</field>
+        </record>
+        <record id="artifacts_gladiators_finale_circlet" model="genshin.impact.artifacts">
+            <field name="image" type="base64" file="genshin_impact/static/img/art_set/gladiators_finale/gladiators_finale_circlet.png" />
+            <field name="name">Triunfo del Gladiador</field>
+            <field name="art_types">CIRCLET</field>
+        </record>
+        <record id="artifacts_Emblem_of_Severed_Fate_flower" model="genshin.impact.artifacts">
+            <field name="image" type="base64" file="genshin_impact/static/img/art_set/Emblem_of_Severed_Fate.png" />
+            <field name="name">Guardamano del Honor</field>
+            <field name="art_types">FLOWER</field>
+        </record>
+        <record id="artifacts_Emblem_of_Severed_Fate_plume" model="genshin.impact.artifacts">
+            <field name="image" type="base64" file="genshin_impact/static/img/art_set/Emblem_of_Severed_Fate.png" />
+            <field name="name">Pluma de la Laceración</field>
+            <field name="art_types">PLUME</field>
+        </record>
+        <record id="artifacts_Emblem_of_Severed_Fate_sands" model="genshin.impact.artifacts">
+            <field name="image" type="base64" file="genshin_impact/static/img/art_set/Emblem_of_Severed_Fate.png" />
+            <field name="name">Inrou de la Tempestad</field>
+            <field name="art_types">SANDS</field>
+        </record>
+        <record id="artifacts_Emblem_of_Severed_Fate_goblet" model="genshin.impact.artifacts">
+            <field name="image" type="base64" file="genshin_impact/static/img/art_set/Emblem_of_Severed_Fate.png" />
+            <field name="name">Cáliz Escarlata</field>
+            <field name="art_types">GLOBET</field>
+        </record>
+        <record id="artifacts_Emblem_of_Severed_Fate_circlet" model="genshin.impact.artifacts">
+            <field name="image" type="base64" file="genshin_impact/static/img/art_set/Emblem_of_Severed_Fate.png" />
+            <field name="name">Casco Ornamentado</field>
+            <field name="art_types">CIRCLET</field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+<!--        Template Weapon XML-->
+<!--        <record id="weapons_name" model="genshin.impact.weapons">-->
+<!--            <field name="active">True</field>-->
+<!--            <field name="achieved">False</field>-->
+<!--            <field name="name">NAME</field>-->
+<!--            <field name="weapon_type">1</field>-->
+<!--            <field name="weapon_sub_stat_type">SUB_TYPE</field>-->
+<!--            <field name="weapon_note">Description</field>-->
+<!--            <field name="weapon_passive">Passive</field>-->
+<!--            <field name="weapon_passive2">Passive2</field>-->
+<!--            <field name="weapon_passive3">Passive3</field>-->
+<!--            <field name="weapon_passive4">Passive4</field>-->
+<!--            <field name="weapon_passive5">Passive5</field>-->
+<!--            <field name="image" type="base64" file="genshin_impact/static/img/weapons/filename.png" />-->
+<!--        </record>-->
+
+        <record id="weapons_amos_bow" model="genshin.impact.weapons">
+            <field name="active">True</field>
+            <field name="achieved">False</field>
+            <field name="name">Arco de Amos</field>
+            <field name="weapon_type">1</field>
+            <field name="weapon_sub_stat_type">ATK_PERC</field>
+            <field name="weapon_note">Un arco extremadamente antiguo que conserva su poder aunque su dueño abandonó nuestro mundo hace mucho tiempo. Absorbe el poder de los seres vivos e inertes. Cuanto más lejos estés de aquello que tu corazón anhela, más poderoso será este arco.</field>
+            <field name="weapon_passive">El daño infligido con Ataques Normales o Cargados aumenta en un 12%. Tras disparar un Ataque Normal o Cargado, el daño aumenta en un 8% por cada 0.1 s que la flecha permanece en el aire. Este efecto puede acumularse hasta cinco veces.</field>
+            <field name="weapon_passive2">El daño infligido con Ataques Normales o Cargados aumenta en un 15%. Tras disparar un Ataque Normal o Cargado, el daño aumenta en un 10% por cada 0.1 s que la flecha permanece en el aire. Este efecto puede acumularse hasta cinco veces.</field>
+            <field name="weapon_passive3">El daño infligido con Ataques Normales o Cargados aumenta en un 18%. Tras disparar un Ataque Normal o Cargado, el daño aumenta en un 12% por cada 0.1 s que la flecha permanece en el aire. Este efecto puede acumularse hasta cinco veces.</field>
+            <field name="weapon_passive4">El daño infligido con Ataques Normales o Cargados aumenta en un 21%. Tras disparar un Ataque Normal o Cargado, el daño aumenta en un 14% por cada 0.1 s que la flecha permanece en el aire. Este efecto puede acumularse hasta cinco veces.</field>
+            <field name="weapon_passive5">El daño infligido con Ataques Normales o Cargados aumenta en un 24%. Tras disparar un Ataque Normal o Cargado, el daño aumenta en un 16% por cada 0.1 s que la flecha permanece en el aire. Este efecto puede acumularse hasta cinco veces.</field>
+            <field name="image" type="base64" file="genshin_impact/static/img/weapons/amos_bow.png" />
+        </record>
+
+        <record id="weapons_thundering_pulse" model="genshin.impact.weapons">
+            <field name="active">True</field>
+            <field name="achieved">False</field>
+            <field name="name">Agitador del Relámpago</field>
+            <field name="weapon_type">1</field>
+            <field name="weapon_sub_stat_type">CRIT_DMG</field>
+            <field name="weapon_note">Un arco que la Shogun le otorgó a alguien. Emite unos destellos eléctricos que nunca se apagarán.</field>
+            <field name="weapon_passive">Aumenta el ATQ en un 20% y otorga el poder de los emblemas del trueno. Dependiendo de si se tienen 1, 2 o 3 emblemas del trueno, el daño infligido con los Ataques Normales aumenta en un 12/24/40%. En las siguientes situaciones, el personaje obtiene un emblema: al infligir daño con Ataques Normales. El emblema dura 5 s; al realizar una Habilidad Elemental. El emblema dura 10 s; cuando la Energía Elemental del personaje está por debajo del 100%. El emblema del trueno obtenido de esta manera dura hasta que el personaje regenere toda su Energía Elemental. La duración de cada emblema del trueno se calcula de manera independiente.</field>
+            <field name="weapon_passive2">Aumenta el ATQ en un 25% y otorga el poder de los emblemas del trueno. Dependiendo de si se tienen 1, 2 o 3 emblemas del trueno, el daño infligido con los Ataques Normales aumenta en un 15/30/50%. En las siguientes situaciones, el personaje obtiene un emblema: al infligir daño con Ataques Normales. El emblema dura 5 s; al realizar una Habilidad Elemental. El emblema dura 10 s; cuando la Energía Elemental del personaje está por debajo del 100%. El emblema del trueno obtenido de esta manera dura hasta que el personaje regenere toda su Energía Elemental. La duración de cada emblema del trueno se calcula de manera independiente.</field>
+            <field name="weapon_passive3">Aumenta el ATQ en un 30% y otorga el poder de los emblemas del trueno. Dependiendo de si se tienen 1, 2 o 3 emblemas del trueno, el daño infligido con los Ataques Normales aumenta en un 18/36/60%. En las siguientes situaciones, el personaje obtiene un emblema: al infligir daño con Ataques Normales. El emblema dura 5 s; al realizar una Habilidad Elemental. El emblema dura 10 s; cuando la Energía Elemental del personaje está por debajo del 100%. El emblema del trueno obtenido de esta manera dura hasta que el personaje regenere toda su Energía Elemental. La duración de cada emblema del trueno se calcula de manera independiente.</field>
+            <field name="weapon_passive4">Aumenta el ATQ en un 35% y otorga el poder de los emblemas del trueno. Dependiendo de si se tienen 1, 2 o 3 emblemas del trueno, el daño infligido con los Ataques Normales aumenta en un 21/42/70%. En las siguientes situaciones, el personaje obtiene un emblema: al infligir daño con Ataques Normales. El emblema dura 5 s; al realizar una Habilidad Elemental. El emblema dura 10 s; cuando la Energía Elemental del personaje está por debajo del 100%. El emblema del trueno obtenido de esta manera dura hasta que el personaje regenere toda su Energía Elemental. La duración de cada emblema del trueno se calcula de manera independiente.</field>
+            <field name="weapon_passive5">Aumenta el ATQ en un 40% y otorga el poder de los emblemas del trueno. Dependiendo de si se tienen 1, 2 o 3 emblemas del trueno, el daño infligido con los Ataques Normales aumenta en un 24/48/80%. En las siguientes situaciones, el personaje obtiene un emblema: al infligir daño con Ataques Normales. El emblema dura 5 s; al realizar una Habilidad Elemental. El emblema dura 10 s; cuando la Energía Elemental del personaje está por debajo del 100%. El emblema del trueno obtenido de esta manera dura hasta que el personaje regenere toda su Energía Elemental. La duración de cada emblema del trueno se calcula de manera independiente.</field>
+            <field name="image" type="base64" file="genshin_impact/static/img/weapons/thundering_pulse.png" />
+        </record>
+
+        <record id="weapons_Wolfs_Gravestone" model="genshin.impact.weapons">
+            <field name="active">True</field>
+            <field name="achieved">False</field>
+            <field name="name">Lápida del Lobo</field>
+            <field name="weapon_type">3</field>
+            <field name="weapon_sub_stat_type">ATK_PERC</field>
+            <field name="weapon_note">Una gran espada que fue usada por el Lobo de los Caballeros de Favonius. Originariamente, era solo una pesada lámina de hierro que le regaló el herrero de la ciudad. Sin embargo, se convirtió en una gran espada al serle otorgado poderes legendarios por su amistad con los lobos</field>
+            <field name="weapon_passive">Aumenta el ATQ en un 20%. Al atacar a enemigos con menos del 30% de su Vida, aumenta el ATQ de todos los miembros del equipo en un 40% durante 12 s. Este efecto solo puede ocurrir una vez cada 30 s.</field>
+            <field name="weapon_passive2">Aumenta el ATQ en un 25%. Al atacar a enemigos con menos del 30% de su Vida, aumenta el ATQ de todos los miembros del equipo en un 40% durante 12 s. Este efecto solo puede ocurrir una vez cada 30 s.</field>
+            <field name="weapon_passive3">Aumenta el ATQ en un 30%. Al atacar a enemigos con menos del 30% de su Vida, aumenta el ATQ de todos los miembros del equipo en un 40% durante 12 s. Este efecto solo puede ocurrir una vez cada 30 s.</field>
+            <field name="weapon_passive4">Aumenta el ATQ en un 35%. Al atacar a enemigos con menos del 30% de su Vida, aumenta el ATQ de todos los miembros del equipo en un 40% durante 12 s. Este efecto solo puede ocurrir una vez cada 30 s.</field>
+            <field name="weapon_passive5">Aumenta el ATQ en un 40%. Al atacar a enemigos con menos del 30% de su Vida, aumenta el ATQ de todos los miembros del equipo en un 40% durante 12 s. Este efecto solo puede ocurrir una vez cada 30 s.</field>
+            <field name="image" type="base64" file="genshin_impact/static/img/weapons/wolfs_gravestone.png" />
+        </record>
+
+    </data>
+
+</odoo>

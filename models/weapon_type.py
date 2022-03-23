@@ -22,4 +22,4 @@ class WeaponType(models.Model):
 	avatar = fields.Image(string='Icono de Arma')
 	name = fields.Char(string='Nombre del Arma', required=True)
 	weapon_type = fields.Selection(WEAPON_TYPE, string='Tipo de Arma')
-	note = fields.Text(string='Descripción', copy=False, tracking=True)
+	note = fields.Html(string='Descripción', copy=False, tracking=True)

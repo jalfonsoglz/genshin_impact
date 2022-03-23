@@ -1,7 +1,10 @@
 # -*- coding: utf-8 -*-
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 
-from odoo import models, fields
+from odoo import _, fields, models
+
+RARITY = [('4', '★★★★'),
+          ('5', '★★★★★')]
 
 
 class Characters(models.Model):
@@ -14,6 +17,7 @@ class Characters(models.Model):
     avatar = fields.Image(string='Avatar')
     full_avatar = fields.Image(string='Avatar')
     name = fields.Char(string='Nombre')
+    char_rarity = fields.Selection(RARITY, string='Rareza')
     char_element_type = fields.Many2one('genshin.impact.elements', string='Elemento')
     char_weapon_type = fields.Many2one('genshin.impact.weapon.type', string='Tipo de Arma')
     note = fields.Text(string='Descripción', copy=False, tracking=True)

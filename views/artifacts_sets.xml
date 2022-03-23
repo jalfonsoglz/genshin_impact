@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="artifacts_sets_tree" model="ir.ui.view">
+        <field name="name">genshin.impact.artifacts.sets.tree</field>
+        <field name="model">genshin.impact.artifacts.sets</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="image" widget="image" class="oe_avatar" height="64" />
+                <field name="name" />
+                <field name="art_passive2" />
+                <field name="art_passive4" />
+            </tree>
+        </field>
+    </record>
+    <record id="artifacts_sets_form" model="ir.ui.view">
+        <field name="name">genshin.impact.artifacts.sets.form</field>
+        <field name="model">genshin.impact.artifacts.sets</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="name" required="1" />
+                        </h1>
+                    </div>
+                    <group>
+                    <group string="General">
+                        <field name="image" widget="image" height="256" />
+                    </group>
+                    <group string="Bonus">
+                        <field name="art_passive2" widget="html" />
+                        <field name="art_passive4" widget="html" />
+                    </group>
+                        <field name="art_passive_note" widget="html" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="artifacts_sets_search" model="ir.ui.view">
+        <field name="name">genshin.impact.artifacts.sets.search</field>
+        <field name="model">genshin.impact.artifacts.sets</field>
+        <field name="arch" type="xml">
+            <search string="Tipo de Artefacto">
+                <field name="name" />
+            </search>
+        </field>
+    </record>
+    <record id="artifacts_sets_action" model="ir.actions.act_window">
+        <field name="name">Conjunto de Artefactos</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">genshin.impact.artifacts.sets</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Crear tu primer Conjunto de Artefactos!
+            </p>
+        </field>
+    </record>
+    <!-- actions -->
+    <menuitem id="artifacts_sets_conf" name="Configurar Conjuntos de Artefactos" parent="genshin_config_root" action="artifacts_sets_action" sequence="6" />
+</odoo>

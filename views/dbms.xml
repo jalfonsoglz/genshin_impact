@@ -51,7 +51,7 @@
                             <field name="elemental_skill_talent" icon="fa fa-superpowers" />
                             <field name="elemental_burst_talent" icon="fa fa-eercast" />
                         </group>
-                        <group string="Básico">
+                        <group string="Atributos Básicos">
                             <field name="char_hp" />
                             <field name="char_atk" />
                             <field name="char_def" />
@@ -60,7 +60,9 @@
                         </group>
                         <group string="Arma">
                             <field name="char_weapon_type" widget="selection" />
-                            <field name="char_weapon" widget="selection" domain="[('weapon_type', '=', 'char_weapon_type')]" />
+                            <field name="char_weapon" widget="selection" domain="[('weapon_type', '=', 'char_weapon')]" />
+                            <field name="char_weapon_level" />
+                            <field name="char_weapon_upgrade" />
                             <field name="weapon_note" widget="selection" />
                             <field name="weapon_stat" widget="selection" />
                             <field name="weapon_atk" />
@@ -68,7 +70,7 @@
                         </group>
                     </group>
                     <group col="3">
-                        <group string="Adicional">
+                        <group string="Atributos Avanzados">
                             <field name="char_crit_rate" />
                             <field name="char_crit_dmg" />
                             <field name="char_heal_bonus" />
@@ -102,6 +104,9 @@
                         <group>
                             <field name="char_art_flower" domain="[('art_types', '=', 'FLOWER')]" />
                             <field name="char_art_flower_rarity" />
+                            <field name="char_art_flower_level" />
+                            <field name="char_art_flower_sub0" />
+                            <field name="char_art_flower_stat0" />
                             <field name="char_art_flower_sub1" />
                             <field name="char_art_flower_stat1" />
                             <field name="char_art_flower_sub2" />
@@ -114,6 +119,7 @@
                         <group>
                             <field name="char_art_plume" domain="[('art_types', '=', 'PLUME')]" />
                             <field name="char_art_plume_rarity" />
+                            <field name="char_art_plume_level" />
                             <field name="char_art_plume_sub1" />
                             <field name="char_art_plume_stat1" />
                             <field name="char_art_plume_sub2" />
@@ -132,6 +138,7 @@
                         <group>
                             <field name="char_art_sands" domain="[('art_types', '=', 'SANDS')]" />
                             <field name="char_art_sands_rarity" />
+                            <field name="char_art_sands_level" />
                             <field name="char_art_sands_sub1" />
                             <field name="char_art_sands_stat1" />
                             <field name="char_art_sands_sub2" />
@@ -144,6 +151,7 @@
                         <group>
                             <field name="char_art_goblet" domain="[('art_types', '=', 'GOBLET')]" />
                             <field name="char_art_goblet_rarity" />
+                            <field name="char_art_goblet_level" />
                             <field name="char_art_goblet_sub1" />
                             <field name="char_art_goblet_stat1" />
                             <field name="char_art_goblet_sub2" />
@@ -156,6 +164,7 @@
                         <group>
                             <field name="char_art_circlet" domain="[('art_types', '=', 'CIRCLET')]" />
                             <field name="char_art_circlet_rarity" />
+                            <field name="char_art_circlet_level" />
                             <field name="char_art_circlet_sub1" />
                             <field name="char_art_circlet_stat1" />
                             <field name="char_art_circlet_sub2" />

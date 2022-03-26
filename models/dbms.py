@@ -31,7 +31,7 @@ class Dbms(models.Model):
     _name = 'genshin.impact.dbms'
     _description = 'Gestión de Personajes'
     _rec_name = 'name'
-    _order = 'level'
+    _order = 'level desc, constellation desc'
 
     active = fields.Boolean(string='Activo', default=True)
     achieved = fields.Boolean(string='Invocado', default=False, tracking=True)

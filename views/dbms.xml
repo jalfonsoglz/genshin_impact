@@ -47,9 +47,9 @@
                             <field name="char_element_type" widget="selection" />
                             <field name="level" />
                             <field name="constellation" />
-                            <field name="basic_attack_talent" icon="fa fa-external-link-square" />
-                            <field name="elemental_skill_talent" icon="fa fa-superpowers" />
-                            <field name="elemental_burst_talent" icon="fa fa-eercast" />
+                            <field name="basic_attack_talent" />
+                            <field name="elemental_skill_talent" />
+                            <field name="elemental_burst_talent" />
                         </group>
                         <group string="Atributos Básicos">
                             <field name="char_hp" />
@@ -130,7 +130,9 @@
                             <field name="char_art_plume_stat4" />
                         </group>
                         <group>
+                            <field name="art_2pza_set" />
                             <field name="art_2pza_passive" />
+                            <field name="art_4pza_set" />
                             <field name="art_4pza_passive" />
                         </group>
                     </group>

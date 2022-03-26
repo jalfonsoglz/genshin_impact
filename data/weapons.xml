@@ -22,6 +22,7 @@
             <field name="achieved">False</field>
             <field name="name">Arco de Amos</field>
             <field name="weapon_type">1</field>
+            <field name="weapon_rarity">5</field>
             <field name="weapon_sub_stat_type">ATK_PERC</field>
             <field name="weapon_note">Un arco extremadamente antiguo que conserva su poder aunque su dueño abandonó nuestro mundo hace mucho tiempo. Absorbe el poder de los seres vivos e inertes. Cuanto más lejos estés de aquello que tu corazón anhela, más poderoso será este arco.</field>
             <field name="weapon_passive">El daño infligido con Ataques Normales o Cargados aumenta en un 12%. Tras disparar un Ataque Normal o Cargado, el daño aumenta en un 8% por cada 0.1 s que la flecha permanece en el aire. Este efecto puede acumularse hasta cinco veces.</field>
@@ -37,6 +38,7 @@
             <field name="achieved">False</field>
             <field name="name">Agitador del Relámpago</field>
             <field name="weapon_type">1</field>
+            <field name="weapon_rarity">5</field>
             <field name="weapon_sub_stat_type">CRIT_DMG</field>
             <field name="weapon_note">Un arco que la Shogun le otorgó a alguien. Emite unos destellos eléctricos que nunca se apagarán.</field>
             <field name="weapon_passive">Aumenta el ATQ en un 20% y otorga el poder de los emblemas del trueno. Dependiendo de si se tienen 1, 2 o 3 emblemas del trueno, el daño infligido con los Ataques Normales aumenta en un 12/24/40%. En las siguientes situaciones, el personaje obtiene un emblema: al infligir daño con Ataques Normales. El emblema dura 5 s; al realizar una Habilidad Elemental. El emblema dura 10 s; cuando la Energía Elemental del personaje está por debajo del 100%. El emblema del trueno obtenido de esta manera dura hasta que el personaje regenere toda su Energía Elemental. La duración de cada emblema del trueno se calcula de manera independiente.</field>
@@ -51,6 +53,7 @@
             <field name="active">True</field>
             <field name="achieved">False</field>
             <field name="name">Lápida del Lobo</field>
+            <field name="weapon_rarity">5</field>
             <field name="weapon_type">3</field>
             <field name="weapon_sub_stat_type">ATK_PERC</field>
             <field name="weapon_note">Una gran espada que fue usada por el Lobo de los Caballeros de Favonius. Originariamente, era solo una pesada lámina de hierro que le regaló el herrero de la ciudad. Sin embargo, se convirtió en una gran espada al serle otorgado poderes legendarios por su amistad con los lobos</field>

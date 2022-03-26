@@ -8,6 +8,7 @@
                 <field name="image" widget="image" class="oe_avatar" height="64" />
                 <field name="name" />
                 <field name="art_types" />
+                <field name="art_set" />
             </tree>
         </field>
     </record>
@@ -26,7 +27,7 @@
                         <field name="image" widget="image" height="256" invisible="1" />
                         <field name="art_types" />
                     </group>
-
+                <field name="art_set" />
                 </sheet>
             </form>
         </field>
@@ -41,6 +42,7 @@
                 <separator />
                 <group expand="1" string="Group by">
                     <filter string="Tipo de Artefacto" name="art_types" context="{'group_by':'art_types' }" />
+                    <filter string="Conjunto de Artefactos" name="art_set" context="{'group_by':'art_set' }" />
                 </group>
             </search>
         </field>

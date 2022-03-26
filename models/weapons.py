@@ -20,10 +20,10 @@ SUB_STAT_TYPES = [
 	('PHY_DMG', 'Daño Físico %'),
 ]
 
-RARITY = [
-	('4', '★★★★'),
-	('5', '★★★★★')
-]
+RARITY = [('3', '★★★'),
+          ('4', '★★★★'),
+          ('5', '★★★★★')
+          ]
 
 
 class Weapons(models.Model):

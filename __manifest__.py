@@ -19,7 +19,9 @@
         'mail',
     ],
     'data': [
+        # Security
         'security/ir.model.access.csv',
+        # Views
         'views/dbms.xml',
         'views/characters.xml',
         'views/weapon_type.xml',
@@ -27,12 +29,13 @@
         'views/elements.xml',
         'views/artifacts.xml',
         'views/artifacts_sets.xml',
+        # Data Sample
         'data/elements.xml',
         'data/weapon.type.xml',
         'data/weapons.xml',
         'data/artifacts.xml',
-        #'data/genshin.impact.characters.csv',
         'data/characters.xml'
+        # 'data/genshin.impact.characters.csv'
     ],
     'images': ['static/description/banner.png'],
     'demo': [],

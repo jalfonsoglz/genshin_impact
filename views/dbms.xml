@@ -60,7 +60,7 @@
                         </group>
                         <group string="Arma">
                             <field name="char_weapon_type" widget="selection" />
-                            <field name="char_weapon" widget="selection" domain="[('weapon_type', '=', 'char_weapon')]" />
+                            <field name="char_weapon" widget="selection" />
                             <field name="char_weapon_level" />
                             <field name="char_weapon_upgrade" />
                             <field name="weapon_note" widget="selection" />
@@ -120,6 +120,8 @@
                             <field name="char_art_plume" domain="[('art_types', '=', 'PLUME')]" />
                             <field name="char_art_plume_rarity" />
                             <field name="char_art_plume_level" />
+                            <field name="char_art_plume_sub0" />
+                            <field name="char_art_plume_stat0" />
                             <field name="char_art_plume_sub1" />
                             <field name="char_art_plume_stat1" />
                             <field name="char_art_plume_sub2" />
@@ -141,6 +143,8 @@
                             <field name="char_art_sands" domain="[('art_types', '=', 'SANDS')]" />
                             <field name="char_art_sands_rarity" />
                             <field name="char_art_sands_level" />
+                            <field name="char_art_sands_sub0" />
+                            <field name="char_art_sands_stat0" />
                             <field name="char_art_sands_sub1" />
                             <field name="char_art_sands_stat1" />
                             <field name="char_art_sands_sub2" />
@@ -154,6 +158,8 @@
                             <field name="char_art_goblet" domain="[('art_types', '=', 'GOBLET')]" />
                             <field name="char_art_goblet_rarity" />
                             <field name="char_art_goblet_level" />
+                            <field name="char_art_goblet_sub0" />
+                            <field name="char_art_goblet_stat0" />
                             <field name="char_art_goblet_sub1" />
                             <field name="char_art_goblet_stat1" />
                             <field name="char_art_goblet_sub2" />
@@ -167,6 +173,8 @@
                             <field name="char_art_circlet" domain="[('art_types', '=', 'CIRCLET')]" />
                             <field name="char_art_circlet_rarity" />
                             <field name="char_art_circlet_level" />
+                            <field name="char_art_circlet_sub0" />
+                            <field name="char_art_circlet_stat0" />
                             <field name="char_art_circlet_sub1" />
                             <field name="char_art_circlet_stat1" />
                             <field name="char_art_circlet_sub2" />

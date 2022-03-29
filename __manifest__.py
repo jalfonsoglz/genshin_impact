@@ -5,13 +5,12 @@
     'summary': """Módulo de Gestión de Personajes de Genshin Impact""",
 
     'description': """
-    Add model to artifacts sets
-    New artifact tracking on dmbs with artifact, rarity, stat and numbers
+    Add Main Stat on each artifact and track
     """,
     'author': "Alfonso Gonzalez (alfonso@ptree.com.mx)",
     'website': "https://ntropy.tech",
     'category': 'Customizations',
-    'version': '15.0.0.1.4',
+    'version': '15.0.0.1.5',
     'license': "AGPL-3",
     'sequence': "-95",
     'depends': [

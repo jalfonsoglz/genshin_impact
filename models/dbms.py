@@ -22,7 +22,7 @@ ART_STAT_TYPES = [('ATK_FLAT', 'Ataque'),
                   ('ELC_DMG', 'Daño Electro %'),
                   ('GEO_DMG', 'Daño Geo %'),
                   ('HYD_DMG', 'Daño Hydro %'),
-                  ('PYR_DMG', 'Daño Pyro %'),
+                  ('PHY_DMG', 'Daño Físico %')
                   ]
 
 

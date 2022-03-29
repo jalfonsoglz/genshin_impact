@@ -6,8 +6,13 @@
 
     'description': """
     Add Main Stat on each artifact and track
+    Coming: 
+    * Add Rarity and avatar on dbms
+    * Weapon Pasive
+    * 2 and 4 passives
+    * New artifacts names and icons    
     """,
-    'author': "Alfonso Gonzalez (alfonso@ptree.com.mx)",
+    'author': "Alfonso Gonzalez",
     'website': "https://ntropy.tech",
     'category': 'Customizations',
     'version': '15.0.0.1.5',

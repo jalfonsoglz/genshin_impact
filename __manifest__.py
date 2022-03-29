@@ -11,7 +11,7 @@
     'author': "Alfonso Gonzalez (alfonso@ptree.com.mx)",
     'website': "https://ntropy.tech",
     'category': 'Customizations',
-    'version': '15.0.0.1.3',
+    'version': '15.0.0.1.4',
     'license': "AGPL-3",
     'sequence': "-95",
     'depends': [

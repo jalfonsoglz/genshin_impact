@@ -5,15 +5,13 @@
     'summary': """Módulo de Gestión de Personajes de Genshin Impact""",
 
     'description': """
-    * Fix Elements and Weapons for Beidou, Miko and Hu Tao
-    * Add Physical Damage Type Bonus
-    * Add Rarity in all characters
-    * Add Artifact Sets related to Artifacts
+    * Add Artifact Sets Preload
+    * Images view on every view move to right corner
     """,
     'author': "Alfonso Gonzalez",
     'website': "https://ntropy.tech",
     'category': 'Customizations',
-    'version': '15.0.0.1.6',
+    'version': '15.0.0.1.7',
     'license': "AGPL-3",
     'sequence': "-95",
     'depends': [

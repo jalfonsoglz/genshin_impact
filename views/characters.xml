@@ -24,6 +24,7 @@
                         <div class="oe_title">
                             <h1>
                                 <field name="name" placeholder="Nombre..." />
+                                <field name="avatar" widget="image" class="oe_avatar" height="106" options='{"preview_image": "avatar"}' readonly="1" />
                             </h1>
                             <group>
                                 <field name="active" invisible="1" />
@@ -34,8 +35,7 @@
                             </group>
                         </div>
                         <group>
-                            <field name="avatar" widget="image" height="106" />
-                            <field name="full_avatar" widget="image" height="128" />
+                            <field name="full_avatar" widget="image" height="128" invisible="1" />
                         </group>
                     </group>
                 </sheet>

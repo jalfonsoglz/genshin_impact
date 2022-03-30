@@ -1,25 +1,254 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>
+        <!--        GROUP 1 (MAX RARITY: 3) -->
+        <record id="artifacts_set_adventurer" model="genshin.impact.artifacts.sets">
+            <field name="image" type="base64" file="genshin_impact\static\img\artifact\art_flower.png" />
+            <field name="name">Aventurero</field>
+            <field name="art_passive_note">.</field>
+            <field name="art_passive2">Vida Máx. +1000 pts.</field>
+            <field name="art_passive4">Al abrir un cofre, se regenera un 30% de Vida durante 5 s.</field>
+        </record>
+        <record id="artifacts_set_lucky_dog" model="genshin.impact.artifacts.sets">
+            <field name="image" type="base64" file="genshin_impact\static\img\artifact\art_flower.png" />
+            <field name="name">Afortunado</field>
+            <field name="art_passive_note">.</field>
+            <field name="art_passive2">DEF +100</field>
+            <field name="art_passive4">Recoger Mora restaura 300 pts. de Vida.</field>
+        </record>
+        <record id="artifacts_set_traveling_doctor" model="genshin.impact.artifacts.sets">
+            <field name="image" type="base64" file="genshin_impact\static\img\artifact\art_flower.png" />
+            <field name="name">Médica Itinerante</field>
+            <field name="art_passive_note">.</field>
+            <field name="art_passive2">Curación recibida +20%</field>
+            <field name="art_passive4">Al lanzar una Habilidad Definitiva, restaura 20% de Vida.</field>
+        </record>
+        <!--        GROUP 2 (MAX RARITY: 4) -->
+        <record id="artifacts_set_instructor" model="genshin.impact.artifacts.sets">
+            <field name="image" type="base64" file="genshin_impact\static\img\artifact\art_flower.png" />
+            <field name="name">Instructor</field>
+            <field name="art_passive_note">.</field>
+            <field name="art_passive2">Maestría Elemental +80.</field>
+            <field name="art_passive4">Después de activar una Reacción Elemental, aumenta la Maestría Elemental de todos los miembros del equipo en 120 pts. durante 8 s.</field>
+        </record>
+        <record id="artifacts_set_berserker" model="genshin.impact.artifacts.sets">
+            <field name="image" type="base64" file="genshin_impact\static\img\artifact\art_flower.png" />
+            <field name="name">Berserker</field>
+            <field name="art_passive_note">.</field>
+            <field name="art_passive2">Prob. CRIT +12%.</field>
+            <field name="art_passive4">Cuando la Vida es inferior al 70%, aumenta la Prob. CRIT en un 24%.</field>
+        </record>
+        <record id="artifacts_set_the_exile" model="genshin.impact.artifacts.sets">
+            <field name="image" type="base64" file="genshin_impact\static\img\artifact\art_flower.png" />
+            <field name="name">Exiliado</field>
+            <field name="art_passive_note">.</field>
+            <field name="art_passive2">Recarga de Energía +20%.</field>
+            <field name="art_passive4">Al usar la Habilidad Elemental, todos los miembros del equipo (a excepción de tu personaje en uso) recuperan 2 pts. de Energía Elemental cada 2 s durante 6s. Este efecto no puede acumularse.</field>
+        </record>
+        <!--        GROUP 3 (MAX RARITY: 4) -->
+        <record id="artifacts_set_resolution_of_sojourner" model="genshin.impact.artifacts.sets">
+            <field name="image" type="base64" file="genshin_impact\static\img\artifact\art_flower.png" />
+            <field name="name">Corazón del Viajero </field>
+            <field name="art_passive_note">.</field>
+            <field name="art_passive2">ATQ +18%.</field>
+            <field name="art_passive4">La Prob. CRIT de los Ataques Cargados aumenta en un 30%.</field>
+        </record>
+        <record id="artifacts_set_martial_artist" model="genshin.impact.artifacts.sets">
+            <field name="image" type="base64" file="genshin_impact\static\img\artifact\art_flower.png" />
+            <field name="name">Artista Marcial</field>
+            <field name="art_passive_note">.</field>
+            <field name="art_passive2">Daño del Ataque Normal y Ataque Cargado +15%</field>
+            <field name="art_passive4">Tras usar la Habilidad Elemental, aumenta el daño de Ataque Normal y Ataque Cargado en un 25% durante 8 s.</field>
+        </record>
+        <record id="artifacts_set_defenders_will" model="genshin.impact.artifacts.sets">
+            <field name="image" type="base64" file="genshin_impact\static\img\artifact\art_flower.png" />
+            <field name="name">Corazón del Guardián</field>
+            <field name="art_passive_note">.</field>
+            <field name="art_passive2">DEF +30%.</field>
+            <field name="art_passive4">Por cada miembro de tu equipo con un Elemento distinto, la RES Elemental del personaje que lleve este conjunto aumenta en un 30% contra dicho elemento.</field>
+        </record>
+        <record id="artifacts_set_tiny_miracle" model="genshin.impact.artifacts.sets">
+            <field name="image" type="base64" file="genshin_impact\static\img\artifact\art_flower.png" />
+            <field name="name">Milagro</field>
+            <field name="art_passive_note">.</field>
+            <field name="art_passive2">Todas las Resistencias Elementales aumentan un 20%</field>
+            <field name="art_passive4">El Daño Elemental recibido incrementa la Resistencia Elemental correspondiente un 30% por 10s. Sólo puede ocurrir una vez cada 10s.</field>
+        </record>
+        <record id="artifacts_set_brave_heart" model="genshin.impact.artifacts.sets">
+            <field name="image" type="base64" file="genshin_impact\static\img\artifact\art_flower.png" />
+            <field name="name">Corazón del Guerrero</field>
+            <field name="art_passive_note">.</field>
+            <field name="art_passive2">ATQ +18%</field>
+            <field name="art_passive4">Incrementa el Daño un 30% contra enemigos con más de 50% de Vida</field>
+        </record>
+        <record id="artifacts_set_gambler" model="genshin.impact.artifacts.sets">
+            <field name="image" type="base64" file="genshin_impact\static\img\artifact\art_flower.png" />
+            <field name="name">Jugadora</field>
+            <field name="art_passive_note">.</field>
+            <field name="art_passive2">Incrementa el daño de la habilidad elemental un 20%</field>
+            <field name="art_passive4">Derrotar a un enemigo tiene un 100% de probabilidad de remover el tiempo de reutilización de la habilidad elemental. Sólo puede ocurrir una vez cada 15s</field>
+        </record>
+        <record id="artifacts_set_scholar" model="genshin.impact.artifacts.sets">
+            <field name="image" type="base64" file="genshin_impact\static\img\artifact\art_flower.png" />
+            <field name="name">Erudita</field>
+            <field name="art_passive_note">.</field>
+            <field name="art_passive2">Recarga de Energía +20%</field>
+            <field name="art_passive4">Ganar energía da 3 de energía a todos los miembros del equipo que tienen un arco o catalizador equipado. Sólo puede ocurrir una vez cada 3s</field>
+        </record>
+        <!--        GROUP 4 (MAX RARITY: 5) -->
         <record id="artifacts_set_gladiators_finale" model="genshin.impact.artifacts.sets">
             <field name="image" type="base64" file="genshin_impact/static/img/art_set/gladiators_finale/gladiators_finale_flower.png" />
             <field name="name">Final del Gladiador</field>
             <field name="art_passive_note">El Bono de 4 Piezas se considera % de Daño y es aditivo con otras fuentes de Daño% como el % de Daño Elemental de un Cáliz de Eonothem.
-El Bono de 4 piezas solo se aplica a los Ataques Normales y no afecta a otras fuentes de daño, como la Aguja de infusión de Pica Luna Creciente.</field>
+                El Bono de 4 piezas solo se aplica a los Ataques Normales y no afecta a otras fuentes de daño, como la Aguja de infusión de Pica Luna Creciente.</field>
             <field name="art_passive2">ATQ +18%.</field>
             <field name="art_passive4">Aumenta el daño de Ataque Normal en un 35% si el personaje usa una espada ligera, mandoble o lanza.</field>
         </record>
-
+        <record id="artifacts_set_maiden_beloved" model="genshin.impact.artifacts.sets">
+            <field name="image" type="base64" file="genshin_impact\static\img\artifact\art_flower.png" />
+            <field name="name">Doncella Amada</field>
+            <field name="art_passive_note">El Manual del aventurero ofrece un conjunto completo de Artefactos 4★ de Doncella Amada:
+                Al completar el Capítulo 6 se puede obtener Belleza Desvanecida de la Doncella.
+                Al derrotar a 10 Jefes y recoger sus recompensas se puede obtener Corazón Distante de la Doncella.
+                Al superar el Espiral del Abismo 4-5 se puede obtener Pasatiempo de la Doncella.
+                Al mejorar 4 artefactos al nivel 8 se pueden obtener Juventud Pasaje de la Doncella.
+                Al completar todo el Capítulo 7 se puede obtener Recuerdos de la Doncella.</field>
+            <field name="art_passive2">Aumenta en un 15% la curación realizada.</field>
+            <field name="art_passive4">El uso de una Habilidad Elemental o Definitiva aumenta en un 20% la curación recibida de todos los miembros del equipo durante 10 s.</field>
+        </record>
+        <record id="artifacts_set_noblesse_oblige" model="genshin.impact.artifacts.sets">
+            <field name="image" type="base64" file="genshin_impact\static\img\artifact\art_flower.png" />
+            <field name="name">Ritual Antiguo de la Nobleza</field>
+            <field name="art_passive_note">...</field>
+            <field name="art_passive2">Daño de Habilidad Definitiva +20%</field>
+            <field name="art_passive4">Después de lanzar una Habilidad Definitiva, aumenta el ATQ de todos los miembros del equipo en un 20% durante 12 s. Este efecto no puede acumularse.</field>
+        </record>
+        <record id="artifacts_set_bloodstained_chivalry" model="genshin.impact.artifacts.sets">
+            <field name="image" type="base64" file="genshin_impact\static\img\artifact\art_flower.png" />
+            <field name="name">Caballería Sanguinaria</field>
+            <field name="art_passive_note">...</field>
+            <field name="art_passive2">Daño Físico +25%</field>
+            <field name="art_passive4">Derrotar a un enemigo hace que no consumas Aguante al lanzar un Ataque Cargado, y que el daño de Ataque Cargado aumente en un 50% durante 10 s.</field>
+        </record>
+        <record id="artifacts_set_wanderers_troupe" model="genshin.impact.artifacts.sets">
+            <field name="image" type="base64" file="genshin_impact\static\img\artifact\art_flower.png" />
+            <field name="name">Orquesta del Errante</field>
+            <field name="art_passive_note">.</field>
+            <field name="art_passive2">Maestría Elemental +80</field>
+            <field name="art_passive4">Aumenta el daño del ataque cargado un 35% si el personaje usa un catalizador o arco</field>
+        </record>
+        <record id="artifacts_set_tenacity_of_the_millelith" model="genshin.impact.artifacts.sets">
+            <field name="image" type="base64" file="genshin_impact\static\img\artifact\art_flower.png" />
+            <field name="name">Tenacidad de la Geoarmada</field>
+            <field name="art_passive_note">.</field>
+            <field name="art_passive2">Vida +20%</field>
+            <field name="art_passive4">Cuando una Habilidad Elemental golpea a un enemigo, el ATQ de todos los personajes del equipo cercanos aumenta en un 20% y su Protección de Escudo aumenta en un 30% durante 3 . Este efecto puede tener lugar cada 0.5 s y se activa incluso cuando el personaje que lleva equipado este conjunto de artefactos está en tu equipo pero no en combate.</field>
+        </record>
+        <record id="artifacts_set_pale_flame" model="genshin.impact.artifacts.sets">
+            <field name="image" type="base64" file="genshin_impact\static\img\artifact\art_flower.png" />
+            <field name="name">Llamas Albinas</field>
+            <field name="art_passive_note">.</field>
+            <field name="art_passive2">Daño Físico +25%</field>
+            <field name="art_passive4">Cuando una Habilidad Elemental golpea al enemigo, el ATQ de todos los miembros del equipo cercanos aumenta 9% durante 7 s. Este efecto puede acumularse hasta 2 veces y puede ser activado cada 0.3 s. Cuando se llega a aplicar 2 veces, el efecto del conjunto de 2 piezas aumenta un 100%.</field>
+        </record>
         <record id="artifacts_set_emblem_of_severed_fate" model="genshin.impact.artifacts.sets">
             <field name="image" type="base64" file="genshin_impact/static/img/art_set/Emblem_of_Severed_Fate.png" />
             <field name="name">Emblema del Destino</field>
             <field name="art_passive_note">Sólo el personaje con el conjunto de artefactos equipado obtendrá la bonificación.
-La bonificación del daño infligido con la Habilidad Definitiva se obtiene en base a cada 100% de Recarga de Energía del personaje que usa este artefacto.
-100% de Recarga de Energía equivale al 25%
-200% de Recarga de Energía equivale al 50%
-300% de Recarga de Energía equivale al 75%</field>
+                La bonificación del daño infligido con la Habilidad Definitiva se obtiene en base a cada 100% de Recarga de Energía del personaje que usa este artefacto.
+                100% de Recarga de Energía equivale al 25%
+                200% de Recarga de Energía equivale al 50%
+                300% de Recarga de Energía equivale al 75%</field>
             <field name="art_passive2">Recarga de Energía +20%.</field>
             <field name="art_passive4">Aumenta el daño infligido con la Habilidad Definitiva en una cantidad equivalente al 25% de la Recarga de Energía. Se puede obtener un aumento del 75% como máximo.</field>
+        </record>
+        <record id="artifacts_set_shimenawas_reminiscence" model="genshin.impact.artifacts.sets">
+            <field name="image" type="base64" file="genshin_impact\static\img\artifact\art_flower.png" />
+            <field name="name">Reminiscencia de la Purificación</field>
+            <field name="art_passive_note">.</field>
+            <field name="art_passive2">ATQ +18%</field>
+            <field name="art_passive4">Si el personaje tiene 15 pts. de Energía Elemental o más, perderá 15 pts. al realizar una Habilidad Elemental y el daño infligido con los Ataques Normales, Cargados y Descendentes aumentará en un 50% durante 10 s.</field>
+        </record>
+        <!--        GROUP 5 (MAX RARITY: 5) -->
+        <record id="artifacts_set_viridescent_venerer" model="genshin.impact.artifacts.sets">
+            <field name="image" type="base64" file="genshin_impact\static\img\artifact\art_flower.png" />
+            <field name="name">Sombra Verde Esmeralda</field>
+            <field name="art_passive_note">....</field>
+            <field name="art_passive2">Bono de Daño Anemo +15%</field>
+            <field name="art_passive4">Aumenta el daño de Torbellino en un 60%. Dependiendo del tipo elemental que tenga, disminuye la RES Elemental correspondiente del enemigo en un 40% durante 10 s.</field>
+        </record>
+        <record id="artifacts_set_thundering_fury" model="genshin.impact.artifacts.sets">
+            <field name="image" type="base64" file="genshin_impact\static\img\artifact\art_flower.png" />
+            <field name="name">Furia del Trueno</field>
+            <field name="art_passive_note">....</field>
+            <field name="art_passive2">Bono de Daño Electro +15%</field>
+            <field name="art_passive4">Aumenta el daño infligido por Sobrecarga, Electrocargado y Superconductor en un 40%. Al activar alguna de estas reacciones, disminuye en 1 s el TdE de la Habilidad Elemental. Solo puede ocurrir una vez cada 0.8 s.</field>
+        </record>
+        <record id="artifacts_set_thunder_soother" model="genshin.impact.artifacts.sets">
+            <field name="image" type="base64" file="genshin_impact\static\img\artifact\art_flower.png" />
+            <field name="name">Domador de Truenos</field>
+            <field name="art_passive_note">....</field>
+            <field name="art_passive2">RES Electro +40%</field>
+            <field name="art_passive4">Aumenta en un 35% el daño contra los enemigos afectados por Electro.</field>
+        </record>
+        <record id="artifacts_set_crimson_witch_of_flames" model="genshin.impact.artifacts.sets">
+            <field name="image" type="base64" file="genshin_impact\static\img\artifact\art_flower.png" />
+            <field name="name">Bruja Carmesí en Llamas</field>
+            <field name="art_passive_note">....</field>
+            <field name="art_passive2">Bono de Daño Pyro +15%</field>
+            <field name="art_passive4">Aumenta el daño causado por Sobrecarga y Quemadura en un 40%, y el de Vaporización y Derretido en un 15%. El uso de una Habilidad Elemental aumenta los efectos del conjunto de 2 piezas en un 50% durante 10 s. Puede acumularse hasta un máximo de 3 veces.</field>
+        </record>
+        <record id="artifacts_set_lavawalker" model="genshin.impact.artifacts.sets">
+            <field name="image" type="base64" file="genshin_impact\static\img\artifact\art_flower.png" />
+            <field name="name">Virtuoso Corredor de Lava</field>
+            <field name="art_passive_note">....</field>
+            <field name="art_passive2">RES Pyro +40%</field>
+            <field name="art_passive4">Aumenta en un 35% el daño contra los enemigos afectados por Pyro.</field>
+        </record>
+        <record id="artifacts_set_archaic_petra" model="genshin.impact.artifacts.sets">
+            <field name="image" type="base64" file="genshin_impact\static\img\artifact\art_flower.png" />
+            <field name="name">Petra Arcaica</field>
+            <field name="art_passive_note">....</field>
+            <field name="art_passive2">Bono de Daño Geo +15%</field>
+            <field name="art_passive4">Al obtener un cristal creado a través de la reacción de Cristalización, todos los miembros del equipo obtienen durante 10 s un 35% de Bono de Daño Elemental del elemento que causó dicha reacción. Solo se puede obtener un tipo de Bono de Daño Elemental a la vez.</field>
+        </record>
+        <record id="artifacts_set_retracing_bolide" model="genshin.impact.artifacts.sets">
+            <field name="image" type="base64" file="genshin_impact\static\img\artifact\art_flower.png" />
+            <field name="name">Retroceso del Meteorito</field>
+            <field name="art_passive_note">....</field>
+            <field name="art_passive2">Protección de Escudo +35%.</field>
+            <field name="art_passive4">Los Ataque Normales y Cargados obtienen un 40% de daño adicional mientras estés bajo la protección de un escudo.</field>
+        </record>
+        <record id="artifacts_set_blizzard_strayer" model="genshin.impact.artifacts.sets">
+            <field name="image" type="base64" file="genshin_impact\static\img\artifact\art_flower.png" />
+            <field name="name">Nómada del Invierno</field>
+            <field name="art_passive_note">....</field>
+            <field name="art_passive2">Bono de Daño Cryo +15%</field>
+            <field name="art_passive4">Aumenta en un 20% la Prob. CRIT contra los enemigos afectados por Cryo. Si el enemigo está Congelado, la Prob. CRIT aumentará en un 20% adicional.</field>
+        </record>
+        <record id="artifacts_set_heart_of_depth" model="genshin.impact.artifacts.sets">
+            <field name="image" type="base64" file="genshin_impact\static\img\artifact\art_flower.png" />
+            <field name="name">Corazón de las Profundidades</field>
+            <field name="art_passive_note">....</field>
+            <field name="art_passive2">Bono de Daño Hydro +15%</field>
+            <field name="art_passive4">Tras usar la Habilidad Elemental, aumenta el daño de Ataque Normal y Ataque Cargado en un 30% durante 15 s.</field>
+        </record>
+        <record id="artifacts_set_vermillion_hereafter" model="genshin.impact.artifacts.sets">
+            <field name="image" type="base64" file="genshin_impact\static\img\artifact\art_flower.png" />
+            <field name="name">Vermillion Hereafter</field>
+            <field name="art_passive_note">....</field>
+            <field name="art_passive2">ATK +18%.</field>
+            <field name="art_passive4">After using an Elemental Burst. this character will gain the Nascent Light effect, increasing their ATK by 8% for 16s. When the character's HP decreases, their ATK will further increase by 10%. This increase can occur this way maximum of 4 times. This effect can be triggered once every 0.8s. Nascent Light will be dispelled when the character leaves the field. If an Elemental Burst is used again during the duration of Nascent Light, the original Nascent Light will be dispelled.</field>
+        </record>
+        <record id="artifacts_set_echoes_of_an_offering" model="genshin.impact.artifacts.sets">
+            <field name="image" type="base64" file="genshin_impact\static\img\artifact\art_flower.png" />
+            <field name="name">Echoes of an Offering</field>
+            <field name="art_passive_note">....</field>
+            <field name="art_passive2">ATK +18%.</field>
+            <field name="art_passive4">When Normal Attacks hit opponents, there is a 36% chance that it will trigger Valley Rite, which will increase Normal Attack DMG by 70% of ATK.
+                This effect will be dispelled 0.05s after a Normal Attack deals DMG.
+                If a Normal Attack fails to trigger Valley Rite, the odds of it triggering the next time will increase by 20%.
+                This trigger can occur once every 0.2s.</field>
         </record>
     </data>
 </odoo>

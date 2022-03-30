@@ -12,7 +12,7 @@ El Bono de 4 piezas solo se aplica a los Ataques Normales y no afecta a otras fu
 
         <record id="artifacts_set_emblem_of_severed_fate" model="genshin.impact.artifacts.sets">
             <field name="image" type="base64" file="genshin_impact/static/img/art_set/Emblem_of_Severed_Fate.png" />
-            <field name="name">Casco Ornamentado</field>
+            <field name="name">Emblema del Destino</field>
             <field name="art_passive_note">Sólo el personaje con el conjunto de artefactos equipado obtendrá la bonificación.
 La bonificación del daño infligido con la Habilidad Definitiva se obtiene en base a cada 100% de Recarga de Energía del personaje que usa este artefacto.
 100% de Recarga de Energía equivale al 25%

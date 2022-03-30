@@ -26,8 +26,8 @@
                     <group string="Tipo de Artefacto" col="3">
                         <field name="image" widget="image" height="256" invisible="1" />
                         <field name="art_types" />
+                        <field name="art_set" />
                     </group>
-                <field name="art_set" />
                 </sheet>
             </form>
         </field>

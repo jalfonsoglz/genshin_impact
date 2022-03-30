@@ -4,6 +4,7 @@
         <record id="char_albedo" model="genshin.impact.characters">
             <field name="active">True</field>
             <field name="name">Albedo</field>
+            <field name="char_rarity">5</field>
             <field name="char_element_type">5</field>
             <field name="char_weapon_type">5</field>
             <field name="note">Una de las creaciones del alquimista Rhinedottir, el misterioso Albedo es el Jefe Alquimista y Capitán del Equipo de Investigación de los Caballeros de Favonius a través de una recomendación de la aventurera Alice, con Sacarosa como su asistente. Tiene un deseo infinito de aprender sobre el mundo de Teyvat, estudiando cuidadosamente cada objeto a su alrededor.</field>
@@ -12,6 +13,7 @@
         <record id="char_aloy" model="genshin.impact.characters">
             <field name="active">True</field>
             <field name="name">Aloy</field>
+            <field name="char_rarity">4</field>
             <field name="char_element_type">3</field>
             <field name="char_weapon_type">1</field>
             <field name="avatar" type="base64" file="genshin_impact/static/img/avatar/Aloy.png" />
@@ -19,6 +21,7 @@
         <record id="char_amber" model="genshin.impact.characters">
             <field name="active">True</field>
             <field name="name">Amber</field>
+            <field name="char_rarity">4</field>
             <field name="char_element_type">7</field>
             <field name="char_weapon_type">1</field>
             <field name="note">Note</field>
@@ -27,6 +30,7 @@
         <record id="char_itto" model="genshin.impact.characters">
             <field name="active">True</field>
             <field name="name">Arataki Itto</field>
+            <field name="char_rarity">5</field>
             <field name="char_element_type">5</field>
             <field name="char_weapon_type">3</field>
             <field name="note">Note</field>
@@ -35,6 +39,7 @@
         <record id="char_barbara" model="genshin.impact.characters">
             <field name="active">True</field>
             <field name="name">Barbara</field>
+            <field name="char_rarity">4</field>
             <field name="char_element_type">6</field>
             <field name="char_weapon_type">2</field>
             <field name="note">Note</field>
@@ -43,14 +48,16 @@
         <record id="char_beidou" model="genshin.impact.characters">
             <field name="active">True</field>
             <field name="name">Beidou</field>
-            <field name="char_element_type">1</field>
-            <field name="char_weapon_type">1</field>
+            <field name="char_rarity">4</field>
+            <field name="char_element_type">4</field>
+            <field name="char_weapon_type">3</field>
             <field name="note">Note</field>
             <field name="avatar" type="base64" file="genshin_impact/static/img/avatar/Beidou.png" />
         </record>
         <record id="char_bennet" model="genshin.impact.characters">
             <field name="active">True</field>
             <field name="name">Bennet</field>
+            <field name="char_rarity">4</field>
             <field name="char_element_type">7</field>
             <field name="char_weapon_type">5</field>
             <field name="note">Note</field>
@@ -59,6 +66,7 @@
         <record id="char_chongyun" model="genshin.impact.characters">
             <field name="active">True</field>
             <field name="name">Chongyun</field>
+            <field name="char_rarity">4</field>
             <field name="char_element_type">3</field>
             <field name="char_weapon_type">3</field>
             <field name="note">Note</field>
@@ -67,6 +75,7 @@
         <record id="char_diluc" model="genshin.impact.characters">
             <field name="active">True</field>
             <field name="name">Diluc</field>
+            <field name="char_rarity">5</field>
             <field name="char_element_type">7</field>
             <field name="char_weapon_type">3</field>
             <field name="note">Note</field>
@@ -75,6 +84,7 @@
         <record id="char_diona" model="genshin.impact.characters">
             <field name="active">True</field>
             <field name="name">Diona</field>
+            <field name="char_rarity">4</field>
             <field name="char_element_type">3</field>
             <field name="char_weapon_type">1</field>
             <field name="note">Note</field>
@@ -83,6 +93,7 @@
         <record id="char_eula" model="genshin.impact.characters">
             <field name="active">True</field>
             <field name="name">Eula</field>
+            <field name="char_rarity">5</field>
             <field name="char_element_type">3</field>
             <field name="char_weapon_type">3</field>
             <field name="note">Note</field>
@@ -91,6 +102,7 @@
         <record id="char_fischl" model="genshin.impact.characters">
             <field name="active">True</field>
             <field name="name">Fischl</field>
+            <field name="char_rarity">4</field>
             <field name="char_element_type">4</field>
             <field name="char_weapon_type">1</field>
             <field name="note">Note</field>
@@ -99,6 +111,7 @@
         <record id="char_ganyu" model="genshin.impact.characters">
             <field name="active">True</field>
             <field name="name">Ganyu</field>
+            <field name="char_rarity">5</field>
             <field name="char_element_type">3</field>
             <field name="char_weapon_type">1</field>
             <field name="note">Note</field>
@@ -107,6 +120,7 @@
         <record id="char_gorou" model="genshin.impact.characters">
             <field name="active">True</field>
             <field name="name">Gorou</field>
+            <field name="char_rarity">4</field>
             <field name="char_element_type">5</field>
             <field name="char_weapon_type">1</field>
             <field name="note">Note</field>
@@ -115,14 +129,16 @@
         <record id="char_hu_tao" model="genshin.impact.characters">
             <field name="active">True</field>
             <field name="name">Hu Tao</field>
-            <field name="char_element_type">1</field>
-            <field name="char_weapon_type">1</field>
+            <field name="char_rarity">5</field>
+            <field name="char_element_type">7</field>
+            <field name="char_weapon_type">4</field>
             <field name="note">Note</field>
             <field name="avatar" type="base64" file="genshin_impact/static/img/avatar/HuTao.png" />
         </record>
         <record id="char_jean" model="genshin.impact.characters">
             <field name="active">True</field>
             <field name="name">Jean</field>
+            <field name="char_rarity">5</field>
             <field name="char_element_type">2</field>
             <field name="char_weapon_type">5</field>
             <field name="note">Note</field>
@@ -131,6 +147,7 @@
         <record id="char_kaeya" model="genshin.impact.characters">
             <field name="active">True</field>
             <field name="name">Kaeya</field>
+            <field name="char_rarity">4</field>
             <field name="char_element_type">3</field>
             <field name="char_weapon_type">5</field>
             <field name="note">Note</field>
@@ -139,6 +156,7 @@
         <record id="char_kazuha" model="genshin.impact.characters">
             <field name="active">True</field>
             <field name="name">Kazuha</field>
+            <field name="char_rarity">5</field>
             <field name="char_element_type">2</field>
             <field name="char_weapon_type">5</field>
             <field name="note">Note</field>
@@ -147,6 +165,7 @@
         <record id="char_ayaka" model="genshin.impact.characters">
             <field name="active">True</field>
             <field name="name">Ayaka</field>
+            <field name="char_rarity">5</field>
             <field name="char_element_type">3</field>
             <field name="char_weapon_type">5</field>
             <field name="note">Note</field>
@@ -155,6 +174,7 @@
         <record id="char_keching" model="genshin.impact.characters">
             <field name="active">True</field>
             <field name="name">Keching</field>
+            <field name="char_rarity">5</field>
             <field name="char_element_type">4</field>
             <field name="char_weapon_type">5</field>
             <field name="note">Note</field>
@@ -163,6 +183,7 @@
         <record id="char_klee" model="genshin.impact.characters">
             <field name="active">True</field>
             <field name="name">Klee</field>
+            <field name="char_rarity">5</field>
             <field name="char_element_type">7</field>
             <field name="char_weapon_type">2</field>
             <field name="note">Note</field>
@@ -171,6 +192,7 @@
         <record id="char_sara" model="genshin.impact.characters">
             <field name="active">True</field>
             <field name="name">Sara Kujou</field>
+            <field name="char_rarity">4</field>
             <field name="char_element_type">4</field>
             <field name="char_weapon_type">1</field>
             <field name="note">Note</field>
@@ -179,6 +201,7 @@
         <record id="char_lisa" model="genshin.impact.characters">
             <field name="active">True</field>
             <field name="name">Lisa</field>
+            <field name="char_rarity">4</field>
             <field name="char_element_type">4</field>
             <field name="char_weapon_type">2</field>
             <field name="note">Note</field>
@@ -187,6 +210,7 @@
         <record id="char_mona" model="genshin.impact.characters">
             <field name="active">True</field>
             <field name="name">Mona</field>
+            <field name="char_rarity">5</field>
             <field name="char_element_type">6</field>
             <field name="char_weapon_type">2</field>
             <field name="note">Note</field>
@@ -195,6 +219,7 @@
         <record id="char_ninguang" model="genshin.impact.characters">
             <field name="active">True</field>
             <field name="name">Ninguang</field>
+            <field name="char_rarity">4</field>
             <field name="char_element_type">5</field>
             <field name="char_weapon_type">2</field>
             <field name="note">Note</field>
@@ -203,6 +228,7 @@
         <record id="char_noelle" model="genshin.impact.characters">
             <field name="active">True</field>
             <field name="name">Noelle</field>
+            <field name="char_rarity">4</field>
             <field name="char_element_type">5</field>
             <field name="char_weapon_type">3</field>
             <field name="note">Note</field>
@@ -211,6 +237,7 @@
         <record id="char_qiqi" model="genshin.impact.characters">
             <field name="active">True</field>
             <field name="name">Qiqi</field>
+            <field name="char_rarity">5</field>
             <field name="char_element_type">3</field>
             <field name="char_weapon_type">5</field>
             <field name="note">Note</field>
@@ -219,6 +246,7 @@
         <record id="char_razor" model="genshin.impact.characters">
             <field name="active">True</field>
             <field name="name">Razor</field>
+            <field name="char_rarity">4</field>
             <field name="char_element_type">4</field>
             <field name="char_weapon_type">3</field>
             <field name="note">Note</field>
@@ -227,6 +255,7 @@
         <record id="char_rosaria" model="genshin.impact.characters">
             <field name="active">True</field>
             <field name="name">Rosaria</field>
+            <field name="char_rarity">4</field>
             <field name="char_element_type">3</field>
             <field name="char_weapon_type">4</field>
             <field name="note">Note</field>
@@ -235,6 +264,7 @@
         <record id="char_sacarosa" model="genshin.impact.characters">
             <field name="active">True</field>
             <field name="name">Sacarosa</field>
+            <field name="char_rarity">4</field>
             <field name="char_element_type">2</field>
             <field name="char_weapon_type">2</field>
             <field name="note">Note</field>
@@ -243,6 +273,7 @@
         <record id="char_kokomi" model="genshin.impact.characters">
             <field name="active">True</field>
             <field name="name">Kokomi Sangonomiya</field>
+            <field name="char_rarity">5</field>
             <field name="char_element_type">6</field>
             <field name="char_weapon_type">2</field>
             <field name="note">Note</field>
@@ -251,6 +282,7 @@
         <record id="char_sayu" model="genshin.impact.characters">
             <field name="active">True</field>
             <field name="name">Sayu</field>
+            <field name="char_rarity">4</field>
             <field name="char_element_type">2</field>
             <field name="char_weapon_type">3</field>
             <field name="note">Note</field>
@@ -259,6 +291,7 @@
         <record id="char_shenhe" model="genshin.impact.characters">
             <field name="active">True</field>
             <field name="name">Shenhe</field>
+            <field name="char_rarity">5</field>
             <field name="char_element_type">3</field>
             <field name="char_weapon_type">4</field>
             <field name="note">Note</field>
@@ -267,6 +300,7 @@
         <record id="char_raiden" model="genshin.impact.characters">
             <field name="active">True</field>
             <field name="name">Shogun Raiden</field>
+            <field name="char_rarity">5</field>
             <field name="char_element_type">4</field>
             <field name="char_weapon_type">4</field>
             <field name="note">Note</field>
@@ -275,6 +309,7 @@
         <record id="char_tartaglia" model="genshin.impact.characters">
             <field name="active">True</field>
             <field name="name">Tartaglia</field>
+            <field name="char_rarity">5</field>
             <field name="char_element_type">6</field>
             <field name="char_weapon_type">1</field>
             <field name="note">Note</field>
@@ -283,6 +318,7 @@
         <record id="char_thoma" model="genshin.impact.characters">
             <field name="active">True</field>
             <field name="name">Thoma</field>
+            <field name="char_rarity">4</field>
             <field name="char_element_type">7</field>
             <field name="char_weapon_type">4</field>
             <field name="note">Note</field>
@@ -291,6 +327,7 @@
         <record id="char_Traveler" model="genshin.impact.characters">
             <field name="active">True</field>
             <field name="name">Traveler</field>
+            <field name="char_rarity">5</field>
             <field name="char_element_type">4</field>
             <field name="char_weapon_type">5</field>
             <field name="note">Note</field>
@@ -299,6 +336,7 @@
         <record id="char_venti" model="genshin.impact.characters">
             <field name="active">True</field>
             <field name="name">Venti</field>
+            <field name="char_rarity">5</field>
             <field name="char_element_type">2</field>
             <field name="char_weapon_type">1</field>
             <field name="note">Note</field>
@@ -307,6 +345,7 @@
         <record id="char_xiangling" model="genshin.impact.characters">
             <field name="active">True</field>
             <field name="name">Xiangling</field>
+            <field name="char_rarity">4</field>
             <field name="char_element_type">7</field>
             <field name="char_weapon_type">4</field>
             <field name="note">Note</field>
@@ -315,6 +354,7 @@
         <record id="char_xiao" model="genshin.impact.characters">
             <field name="active">True</field>
             <field name="name">Xiao</field>
+            <field name="char_rarity">5</field>
             <field name="char_element_type">2</field>
             <field name="char_weapon_type">4</field>
             <field name="note">Note</field>
@@ -323,6 +363,7 @@
         <record id="char_xingchiu" model="genshin.impact.characters">
             <field name="active">True</field>
             <field name="name">Xingchiu</field>
+            <field name="char_rarity">4</field>
             <field name="char_element_type">6</field>
             <field name="char_weapon_type">5</field>
             <field name="note">Note</field>
@@ -331,6 +372,7 @@
         <record id="char_xinyan" model="genshin.impact.characters">
             <field name="active">True</field>
             <field name="name">Xinyan</field>
+            <field name="char_rarity">4</field>
             <field name="char_element_type">7</field>
             <field name="char_weapon_type">3</field>
             <field name="note">Note</field>
@@ -339,14 +381,16 @@
         <record id="char_miko" model="genshin.impact.characters">
             <field name="active">True</field>
             <field name="name">Yae Miko</field>
-            <field name="char_element_type">1</field>
-            <field name="char_weapon_type">1</field>
+            <field name="char_rarity">5</field>
+            <field name="char_element_type">4</field>
+            <field name="char_weapon_type">2</field>
             <field name="note">Note</field>
             <field name="avatar" type="base64" file="genshin_impact/static/img/avatar/YaeMiko.png" />
         </record>
         <record id="char_yanfei" model="genshin.impact.characters">
             <field name="active">True</field>
             <field name="name">Yanfei</field>
+            <field name="char_rarity">4</field>
             <field name="char_element_type">7</field>
             <field name="char_weapon_type">2</field>
             <field name="note">Note</field>
@@ -355,6 +399,7 @@
         <record id="char_yoimiya" model="genshin.impact.characters">
             <field name="active">True</field>
             <field name="name">Yoimiya</field>
+            <field name="char_rarity">5</field>
             <field name="char_element_type">7</field>
             <field name="char_weapon_type">1</field>
             <field name="note">Note</field>
@@ -363,6 +408,7 @@
         <record id="char_yunjin" model="genshin.impact.characters">
             <field name="active">True</field>
             <field name="name">Yun Jin</field>
+            <field name="char_rarity">4</field>
             <field name="char_element_type">5</field>
             <field name="char_weapon_type">4</field>
             <field name="note">Note</field>
@@ -371,6 +417,7 @@
         <record id="char_zhongli" model="genshin.impact.characters">
             <field name="active">True</field>
             <field name="name">Zhongli</field>
+            <field name="char_rarity">5</field>
             <field name="char_element_type">5</field>
             <field name="char_weapon_type">4</field>
             <field name="note">Note</field>

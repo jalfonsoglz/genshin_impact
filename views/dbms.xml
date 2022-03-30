@@ -33,11 +33,12 @@
         <field name="arch" type="xml">
             <form>
                 <sheet>
+                    <field name="avatar" widget='image' class="oe_avatar" options='{"preview_image": "avatar"}'/>
                     <div class="oe_title">
                         <h1>
                             <field name="name" placeholder="Nombre..." />
+                            <field name="char_rarity" />
                         </h1>
-                        <!--                        <field name="avatar" widget="image" height="128" />-->
                         <!--                        <field name="full_avatar" widget="image" height="200" />-->
                     </div>
                     <group col="3">
@@ -60,11 +61,11 @@
                         </group>
                         <group string="Arma">
                             <field name="char_weapon_type" widget="selection" />
-                            <field name="char_weapon" widget="selection" />
+                            <field name="char_weapon" />
                             <field name="char_weapon_level" />
                             <field name="char_weapon_upgrade" />
-                            <field name="weapon_note" widget="selection" />
-                            <field name="weapon_stat" widget="selection" />
+                            <field name="weapon_note" />
+                            <field name="weapon_stat" />
                             <field name="weapon_atk" />
                             <field name="weapon_sub_stat_value" />
                         </group>

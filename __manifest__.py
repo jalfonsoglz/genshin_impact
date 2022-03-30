@@ -5,17 +5,15 @@
     'summary': """Módulo de Gestión de Personajes de Genshin Impact""",
 
     'description': """
-    Add Main Stat on each artifact and track
-    Coming: 
-    * Add Rarity and avatar on dbms
-    * Weapon Pasive
-    * 2 and 4 passives
-    * New artifacts names and icons    
+    * Fix Elements and Weapons for Beidou, Miko and Hu Tao
+    * Add Physical Damage Type Bonus
+    * Add Rarity in all characters
+    * Add Artifact Sets related to Artifacts
     """,
     'author': "Alfonso Gonzalez",
     'website': "https://ntropy.tech",
     'category': 'Customizations',
-    'version': '15.0.0.1.5',
+    'version': '15.0.0.1.6',
     'license': "AGPL-3",
     'sequence': "-95",
     'depends': [
@@ -38,6 +36,7 @@
         'data/weapon.type.xml',
         'data/weapons.xml',
         'data/artifacts.xml',
+        'data/artifacts.sets.xml',
         'data/characters.xml'
         # 'data/genshin.impact.characters.csv'
     ],

@@ -35,9 +35,9 @@ class Dbms(models.Model):
 
     active = fields.Boolean(string='Activo', default=True)
     achieved = fields.Boolean(string='Invocado', default=False, tracking=True)
-    avatar = fields.Binary(related='name.avatar', string="avatar", readonly=True, store=True)
+    avatar = fields.Image(related='name.avatar', string="avatar", store=True)
     name = fields.Many2one('genshin.impact.characters', string="Nombre")
-    char_rarity = fields.Many2one('genshin.impact.characters', string='Rareza')
+    # char_rarity = fields.Many2one(related='name.char_rarity', string='Rareza')
     char_element_type = fields.Many2one(related='name.char_element_type', string='Elemento', readonly=True, store=True)
     char_weapon_type = fields.Many2one(related='name.char_weapon_type', string='Tipo Arma', readonly=True, store=True)
     char_weapon = fields.Many2one('genshin.impact.weapons', string='Arma')

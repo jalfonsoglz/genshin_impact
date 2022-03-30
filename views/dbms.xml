@@ -37,7 +37,6 @@
                     <div class="oe_title">
                         <h1>
                             <field name="name" placeholder="Nombre..." />
-                            <field name="char_rarity" />
                         </h1>
                         <!--                        <field name="full_avatar" widget="image" height="200" />-->
                     </div>
@@ -45,6 +44,7 @@
                         <group string="Personaje">
                             <field name="active" invisible="1" />
                             <field name="achieved" attrs="{'invisible': [('achieved', '=', True)]}" />
+<!--                            <field name="char_rarity" />-->
                             <field name="char_element_type" widget="selection" />
                             <field name="level" />
                             <field name="constellation" />

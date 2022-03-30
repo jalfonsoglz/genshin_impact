@@ -33,8 +33,8 @@
         'data/elements.xml',
         'data/weapon.type.xml',
         'data/weapons.xml',
-        'data/artifacts.xml',
         'data/artifacts.sets.xml',
+        'data/artifacts.xml',
         'data/characters.xml'
         # 'data/genshin.impact.characters.csv'
     ],

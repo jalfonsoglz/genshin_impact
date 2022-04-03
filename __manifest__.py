@@ -13,7 +13,7 @@
     'category': 'Customizations',
     'version': '15.0.0.1.7',
     'license': "AGPL-3",
-    'sequence': "-95",
+    'sequence': "-99",
     'depends': [
         'base',
         'mail',

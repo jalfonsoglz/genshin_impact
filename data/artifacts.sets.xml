@@ -235,14 +235,14 @@
         </record>
         <record id="artifacts_set_vermillion_hereafter" model="genshin.impact.artifacts.sets">
             <field name="image" type="base64" file="genshin_impact/static/img/artifact/Vermillion_Hereafter_Flower.png" />
-            <field name="name">Vermillion Hereafter</field>
+            <field name="name">Deceso del Cinabrio</field>
             <field name="art_passive_note">....</field>
             <field name="art_passive2">ATK +18%.</field>
             <field name="art_passive4">After using an Elemental Burst. this character will gain the Nascent Light effect, increasing their ATK by 8% for 16s. When the character's HP decreases, their ATK will further increase by 10%. This increase can occur this way maximum of 4 times. This effect can be triggered once every 0.8s. Nascent Light will be dispelled when the character leaves the field. If an Elemental Burst is used again during the duration of Nascent Light, the original Nascent Light will be dispelled.</field>
         </record>
         <record id="artifacts_set_echoes_of_an_offering" model="genshin.impact.artifacts.sets">
             <field name="image" type="base64" file="genshin_impact/static/img/artifact/Echoes_of_an_Offering_Flower.png" />
-            <field name="name">Echoes of an Offering</field>
+            <field name="name">	Eco del Sacrificio</field>
             <field name="art_passive_note">....</field>
             <field name="art_passive2">ATK +18%.</field>
             <field name="art_passive4">When Normal Attacks hit opponents, there is a 36% chance that it will trigger Valley Rite, which will increase Normal Attack DMG by 70% of ATK.

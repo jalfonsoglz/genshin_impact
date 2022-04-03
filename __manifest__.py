@@ -5,13 +5,24 @@
     'summary': """Módulo de Gestión de Personajes de Genshin Impact""",
 
     'description': """
-    * Add Artifact Sets Preload
-    * Images view on every view move to right corner
+    ** Update **
+    Add 34 Artifacts Sets with Set Name and Icon (next update individual names)
+    ** 2.6 Update **
+    * Add Ayato
+    * Add Artifact Set
+        * Vermillion Hereafter (new)
+        * Echoes of an Offering (new)
+    ** Fixes **
+    * Add Artifact Set
+        * Husk of Opulent Dreams (missed)
+        * Ocean-Hued Clam (missed)
+    * Add Ayaka last name
+    * More minor fixes
     """,
     'author': "Alfonso Gonzalez",
     'website': "https://ntropy.tech",
     'category': 'Customizations',
-    'version': '15.0.0.1.7',
+    'version': '15.0.0.1.8',
     'license': "AGPL-3",
     'sequence': "-99",
     'depends': [

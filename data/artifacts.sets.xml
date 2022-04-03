@@ -48,7 +48,7 @@
         <!--        GROUP 3 (MAX RARITY: 4) -->
         <record id="artifacts_set_resolution_of_sojourner" model="genshin.impact.artifacts.sets">
             <field name="image" type="base64" file="genshin_impact/static/img/artifact/Resolution_of_Sojourner_Flower.png" />
-            <field name="name">Corazón del Viajero </field>
+            <field name="name">Corazón del Viajero</field>
             <field name="art_passive_note">.</field>
             <field name="art_passive2">ATQ +18%.</field>
             <field name="art_passive4">La Prob. CRIT de los Ataques Cargados aumenta en un 30%.</field>
@@ -238,17 +238,35 @@
             <field name="name">Deceso del Cinabrio</field>
             <field name="art_passive_note">....</field>
             <field name="art_passive2">ATK +18%.</field>
-            <field name="art_passive4">After using an Elemental Burst. this character will gain the Nascent Light effect, increasing their ATK by 8% for 16s. When the character's HP decreases, their ATK will further increase by 10%. This increase can occur this way maximum of 4 times. This effect can be triggered once every 0.8s. Nascent Light will be dispelled when the character leaves the field. If an Elemental Burst is used again during the duration of Nascent Light, the original Nascent Light will be dispelled.</field>
+            <field name="art_passive4">Al usar la Habilidad Definitiva, obtienes el efecto de “destello emergente” durante 16s, el cual aumenta el ATQ en un 8% y, además, hace que cada vez que el personaje pierda Vida, su ATQ aumente en un 10% adicional. Este efecto solo puede aumentar el ATQ un máximo de 4 veces de esta manera y activarse una vez cada 0.8 s. Los efectos de destello emergente se disiparán si el personaje es retirado de combate. Si el personaje vuelve a usar la Habilidad Definitiva mientras dicho efecto está activo, el destello emergente original también se disipará.</field>
         </record>
         <record id="artifacts_set_echoes_of_an_offering" model="genshin.impact.artifacts.sets">
             <field name="image" type="base64" file="genshin_impact/static/img/artifact/Echoes_of_an_Offering_Flower.png" />
-            <field name="name">	Eco del Sacrificio</field>
+            <field name="name">Eco del Sacrificio</field>
             <field name="art_passive_note">....</field>
             <field name="art_passive2">ATK +18%.</field>
-            <field name="art_passive4">When Normal Attacks hit opponents, there is a 36% chance that it will trigger Valley Rite, which will increase Normal Attack DMG by 70% of ATK.
-                This effect will be dispelled 0.05s after a Normal Attack deals DMG.
-                If a Normal Attack fails to trigger Valley Rite, the odds of it triggering the next time will increase by 20%.
-                This trigger can occur once every 0.2s.</field>
+            <field name="art_passive4">Al golpear a un enemigo con un Ataque Normal, hay una probabilidad del 36% de activar el efecto de “ritual del valle”, el cual aumenta el Daño de Ataque Normal en una cantidad equivalente al 70% del ATQ. Este efecto se anula 0.05 s después de infligir daño con un Ataque Normal. Si dicho ataque no activa ritual del valle, la probabilidad de activarlo con el siguiente golpe de Ataque Normal aumenta en un 20%. Esta activación solo puede ocurrir una vez cada 0.2s.</field>
+        </record>
+        <record id="artifacts_set_Glacier_and_Snowfield" model="genshin.impact.artifacts.sets">
+            <field name="image" type="base64" file="genshin_impact/static/img/artifact/Glacier_and_Snowfield_Flower.png" />
+            <field name="name">Arenas de hielo y nieve</field>
+            <field name="art_passive_note">....</field>
+            <field name="art_passive2">Bono de Daño Cryo +15%.</field>
+            <field name="art_passive4">Aumenta en un 100% el daño infligido por Superconductor y el de Derretido en un 15%. Además, al usar una Habilidad Definitiva, obtienes un 30% de Bono de Daño Cryo durante 10 s.</field>
+        </record>
+        <record id="artifacts_set_Husk_of_Opulent_Dreams" model="genshin.impact.artifacts.sets">
+            <field name="image" type="base64" file="genshin_impact/static/img/artifact/Husk_of_Opulent_Dreams_Flower.png" />
+            <field name="name">Cáscara de Sueños Opulentos</field>
+            <field name="art_passive_note">....</field>
+            <field name="art_passive2">DEF +30%.</field>
+            <field name="art_passive4">El personaje que equipe este conjunto de artefactos obtendrá el efecto de “curiosidad” en las siguientes circunstancias: al golpear a un enemigo con un ataque Geo, obtiene una carga, lo cual solo puede ocurrir una vez cada 0.3 s; mientras está en tu equipo pero no en combate, obtiene una carga cada 3 s. Este efecto puede acumularse hasta 4 veces, y cada carga aumenta en un 6% la DEF y otorga un 6% de Bono de Daño Geo. Si el personaje no obtiene una carga de curiosidad en 6 s, perderá una acumulación.</field>
+        </record>
+        <record id="artifacts_set_Ocean_Hued_Clam" model="genshin.impact.artifacts.sets">
+            <field name="image" type="base64" file="genshin_impact/static/img/artifact/Ocean_Hued_Clam_Flower.png" />
+            <field name="name">Perla Oceánica</field>
+            <field name="art_passive_note">....</field>
+            <field name="art_passive2">Bono de Curación +15%.</field>
+            <field name="art_passive4">Cuando el personaje que equipa este conjunto de artefactos cura a otro, crea el efecto de “burbuja marina” durante 3 s, el cual registra la cantidad de Vida regenerada (incluida la regenerada por encima del 100%). Tras ello, la burbuja marina estalla e inflige contra los enemigos cercanos un daño basado en el 90% de la cantidad regenerada. Este daño se calcula de manera similar al de las reacciones de Electrocargado, Superconductor, etc., pero no varía en función de la Maestría Elemental, el nivel del personaje o el bono de daño de las reacciones. Solo se puede crear una burbuja marina cada 3.5 s, la cual solo puede registrar un máximo de 30 000 pts. de Vida regenerada, incluyendo la regenerada por encima del 100%. Además, solo puede existir una burbuja marina en tu equipo al mismo tiempo. Cuando el personaje que equipa este conjunto de artefactos está en el equipo pero no en combate, también podrá activar este efecto.</field>
         </record>
     </data>
 </odoo>

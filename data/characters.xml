@@ -164,12 +164,21 @@
         </record>
         <record id="char_ayaka" model="genshin.impact.characters">
             <field name="active">True</field>
-            <field name="name">Ayaka</field>
+            <field name="name">Kamisato Ayaka</field>
             <field name="char_rarity">5</field>
             <field name="char_element_type">3</field>
             <field name="char_weapon_type">5</field>
             <field name="note">Note</field>
             <field name="avatar" type="base64" file="genshin_impact/static/img/avatar/Ayaka.png" />
+        </record>
+        <record id="char_ayato" model="genshin.impact.characters">
+            <field name="active">True</field>
+            <field name="name">Kamisato Ayato</field>
+            <field name="char_rarity">5</field>
+            <field name="char_element_type">6</field>
+            <field name="char_weapon_type">5</field>
+            <field name="note">Note</field>
+            <field name="avatar" type="base64" file="genshin_impact/static/img/avatar/Ayato.png" />
         </record>
         <record id="char_keching" model="genshin.impact.characters">
             <field name="active">True</field>

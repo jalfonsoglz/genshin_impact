@@ -603,271 +603,271 @@
         </record>
         <record id="artifacts_viridescent_venerer_flower" model="genshin.impact.artifacts">
             <field name="image" type="base64" file="genshin_impact/static/img/artifact/Viridescent_Venerer_Flower.png" />
-            <field name="name">Sombra Verde Esmeralda</field>
+            <field name="name">Recuerdo de Flores Silvestres</field>
             <field name="art_types">FLOWER</field>
             <field name="art_set" ref="artifacts_set_viridescent_venerer" />
         </record>
         <record id="artifacts_viridescent_venerer_plume" model="genshin.impact.artifacts">
             <field name="image" type="base64" file="genshin_impact/static/img/artifact/Viridescent_Venerer_Flower.png" />
-            <field name="name">Sombra Verde Esmeralda</field>
+            <field name="name">Pluma de la Cazadora Verde Esmeralda</field>
             <field name="art_types">PLUME</field>
             <field name="art_set" ref="artifacts_set_viridescent_venerer" />
         </record>
         <record id="artifacts_viridescent_venerer_sands" model="genshin.impact.artifacts">
             <field name="image" type="base64" file="genshin_impact/static/img/artifact/Viridescent_Venerer_Flower.png" />
-            <field name="name">Sombra Verde Esmeralda</field>
+            <field name="name">Serenidad de la Cazadora Verde Esmeralda</field>
             <field name="art_types">SANDS</field>
             <field name="art_set" ref="artifacts_set_viridescent_venerer" />
         </record>
         <record id="artifacts_viridescent_venerer_goblet" model="genshin.impact.artifacts">
             <field name="image" type="base64" file="genshin_impact/static/img/artifact/Viridescent_Venerer_Flower.png" />
-            <field name="name">Sombra Verde Esmeralda</field>
+            <field name="name">Cantimplora de la Cazadora Verde Esmeralda</field>
             <field name="art_types">GOBLET</field>
             <field name="art_set" ref="artifacts_set_viridescent_venerer" />
         </record>
         <record id="artifacts_viridescent_venerer_circlet" model="genshin.impact.artifacts">
             <field name="image" type="base64" file="genshin_impact/static/img/artifact/Viridescent_Venerer_Flower.png" />
-            <field name="name">Sombra Verde Esmeralda</field>
+            <field name="name">Sombrero de la Cazadora Verde Esmeralda</field>
             <field name="art_types">CIRCLET</field>
             <field name="art_set" ref="artifacts_set_viridescent_venerer" />
         </record>
         <record id="artifacts_thundering_fury_flower" model="genshin.impact.artifacts">
             <field name="image" type="base64" file="genshin_impact/static/img/artifact/Thundering_Fury_Flower.png" />
-            <field name="name">Furia del Trueno</field>
+            <field name="name">Misericordia del Pájaro del Trueno</field>
             <field name="art_types">FLOWER</field>
             <field name="art_set" ref="artifacts_set_thundering_fury" />
         </record>
         <record id="artifacts_thundering_fury_plume" model="genshin.impact.artifacts">
             <field name="image" type="base64" file="genshin_impact/static/img/artifact/Thundering_Fury_Flower.png" />
-            <field name="name">Furia del Trueno</field>
+            <field name="name">Superviviente de la Catástrofe</field>
             <field name="art_types">PLUME</field>
             <field name="art_set" ref="artifacts_set_thundering_fury" />
         </record>
         <record id="artifacts_thundering_fury_sands" model="genshin.impact.artifacts">
             <field name="image" type="base64" file="genshin_impact/static/img/artifact/Thundering_Fury_Flower.png" />
-            <field name="name">Furia del Trueno</field>
+            <field name="name">Reloj de Arena del Trueno</field>
             <field name="art_types">SANDS</field>
             <field name="art_set" ref="artifacts_set_thundering_fury" />
         </record>
         <record id="artifacts_thundering_fury_goblet" model="genshin.impact.artifacts">
             <field name="image" type="base64" file="genshin_impact/static/img/artifact/Thundering_Fury_Flower.png" />
-            <field name="name">Furia del Trueno</field>
+            <field name="name">Presagio de la Tormenta</field>
             <field name="art_types">GOBLET</field>
             <field name="art_set" ref="artifacts_set_thundering_fury" />
         </record>
         <record id="artifacts_thundering_fury_circlet" model="genshin.impact.artifacts">
             <field name="image" type="base64" file="genshin_impact/static/img/artifact/Thundering_Fury_Flower.png" />
-            <field name="name">Furia del Trueno</field>
+            <field name="name">Corona del Invocador de Truenos</field>
             <field name="art_types">CIRCLET</field>
             <field name="art_set" ref="artifacts_set_thundering_fury" />
         </record>
         <record id="artifacts_thunder_soother_flower" model="genshin.impact.artifacts">
             <field name="image" type="base64" file="genshin_impact/static/img/artifact/Thunder_Soother_Flower.png" />
-            <field name="name">Domador de Truenos</field>
+            <field name="name">Corazón del Domador de Truenos</field>
             <field name="art_types">FLOWER</field>
             <field name="art_set" ref="artifacts_set_thunder_soother" />
         </record>
         <record id="artifacts_thunder_soother_plume" model="genshin.impact.artifacts">
             <field name="image" type="base64" file="genshin_impact/static/img/artifact/Thunder_Soother_Flower.png" />
-            <field name="name">Domador de Truenos</field>
+            <field name="name">Pluma del Domador de Truenos</field>
             <field name="art_types">PLUME</field>
             <field name="art_set" ref="artifacts_set_thunder_soother" />
         </record>
         <record id="artifacts_thunder_soother_sands" model="genshin.impact.artifacts">
             <field name="image" type="base64" file="genshin_impact/static/img/artifact/Thunder_Soother_Flower.png" />
-            <field name="name">Domador de Truenos</field>
+            <field name="name">Tiempo del Domador de Truenos</field>
             <field name="art_types">SANDS</field>
             <field name="art_set" ref="artifacts_set_thunder_soother" />
         </record>
         <record id="artifacts_thunder_soother_goblet" model="genshin.impact.artifacts">
             <field name="image" type="base64" file="genshin_impact/static/img/artifact/Thunder_Soother_Flower.png" />
-            <field name="name">Domador de Truenos</field>
+            <field name="name">Cáliz del Domador de Truenos</field>
             <field name="art_types">GOBLET</field>
             <field name="art_set" ref="artifacts_set_thunder_soother" />
         </record>
         <record id="artifacts_thunder_soother_circlet" model="genshin.impact.artifacts">
             <field name="image" type="base64" file="genshin_impact/static/img/artifact/Thunder_Soother_Flower.png" />
-            <field name="name">Domador de Truenos</field>
+            <field name="name">Corona del Domador de Truenos</field>
             <field name="art_types">CIRCLET</field>
             <field name="art_set" ref="artifacts_set_thunder_soother" />
         </record>
         <record id="artifacts_crimson_witch_of_flames_flower" model="genshin.impact.artifacts">
             <field name="image" type="base64" file="genshin_impact/static/img/artifact/Crimson_Witch_of_Flames_Flower.png" />
-            <field name="name">Bruja Carmesí en Llamas</field>
+            <field name="name">Flor en Llamas de la Bruja</field>
             <field name="art_types">FLOWER</field>
             <field name="art_set" ref="artifacts_set_crimson_witch_of_flames" />
         </record>
         <record id="artifacts_crimson_witch_of_flames_plume" model="genshin.impact.artifacts">
             <field name="image" type="base64" file="genshin_impact/static/img/artifact/Crimson_Witch_of_Flames_Flower.png" />
-            <field name="name">Bruja Carmesí en Llamas</field>
+            <field name="name">Pluma Ardiente de la Bruja</field>
             <field name="art_types">PLUME</field>
             <field name="art_set" ref="artifacts_set_crimson_witch_of_flames" />
         </record>
         <record id="artifacts_crimson_witch_of_flames_sands" model="genshin.impact.artifacts">
             <field name="image" type="base64" file="genshin_impact/static/img/artifact/Crimson_Witch_of_Flames_Flower.png" />
-            <field name="name">Bruja Carmesí en Llamas</field>
+            <field name="name">Fin de los Tiempos de la Bruja</field>
             <field name="art_types">SANDS</field>
             <field name="art_set" ref="artifacts_set_crimson_witch_of_flames" />
         </record>
         <record id="artifacts_crimson_witch_of_flames_goblet" model="genshin.impact.artifacts">
             <field name="image" type="base64" file="genshin_impact/static/img/artifact/Crimson_Witch_of_Flames_Flower.png" />
-            <field name="name">Bruja Carmesí en Llamas</field>
+            <field name="name">Llama del Corazón de la Bruja</field>
             <field name="art_types">GOBLET</field>
             <field name="art_set" ref="artifacts_set_crimson_witch_of_flames" />
         </record>
         <record id="artifacts_crimson_witch_of_flames_circlet" model="genshin.impact.artifacts">
             <field name="image" type="base64" file="genshin_impact/static/img/artifact/Crimson_Witch_of_Flames_Flower.png" />
-            <field name="name">Bruja Carmesí en Llamas</field>
+            <field name="name">Sombrero Abrasador de la Bruja</field>
             <field name="art_types">CIRCLET</field>
             <field name="art_set" ref="artifacts_set_crimson_witch_of_flames" />
         </record>
         <record id="artifacts_lavawalker_flower" model="genshin.impact.artifacts">
             <field name="image" type="base64" file="genshin_impact/static/img/artifact/Lavawalker_Flower.png" />
-            <field name="name">Virtuoso Corredor de Lava</field>
+            <field name="name">Determinación del Corredor de Lava</field>
             <field name="art_types">FLOWER</field>
             <field name="art_set" ref="artifacts_set_lavawalker" />
         </record>
         <record id="artifacts_lavawalker_plume" model="genshin.impact.artifacts">
             <field name="image" type="base64" file="genshin_impact/static/img/artifact/Lavawalker_Flower.png" />
-            <field name="name">Virtuoso Corredor de Lava</field>
+            <field name="name">Liberación del Corredor de Lava</field>
             <field name="art_types">PLUME</field>
             <field name="art_set" ref="artifacts_set_lavawalker" />
         </record>
         <record id="artifacts_lavawalker_sands" model="genshin.impact.artifacts">
             <field name="image" type="base64" file="genshin_impact/static/img/artifact/Lavawalker_Flower.png" />
-            <field name="name">Virtuoso Corredor de Lava</field>
+            <field name="name">Tormento del Corredor de Lava</field>
             <field name="art_types">SANDS</field>
             <field name="art_set" ref="artifacts_set_lavawalker" />
         </record>
         <record id="artifacts_lavawalker_goblet" model="genshin.impact.artifacts">
             <field name="image" type="base64" file="genshin_impact/static/img/artifact/Lavawalker_Flower.png" />
-            <field name="name">Virtuoso Corredor de Lava</field>
+            <field name="name">Despertar del Corredor de Lava</field>
             <field name="art_types">GOBLET</field>
             <field name="art_set" ref="artifacts_set_lavawalker" />
         </record>
         <record id="artifacts_lavawalker_circlet" model="genshin.impact.artifacts">
             <field name="image" type="base64" file="genshin_impact/static/img/artifact/Lavawalker_Flower.png" />
-            <field name="name">Virtuoso Corredor de Lava</field>
+            <field name="name">Sabiduría del Corredor de Lava</field>
             <field name="art_types">CIRCLET</field>
             <field name="art_set" ref="artifacts_set_lavawalker" />
         </record>
         <record id="artifacts_archaic_petra_flower" model="genshin.impact.artifacts">
             <field name="image" type="base64" file="genshin_impact/static/img/artifact/Archaic_Petra_Flower.png" />
-            <field name="name">Petra Arcaica</field>
+            <field name="name">Flor del Acantilado Agrietado</field>
             <field name="art_types">FLOWER</field>
             <field name="art_set" ref="artifacts_set_archaic_petra" />
         </record>
         <record id="artifacts_archaic_petra_plume" model="genshin.impact.artifacts">
             <field name="image" type="base64" file="genshin_impact/static/img/artifact/Archaic_Petra_Flower.png" />
-            <field name="name">Petra Arcaica</field>
+            <field name="name">Pluma de la Cordillera Escarpada</field>
             <field name="art_types">PLUME</field>
             <field name="art_set" ref="artifacts_set_archaic_petra" />
         </record>
         <record id="artifacts_archaic_petra_sands" model="genshin.impact.artifacts">
             <field name="image" type="base64" file="genshin_impact/static/img/artifact/Archaic_Petra_Flower.png" />
-            <field name="name">Petra Arcaica</field>
+            <field name="name">Reloj de Sol de Jade Sempiterno</field>
             <field name="art_types">SANDS</field>
             <field name="art_set" ref="artifacts_set_archaic_petra" />
         </record>
         <record id="artifacts_archaic_petra_goblet" model="genshin.impact.artifacts">
             <field name="image" type="base64" file="genshin_impact/static/img/artifact/Archaic_Petra_Flower.png" />
-            <field name="name">Petra Arcaica</field>
+            <field name="name">Cáliz del Escultor de Montañas</field>
             <field name="art_types">GOBLET</field>
             <field name="art_set" ref="artifacts_set_archaic_petra" />
         </record>
         <record id="artifacts_archaic_petra_circlet" model="genshin.impact.artifacts">
             <field name="image" type="base64" file="genshin_impact/static/img/artifact/Archaic_Petra_Flower.png" />
-            <field name="name">Petra Arcaica</field>
+            <field name="name">Máscara de Basalto Inerte</field>
             <field name="art_types">CIRCLET</field>
             <field name="art_set" ref="artifacts_set_archaic_petra" />
         </record>
         <record id="artifacts_retracing_bolide_flower" model="genshin.impact.artifacts">
             <field name="image" type="base64" file="genshin_impact/static/img/artifact/Retracing_Bolide_Flower.png" />
-            <field name="name">Retroceso del Meteorito</field>
+            <field name="name">Flor de la Noche de Verano</field>
             <field name="art_types">FLOWER</field>
             <field name="art_set" ref="artifacts_set_retracing_bolide" />
         </record>
         <record id="artifacts_retracing_bolide_plume" model="genshin.impact.artifacts">
             <field name="image" type="base64" file="genshin_impact/static/img/artifact/Retracing_Bolide_Flower.png" />
-            <field name="name">Retroceso del Meteorito</field>
+            <field name="name">Gran Final de la Noche de Verano</field>
             <field name="art_types">PLUME</field>
             <field name="art_set" ref="artifacts_set_retracing_bolide" />
         </record>
         <record id="artifacts_retracing_bolide_sands" model="genshin.impact.artifacts">
             <field name="image" type="base64" file="genshin_impact/static/img/artifact/Retracing_Bolide_Flower.png" />
-            <field name="name">Retroceso del Meteorito</field>
+            <field name="name">Reloj de la Noche de Verano</field>
             <field name="art_types">SANDS</field>
             <field name="art_set" ref="artifacts_set_retracing_bolide" />
         </record>
         <record id="artifacts_retracing_bolide_goblet" model="genshin.impact.artifacts">
             <field name="image" type="base64" file="genshin_impact/static/img/artifact/Retracing_Bolide_Flower.png" />
-            <field name="name">Retroceso del Meteorito</field>
+            <field name="name">Globo de Agua de la Noche de Verano</field>
             <field name="art_types">GOBLET</field>
             <field name="art_set" ref="artifacts_set_retracing_bolide" />
         </record>
         <record id="artifacts_retracing_bolide_circlet" model="genshin.impact.artifacts">
             <field name="image" type="base64" file="genshin_impact/static/img/artifact/Retracing_Bolide_Flower.png" />
-            <field name="name">Retroceso del Meteorito</field>
+            <field name="name">Máscara de la Noche de Verano</field>
             <field name="art_types">CIRCLET</field>
             <field name="art_set" ref="artifacts_set_retracing_bolide" />
         </record>
         <record id="artifacts_blizzard_strayer_flower" model="genshin.impact.artifacts">
             <field name="image" type="base64" file="genshin_impact/static/img/artifact/Blizzard_Strayer_Flower.png" />
-            <field name="name">Nómada del Invierno</field>
+            <field name="name">Anhelo de la Ventisca</field>
             <field name="art_types">FLOWER</field>
             <field name="art_set" ref="artifacts_set_blizzard_strayer" />
         </record>
         <record id="artifacts_blizzard_strayer_plume" model="genshin.impact.artifacts">
             <field name="image" type="base64" file="genshin_impact/static/img/artifact/Blizzard_Strayer_Flower.png" />
-            <field name="name">Nómada del Invierno</field>
+            <field name="name">Obstinación Perforahielos</field>
             <field name="art_types">PLUME</field>
             <field name="art_set" ref="artifacts_set_blizzard_strayer" />
         </record>
         <record id="artifacts_blizzard_strayer_sands" model="genshin.impact.artifacts">
             <field name="image" type="base64" file="genshin_impact/static/img/artifact/Blizzard_Strayer_Flower.png" />
-            <field name="name">Nómada del Invierno</field>
+            <field name="name">Retorno a las Tierras del Hielo</field>
             <field name="art_types">SANDS</field>
             <field name="art_set" ref="artifacts_set_blizzard_strayer" />
         </record>
         <record id="artifacts_blizzard_strayer_goblet" model="genshin.impact.artifacts">
             <field name="image" type="base64" file="genshin_impact/static/img/artifact/Blizzard_Strayer_Flower.png" />
-            <field name="name">Nómada del Invierno</field>
+            <field name="name">Orgullo del Invierno</field>
             <field name="art_types">GOBLET</field>
             <field name="art_set" ref="artifacts_set_blizzard_strayer" />
         </record>
         <record id="artifacts_blizzard_strayer_circlet" model="genshin.impact.artifacts">
             <field name="image" type="base64" file="genshin_impact/static/img/artifact/Blizzard_Strayer_Flower.png" />
-            <field name="name">Nómada del Invierno</field>
+            <field name="name">Eco de la Escarcha</field>
             <field name="art_types">CIRCLET</field>
             <field name="art_set" ref="artifacts_set_blizzard_strayer" />
         </record>
         <record id="artifacts_heart_of_depth_flower" model="genshin.impact.artifacts">
             <field name="image" type="base64" file="genshin_impact/static/img/artifact/Heart_of_Depth_Flower.png" />
-            <field name="name">Corazón de las Profundidades</field>
+            <field name="name">Broche Dorado</field>
             <field name="art_types">FLOWER</field>
             <field name="art_set" ref="artifacts_set_heart_of_depth" />
         </record>
         <record id="artifacts_heart_of_depth_plume" model="genshin.impact.artifacts">
             <field name="image" type="base64" file="genshin_impact/static/img/artifact/Heart_of_Depth_Flower.png" />
-            <field name="name">Corazón de las Profundidades</field>
+            <field name="name">Brisa de los Recuerdos</field>
             <field name="art_types">PLUME</field>
             <field name="art_set" ref="artifacts_set_heart_of_depth" />
         </record>
         <record id="artifacts_heart_of_depth_sands" model="genshin.impact.artifacts">
             <field name="image" type="base64" file="genshin_impact/static/img/artifact/Heart_of_Depth_Flower.png" />
-            <field name="name">Corazón de las Profundidades</field>
+            <field name="name">Brújula de Cobre Resistente</field>
             <field name="art_types">SANDS</field>
             <field name="art_set" ref="artifacts_set_heart_of_depth" />
         </record>
         <record id="artifacts_heart_of_depth_goblet" model="genshin.impact.artifacts">
             <field name="image" type="base64" file="genshin_impact/static/img/artifact/Heart_of_Depth_Flower.png" />
-            <field name="name">Corazón de las Profundidades</field>
+            <field name="name">Cáliz de las Profundidades</field>
             <field name="art_types">GOBLET</field>
             <field name="art_set" ref="artifacts_set_heart_of_depth" />
         </record>
         <record id="artifacts_heart_of_depth_circlet" model="genshin.impact.artifacts">
             <field name="image" type="base64" file="genshin_impact/static/img/artifact/Heart_of_Depth_Flower.png" />
-            <field name="name">Corazón de las Profundidades</field>
+            <field name="name">Gorro de Capitán Manchado de Vino</field>
             <field name="art_types">CIRCLET</field>
             <field name="art_set" ref="artifacts_set_heart_of_depth" />
         </record>

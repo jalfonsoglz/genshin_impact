@@ -16,7 +16,7 @@ class Artifacts(models.Model):
 	_name = 'genshin.impact.artifacts'
 	_description = 'Configurar Artefactos'
 	_rec_name = 'name'
-	_order = 'name asc'
+	_order = 'art_set asc'
 
 	image = fields.Image(string='Icono')
 	name = fields.Char(string='Nombre del Artefactos', required=True)

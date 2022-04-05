@@ -44,7 +44,7 @@
                         <group string="Personaje">
                             <field name="active" invisible="1" />
                             <field name="achieved" attrs="{'invisible': [('achieved', '=', True)]}" />
-<!--                            <field name="char_rarity" />-->
+                            <field name="char_rarity" />
                             <field name="char_element_type" widget="selection" />
                             <field name="level" />
                             <field name="constellation" />
@@ -64,7 +64,11 @@
                             <field name="char_weapon" />
                             <field name="char_weapon_level" />
                             <field name="char_weapon_upgrade" />
-                            <field name="weapon_note" />
+                            <field name="weapon_passive" attrs="{'invisible': [('char_weapon_upgrade', '!=', 1)]}"/>
+                            <field name="weapon_passive2" attrs="{'invisible': [('char_weapon_upgrade', '!=', 2)]}"/>
+                            <field name="weapon_passive3" attrs="{'invisible': [('char_weapon_upgrade', '!=', 3)]}"/>
+                            <field name="weapon_passive4" attrs="{'invisible': [('char_weapon_upgrade', '!=', 4)]}"/>
+                            <field name="weapon_passive5" attrs="{'invisible': [('char_weapon_upgrade', '!=', 5)]}"/>
                             <field name="weapon_stat" />
                             <field name="weapon_atk" />
                             <field name="weapon_sub_stat_value" />

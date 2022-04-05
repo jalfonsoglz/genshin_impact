@@ -28,6 +28,8 @@
                         <field name="image" widget="image" height="256" invisible="1" />
                         <field name="art_types" />
                         <field name="art_set" />
+                        <field name="art_passive2" />
+                        <field name="art_passive4" />
                     </group>
                 </sheet>
             </form>

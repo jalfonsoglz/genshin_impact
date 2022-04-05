@@ -22,6 +22,8 @@ class Artifacts(models.Model):
 	name = fields.Char(string='Nombre del Artefactos', required=True)
 	art_types = fields.Selection(ART_TYPES, string='Tipo')
 	art_set = fields.Many2one('genshin.impact.artifacts.sets', string='Set de Artefactos')
+	art_passive2 = fields.Html(related='art_set.art_passive2', string='Pasiva 2 Piezas', readonly=True, store=True)
+	art_passive4 = fields.Html(related='art_set.art_passive4', string='Pasiva 4 Piezas', readonly=True, store=True)
 
 
 class ArtifactsSets(models.Model):

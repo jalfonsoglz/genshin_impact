@@ -8,13 +8,10 @@
     'author': "Alfonso Gonzalez",
     'website': "https://ntropy.tech",
     'category': 'Customizations',
-    'version': '15.0.0.1.9',
+    'version': '15.0.0.2.0',
     'license': "AGPL-3",
     'sequence': "-99",
-    'depends': [
-        'base',
-        'mail',
-    ],
+    'depends': ['mail'],
     'data': [
         # Security
         'security/ir.model.access.csv',
@@ -32,8 +29,8 @@
         'data/weapons.xml',
         'data/artifacts.sets.xml',
         'data/artifacts.xml',
-        'data/characters.xml'
-        # 'data/genshin.impact.characters.csv'
+        'data/characters.xml',
+        'data/dbms.xml'
     ],
     'images': ['static/description/banner.png'],
     'demo': [],

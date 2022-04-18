@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="dbms_albedo" model="genshin.impact.dbms">
+            <field name="active">True</field>
+            <field name="name">1</field>
+        </record>
+        <record id="dbms_aloy" model="genshin.impact.dbms">
+            <field name="active">True</field>
+            <field name="name">2</field>
+        </record>
+        <record id="dbms_amber" model="genshin.impact.dbms">
+            <field name="active">True</field>
+            <field name="name">3</field>
+        </record>
+        <record id="dbms_itto" model="genshin.impact.dbms">
+            <field name="active">True</field>
+            <field name="name">4</field>
+        </record>
+        <record id="dbms_barbara" model="genshin.impact.dbms">
+            <field name="active">True</field>
+            <field name="name">5</field>
+        </record>
+        <record id="dbms_beidou" model="genshin.impact.dbms">
+            <field name="active">True</field>
+            <field name="name">6</field>
+        </record>
+        <record id="dbms_bennet" model="genshin.impact.dbms">
+            <field name="active">True</field>
+            <field name="name">7</field>
+        </record>
+        <record id="dbms_chongyun" model="genshin.impact.dbms">
+            <field name="active">True</field>
+            <field name="name">8</field>
+        </record>
+        <record id="dbms_diluc" model="genshin.impact.dbms">
+            <field name="active">True</field>
+            <field name="name">9</field>
+        </record>
+        <record id="dbms_diona" model="genshin.impact.dbms">
+            <field name="active">True</field>
+            <field name="name">10</field>
+        </record>
+        <record id="dbms_eula" model="genshin.impact.dbms">
+            <field name="active">True</field>
+            <field name="name">11</field>
+        </record>
+        <record id="dbms_fischl" model="genshin.impact.dbms">
+            <field name="active">True</field>
+            <field name="name">12</field>
+        </record>
+        <record id="dbms_ganyu" model="genshin.impact.dbms">
+            <field name="active">True</field>
+            <field name="name">13</field>
+        </record>
+        <record id="dbms_gorou" model="genshin.impact.dbms">
+            <field name="active">True</field>
+            <field name="name">14</field>
+        </record>
+        <record id="dbms_hu_tao" model="genshin.impact.dbms">
+            <field name="active">True</field>
+            <field name="name">15</field>
+        </record>
+        <record id="dbms_jean" model="genshin.impact.dbms">
+            <field name="active">True</field>
+            <field name="name">16</field>
+        </record>
+        <record id="dbms_kaeya" model="genshin.impact.dbms">
+            <field name="active">True</field>
+            <field name="name">17</field>
+        </record>
+        <record id="dbms_kazuha" model="genshin.impact.dbms">
+            <field name="active">True</field>
+            <field name="name">18</field>
+        </record>
+        <record id="dbms_ayaka" model="genshin.impact.dbms">
+            <field name="active">True</field>
+            <field name="name">19</field>
+        </record>
+        <record id="dbms_ayato" model="genshin.impact.dbms">
+            <field name="active">True</field>
+            <field name="name">20</field>
+        </record>
+        <record id="dbms_keching" model="genshin.impact.dbms">
+            <field name="active">True</field>
+            <field name="name">21</field>
+        </record>
+        <record id="dbms_klee" model="genshin.impact.dbms">
+            <field name="active">True</field>
+            <field name="name">22</field>
+        </record>
+        <record id="dbms_sara" model="genshin.impact.dbms">
+            <field name="active">True</field>
+            <field name="name">23</field>
+        </record>
+        <record id="dbms_lisa" model="genshin.impact.dbms">
+            <field name="active">True</field>
+            <field name="name">24</field>
+        </record>
+        <record id="dbms_mona" model="genshin.impact.dbms">
+            <field name="active">True</field>
+            <field name="name">25</field>
+        </record>
+        <record id="dbms_ninguang" model="genshin.impact.dbms">
+            <field name="active">True</field>
+            <field name="name">26</field>
+        </record>
+        <record id="dbms_noelle" model="genshin.impact.dbms">
+            <field name="active">True</field>
+            <field name="name">27</field>
+        </record>
+        <record id="dbms_qiqi" model="genshin.impact.dbms">
+            <field name="active">True</field>
+            <field name="name">28</field>
+        </record>
+        <record id="dbms_razor" model="genshin.impact.dbms">
+            <field name="active">True</field>
+            <field name="name">29</field>
+        </record>
+        <record id="dbms_rosaria" model="genshin.impact.dbms">
+            <field name="active">True</field>
+            <field name="name">30</field>
+        </record>
+        <record id="dbms_sacarosa" model="genshin.impact.dbms">
+            <field name="active">True</field>
+            <field name="name">31</field>
+        </record>
+        <record id="dbms_kokomi" model="genshin.impact.dbms">
+            <field name="active">True</field>
+            <field name="name">32</field>
+        </record>
+        <record id="dbms_sayu" model="genshin.impact.dbms">
+            <field name="active">True</field>
+            <field name="name">33</field>
+        </record>
+        <record id="dbms_shenhe" model="genshin.impact.dbms">
+            <field name="active">True</field>
+            <field name="name">34</field>
+        </record>
+        <record id="dbms_raiden" model="genshin.impact.dbms">
+            <field name="active">True</field>
+            <field name="name">35</field>
+        </record>
+        <record id="dbms_tartaglia" model="genshin.impact.dbms">
+            <field name="active">True</field>
+            <field name="name">36</field>
+        </record>
+        <record id="dbms_thoma" model="genshin.impact.dbms">
+            <field name="active">True</field>
+            <field name="name">37</field>
+        </record>
+        <record id="dbms_Traveler" model="genshin.impact.dbms">
+            <field name="active">True</field>
+            <field name="name">38</field>
+        </record>
+        <record id="dbms_venti" model="genshin.impact.dbms">
+            <field name="active">True</field>
+            <field name="name">39</field>
+        </record>
+        <record id="dbms_xiangling" model="genshin.impact.dbms">
+            <field name="active">True</field>
+            <field name="name">40</field>
+        </record>
+        <record id="dbms_xiao" model="genshin.impact.dbms">
+            <field name="active">True</field>
+            <field name="name">41</field>
+        </record>
+        <record id="dbms_xingchiu" model="genshin.impact.dbms">
+            <field name="active">True</field>
+            <field name="name">42</field>
+        </record>
+        <record id="dbms_xinyan" model="genshin.impact.dbms">
+            <field name="active">True</field>
+            <field name="name">43</field>
+        </record>
+        <record id="dbms_miko" model="genshin.impact.dbms">
+            <field name="active">True</field>
+            <field name="name">44</field>
+        </record>
+        <record id="dbms_yanfei" model="genshin.impact.dbms">
+            <field name="active">True</field>
+            <field name="name">45</field>
+        </record>
+        <record id="dbms_yoimiya" model="genshin.impact.dbms">
+            <field name="active">True</field>
+            <field name="name">46</field>
+        </record>
+        <record id="dbms_yunjin" model="genshin.impact.dbms">
+            <field name="active">True</field>
+            <field name="name">47</field>
+        </record>
+        <record id="dbms_zhongli" model="genshin.impact.dbms">
+            <field name="active">True</field>
+            <field name="name">48</field>
+        </record>
+    </data>
+</odoo>

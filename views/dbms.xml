@@ -32,8 +32,7 @@
         <field name="model">genshin.impact.dbms</field>
         <field name="arch" type="xml">
             <form>
-                <sheet>
-                    <field name="avatar" widget='image' class="oe_avatar" options='{"preview_image": "avatar"}'/>
+                    <field name="avatar" widget='image' class="oe_avatar" />
                     <div class="oe_title">
                         <h1>
                             <field name="name" placeholder="Nombre..." />
@@ -190,7 +189,6 @@
                             <field name="char_art_circlet_stat4" />
                         </group>
                     </group>
-                </sheet>
                 <!-- Chatter -->
                 <div class="oe_chatter">
                     <field name="message_follower_ids" widget="mail_followers" />
@@ -209,7 +207,8 @@
                 <field name="level" />
                 <field name="constellation" />
                 <field name="achieved" />
-                <filter name="achieved" attrs="{'invisible': [('achieved', '!=', True)]}" />
+                <filter string="Invocado" name="achieved_filter" domain="[('achieved', '=', True)]" />
+                <filter string="No Invocado" name="no_achieved_filter" domain="[('achieved', '=', False)]" />
                 <separator />
                 <group expand="1" string="Group by">
                     <filter string="Invocado" name="achieved" context="{'group_by':'achieved' }" />
@@ -222,6 +221,11 @@
                     <field string="Ataque Elemental" name="elemental_skill_talent" context="{'group_by':'elemental_skill_talent' }" />
                     <field string="Definitiva Elemental" name="elemental_burst_talent" context="{'group_by':'elemental_burst_talent' }" />
                 </group>
+                <searchpanel>
+                    <field name="char_rarity" icon="fa-star" enable_counters="1" />
+                    <field name="char_element_type" icon="fa-magic" enable_counters="1" />
+                    <field name="char_weapon_type" icon="fa-gavel" enable_counters="1" />
+                </searchpanel>
             </search>
         </field>
     </record>
@@ -231,7 +235,7 @@
         <field name="type">ir.actions.act_window</field>
         <field name="res_model">genshin.impact.dbms</field>
         <field name="view_mode">tree,form</field>
-        <field name="context">{"achieved":1}</field>
+        <field name="context">{'search_default_achieved_filter':1}</field>
         <field name="help" type="html">
             <p class="o_view_nocontent_smiling_face">
                 Crear tu primer registro!

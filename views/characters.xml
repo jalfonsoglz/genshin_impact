@@ -54,6 +54,11 @@
                     <filter string="Elemento" name="char_element_type" context="{'group_by':'char_element_type' }" />
                     <filter string="Tipo de Arma" name="char_weapon_type" context="{'group_by':'char_weapon_type' }" />
                 </group>
+                <searchpanel>
+                    <field name="char_rarity" icon="fa-star" enable_counters="1" />
+                    <field name="char_element_type" icon="fa-magic" enable_counters="1" />
+                    <field name="char_weapon_type" icon="fa-gavel" enable_counters="1" />
+                </searchpanel>
             </search>
         </field>
     </record>

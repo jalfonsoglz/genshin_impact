@@ -155,7 +155,7 @@
         </record>
         <record id="char_kazuha" model="genshin.impact.characters">
             <field name="active">True</field>
-            <field name="name">Kazuha</field>
+            <field name="name">Kaedehara Kazuha</field>
             <field name="char_rarity">5</field>
             <field name="char_element_type">2</field>
             <field name="char_weapon_type">5</field>
@@ -200,7 +200,7 @@
         </record>
         <record id="char_sara" model="genshin.impact.characters">
             <field name="active">True</field>
-            <field name="name">Sara Kujou</field>
+            <field name="name">Kujou Sara</field>
             <field name="char_rarity">4</field>
             <field name="char_element_type">4</field>
             <field name="char_weapon_type">1</field>
@@ -281,7 +281,7 @@
         </record>
         <record id="char_kokomi" model="genshin.impact.characters">
             <field name="active">True</field>
-            <field name="name">Kokomi Sangonomiya</field>
+            <field name="name">Sangonomiya Kokomi</field>
             <field name="char_rarity">5</field>
             <field name="char_element_type">6</field>
             <field name="char_weapon_type">2</field>
@@ -308,7 +308,7 @@
         </record>
         <record id="char_raiden" model="genshin.impact.characters">
             <field name="active">True</field>
-            <field name="name">Shogun Raiden</field>
+            <field name="name">Raiden Shogun</field>
             <field name="char_rarity">5</field>
             <field name="char_element_type">4</field>
             <field name="char_weapon_type">4</field>
@@ -431,6 +431,29 @@
             <field name="char_weapon_type">4</field>
             <field name="note">Note</field>
             <field name="avatar" type="base64" file="genshin_impact/static/img/avatar/Zhongli.png" />
+        </record>
+        <record id="char_Dainsleif" model="genshin.impact.characters">
+            <field name="active">False</field>
+            <field name="name">Dainsleif</field>
+            <field name="char_rarity">5</field>
+            <field name="char_element_type">2</field>
+            <field name="char_weapon_type">2</field>
+            <field name="note">Note</field>
+        </record>
+        <record id="char_Kuki_Shinobu" model="genshin.impact.characters">
+            <field name="active">False</field>
+            <field name="name">Kuki Shinobu</field>
+            <field name="char_rarity">4</field>
+            <field name="char_element_type">4</field>
+            <field name="char_weapon_type">5</field>
+        </record>
+        <record id="char_Yelan" model="genshin.impact.characters">
+            <field name="active">False</field>
+            <field name="name">Yelan</field>
+            <field name="char_rarity">5</field>
+            <field name="char_element_type">6</field>
+            <field name="char_weapon_type">1</field>
+            <field name="note">Note</field>
         </record>
     </data>
 </odoo>

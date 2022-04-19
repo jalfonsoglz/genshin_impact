@@ -15,7 +15,6 @@ class Characters(models.Model):
 
     active = fields.Boolean(string='Activo', default=True)
     avatar = fields.Image(string='Avatar')
-    full_avatar = fields.Image(string='Avatar')
     name = fields.Char(string='Nombre')
     char_rarity = fields.Selection(RARITY, string='Rareza')
     char_element_type = fields.Many2one('genshin.impact.elements', string='Elemento')

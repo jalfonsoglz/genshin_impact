@@ -20,7 +20,7 @@
                 <sheet>
                     <div class="oe_title">
                         <h1>
-                            <field name="image" widget="image" class="oe_avatar" height="256" options='{"preview_image": "image"}' readonly="1" />
+                            <field name="image" widget="image" class="oe_avatar" readonly="1" />
                             <field name="name" required="1" />
                         </h1>
                     </div>

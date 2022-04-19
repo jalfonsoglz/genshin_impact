@@ -5,10 +5,10 @@
         <field name="name">genshin.impact.dbms.tree</field>
         <field name="model">genshin.impact.dbms</field>
         <field name="arch" type="xml">
-            <tree default_order="level, constellation, name">
+            <tree default_order="level, constellation, name" sample="1">
                 <field name="active" invisible="1" />
                 <field name="achieved" invisible="1" />
-                <!--                <field name="avatar" widget="image" height="48" />-->
+<!--                <field name="avatar" widget="image" height="48" />-->
                 <field name="level" />
                 <field name="name" />
                 <field name="char_element_type" />
@@ -32,17 +32,16 @@
         <field name="model">genshin.impact.dbms</field>
         <field name="arch" type="xml">
             <form>
-                    <field name="avatar" widget='image' class="oe_avatar" />
+                    <field name="avatar" widget='image' class="oe_avatar" readonly="1"/>
                     <div class="oe_title">
                         <h1>
-                            <field name="name" placeholder="Nombre..." />
+                            <field name="name" />
                         </h1>
-                        <!--                        <field name="full_avatar" widget="image" height="200" />-->
                     </div>
                     <group col="3">
                         <group string="Personaje">
                             <field name="active" invisible="1" />
-                            <field name="achieved" attrs="{'invisible': [('achieved', '=', True)]}" />
+                            <field name="achieved" widget="boolean_toggle" attrs="{'invisible': [('achieved', '=', True)]}" />
                             <field name="char_rarity" />
                             <field name="char_element_type" widget="selection" />
                             <field name="level" />

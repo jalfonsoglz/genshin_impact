@@ -24,19 +24,16 @@
                         <div class="oe_title">
                             <h1>
                                 <field name="name" placeholder="Nombre..." />
-                                <field name="avatar" widget="image" class="oe_avatar" height="106" options='{"preview_image": "avatar"}' readonly="1" />
+                                <field name="avatar" widget="image" class="oe_avatar" readonly="1" />
                             </h1>
                             <group>
-                                <field name="active" invisible="1" />
+                                <field name="active" widget="boolean_toggle" invisible="1" />
                                 <field name="char_rarity" />
                                 <field name="char_element_type" options="{'no_create': True}" />
                                 <field name="char_weapon_type" options="{'no_create': True}" />
                                 <field name="note" />
                             </group>
                         </div>
-                        <group>
-                            <field name="full_avatar" widget="image" height="128" invisible="1" />
-                        </group>
                     </group>
                 </sheet>
             </form>

@@ -23,13 +23,13 @@
                 <sheet>
                     <div class="oe_title">
                         <h1>
-                            <field name="image" widget="image" class="oe_avatar" height="128" options='{"preview_image": "image"}' attrs="{'readonly': [('active', '=', True)]}" readonly="1" />
+                            <field name="image" widget="image" class="oe_avatar" readonly="1" />
                             <field name="name" required="1" />
                         </h1>
                     </div>
                     <group col="2">
                         <group string="Información">
-                            <field name="active" attrs="{'invisible': [('active', '=', True)]}" />
+                            <field name="active" widget="boolean_toggle" attrs="{'invisible': [('active', '=', True)]}" />
                             <field name="weapon_type" attrs="{'readonly': [('active', '=', True)]}" />
                             <field name="weapon_rarity" attrs="{'readonly': [('active', '=', True)]}"/>
                             <field name="weapon_sub_stat_type" attrs="{'readonly': [('active', '=', True)]}" />

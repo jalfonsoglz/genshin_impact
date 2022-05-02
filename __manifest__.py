@@ -10,7 +10,7 @@
     'category': 'Customizations',
     'version': '15.0.0.2.0',
     'license': "AGPL-3",
-    'sequence': "-99",
+    'sequence': "-70",
     'depends': ['mail'],
     'data': [
         # Security
